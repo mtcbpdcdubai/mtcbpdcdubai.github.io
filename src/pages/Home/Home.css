@@ -1,0 +1,793 @@
+/* Base (Desktop) CSS */
+/* This will be applied by default on larger screens, such as desktops */
+@keyframes typing {
+  0% { width: 0; }
+  50%, 100% { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 100vh; 
+  width: 100vw; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  z-index: -1;
+  filter: blur(5px); 
+  object-fit: cover; 
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 5em;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  animation: typing 6s steps(40, end) infinite, blink .75s step-end infinite;
+}
+
+p {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.join-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.offer-section {
+  padding: 50px 15%;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+}
+
+.offer-section h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.offer-section p {
+  font-size: 1.75em;
+  margin-bottom: 40px;
+}
+
+.offer-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 0 500px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Color Indicators on Cards */
+.card.card-1::before, .card.card-2::before, .card.card-3::before, .card.card-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+}
+
+.card.card-1::before { background-color: #FFB900; }
+.card.card-2::before { background-color: #0078D7; }
+.card.card-3::before { background-color: #00BC28; }
+.card.card-4::before { background-color: #D83B01; }
+
+
+/*ambassador section desktop view*/
+
+
+.ambassador-section {
+  padding: 50px 15%;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+}
+
+.ambassador-section h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.ambassador-section p {
+  font-size: 1.75em;
+  margin-bottom: 40px;
+}
+
+.ambassador-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.ambassador-card {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.ambassador-card.poster {
+  grid-column: 2 / span 3;
+  grid-row: 1 / span 2;
+  width: 640px;
+  height: 680px;
+  padding:25px;
+}
+
+.ambassador-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ambassador-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.ambassador-card h3 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.ambassador-card:hover {
+  transform: scale(1.05);
+}
+
+
+.events-section {
+  padding: 50px 15%;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+}
+
+.events-section h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.events-section p {
+  font-size: 1.75em;
+  margin-bottom: 40px;
+}
+
+.events-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 0px; /* 10px gap between the cards */
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.event-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 350px; /* Adjusted height for better fit */
+}
+
+.event-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the image covers the entire card */
+  transition: filter 0.3s ease;
+}
+
+.event-card:hover img {
+  filter: blur(5px); /* Apply blur effect on hover */
+}
+
+.event-card .event-card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.25em;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+} 
+
+.event-card:hover .event-card-content {
+  opacity: 1;
+}
+
+.view-all-button {
+  margin-top: 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.view-all-button:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.view-all-button::after {
+  content: " ➔";
+}
+
+.Join-Now-button {
+  margin-top: 50px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.50em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.Join-Now-button:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.Join-Now-button::after {
+  content: " ➔";
+}
+
+/* Mobile View Adjustments */
+@media only screen and (max-width: 600px) {
+  .events-section {
+      padding: 30px 5%;
+  }
+
+  .events-section h2 {
+      font-size: 1.5em;
+  }
+
+  .events-section p {
+      font-size: 1em;
+  }
+
+  .events-cards {
+      grid-template-columns: 1fr; /* Single column layout for mobile */
+      grid-gap: 20px;
+  }
+
+  .event-card {
+      height: auto; /* Let the card height adjust automatically */
+  }
+
+  .event-card img {
+      height: auto; /* Allow the image to adjust automatically */
+  }
+
+  .event-card .event-card-content {
+      font-size: 1.25em;
+  }
+
+  .view-all-button {
+      padding: 10px 15px;
+      font-size: 1.25em;
+  }
+}
+
+
+
+
+
+
+.social-media-section {
+  padding: 50px 15%;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+}
+
+.social-media-section h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.social-media-section p {
+  font-size: 1.75em;
+  margin-bottom: 40px;
+}
+
+.social-media-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin: 0 500px;
+}
+
+.social-media-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  width: 320px;
+  height: 320px;
+}
+
+.social-media-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+
+
+.social-media-card .social-media-card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.social-media-card:hover .social-media-card-content {
+  opacity: 1;
+}
+
+
+
+/* Mobile CSS */
+
+@media screen and (max-width: 500px) {
+  
+  .home-container {
+    height: 90vh; /* Reduce the height of the container */
+    width: 100vw;
+    padding: 0;
+  }
+
+  .background-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    min-height: 90vh; /* Match the reduced container height */
+    object-fit: cover; /* Ensure the image covers the screen without stretching */
+    filter: blur(3px); /* Slightly reduce blur for smaller screens */
+  }
+
+  .content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 15px; /* Add padding to avoid text touching screen edges */
+  }
+
+  h1 {
+    font-size: 1.8em; /* Further reduce heading size for mobile */
+    margin-bottom: 0.3em;
+    border-right: .15em solid white; /* Retain a subtle cursor effect */
+    white-space: nowrap;
+    animation: typing 4s steps(30, end), blink .75s step-end infinite; /* Slightly faster typing animation */
+  }
+
+  p {
+    font-size: 0.9em; /* Further reduce paragraph size for mobile */
+    margin-bottom: 0.8em;
+  }
+
+  .join-button {
+    padding: 0.6em 1.2em; /* Adjust padding for smaller screens */
+    font-size: 0.9em; /* Further reduce button text size */
+    border-radius: 5px;
+  }
+
+  .join-button:hover {
+    transform: scale(1.05); /* Slightly reduce the hover scale effect */
+  }
+
+  @keyframes typing {
+    0% { width: 0; }
+    50%, 100% { width: 100%; }
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+}
+
+
+/*This section is for the mobile for the offer section*/
+/* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px or less */
+@media screen and (max-width: 500px) {
+  
+  .offer-section {
+    padding: 20px 5%; /* Reduce padding for smaller screens */
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+  }
+
+  .offer-section h2 {
+    font-size: 1.8em; /* Further reduce heading size for mobile */
+    margin-bottom: 10px;
+  }
+
+  .offer-section p {
+    font-size: 1em; /* Further reduce paragraph size for mobile */
+    margin-bottom: 15px;
+  }
+
+  .offer-cards {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack cards one below the other */
+    gap: 15px; /* Reduce gap between cards */
+    justify-content: center;
+    padding: 0 20px; /* Reduce padding for smaller screens */
+    margin: 0 auto;
+  }
+
+  .card {
+    position: relative;
+    width: 100%; /* Make card width responsive to screen size */
+    height: 200px; /* Reduce card height for mobile */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px; /* Adjust padding for mobile */
+    text-align: center;
+  }
+
+  .card h3 {
+    margin: 0;
+    font-size: 1.3em; /* Further reduce heading size in cards */
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Increase hover scale effect slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+  }
+
+  /* Color Indicators on Cards */
+  .card.card-1::before, .card.card-2::before, .card.card-3::before, .card.card-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px; /* Reduce the width of the color indicator */
+    height: 100%;
+  }
+
+  .card.card-1::before { background-color: #FFB900; }
+  .card.card-2::before { background-color: #0078D7; }
+  .card.card-3::before { background-color: #00BC28; }
+  .card.card-4::before { background-color: #D83B01; }
+
+  /* Card animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+/*This is the section for the mobile view of the ambassador program*/
+
+@media screen and (max-width: 500px) {
+
+  .ambassador-section {
+    padding: 20px 5%; /* Reduce padding for smaller screens */
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+  }
+
+  .ambassador-section h2 {
+    font-size: 1.8em; /* Reduce heading size for mobile */
+    margin-bottom: 10px;
+  }
+
+  .ambassador-section p {
+    font-size: 1em; /* Reduce paragraph size for mobile */
+    margin-bottom: 15px;
+  }
+
+  .ambassador-cards {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack cards one below the other */
+    gap: 15px; /* Reduce gap between cards */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .ambassador-card {
+    position: relative;
+    width: 100%; /* Make card width responsive to screen size */
+    height: 200px; /* Reduce card height for mobile */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+
+  .ambassador-card.poster {
+    grid-column: auto; /* Remove the spanning across multiple columns */
+    grid-row: auto; /* Remove the spanning across multiple rows */
+    width: 100%; /* Ensure it fits within the screen */
+    height: 300px; /* Adjust the height for the poster card */
+    padding: 15px; /* Adjust padding for mobile */
+  }
+
+  .ambassador-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ambassador-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px; /* Adjust padding for mobile */
+    text-align: center;
+  }
+
+  .ambassador-card h3 {
+    margin: 0;
+    font-size: 1.3em; /* Reduce heading size in cards */
+  }
+
+  .ambassador-card:hover {
+    transform: scale(1.05); /* Increase hover scale effect slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+  }
+
+  /* Card animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+
+
+/*the social media section*/
+
+/* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px or less */
+@media screen and (max-width: 500px) {
+
+  .social-media-section {
+    padding: 20px 5%; /* Reduce padding for smaller screens */
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+  }
+
+  .social-media-section h2 {
+    font-size: 1em; /* Reduce heading size for mobile */
+    margin-bottom: 10px;
+  }
+
+  .social-media-section p {
+    font-size: 1.5em; /* Reduce paragraph size for mobile */
+    margin-bottom: 15px;
+  }
+
+  .social-media-cards {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack cards one below the other */
+    gap: 15px; /* Reduce gap between cards */
+    justify-content: center;
+    margin: 0 auto; /* Center cards within the section */
+    padding: 0 20px; /* Reduce padding for better fit */
+  }
+
+  .social-media-card {
+    position: relative;
+    width: 100%; /* Make card width responsive to screen size */
+    height: 200px; /* Reduce card height for mobile */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+
+  .social-media-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+  }
+
+  .social-media-card:hover img {
+    filter: blur(5px);
+  }
+
+  .social-media-card .social-media-card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 8px 15px; /* Adjust padding for mobile */
+    font-size: 1.2em; /* Reduce font size for mobile */
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+  }
+
+  .social-media-card:hover .social-media-card-content {
+    opacity: 1;
+  }
+
+  /* Card animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

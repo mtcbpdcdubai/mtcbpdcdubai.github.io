@@ -1,0 +1,148 @@
+/* src/components/Navbar/Navbar.css */
+
+/* Base (Desktop) CSS */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2c2c;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.navbar-logo img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px and a height of 1000px or less */
+@media screen and (max-width: 500px) and (max-height: 1000px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-content {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; /* Ensure the navbar content does not exceed the viewport width */
+        max-width: 100%; /* Prevents the content from overflowing */
+    }
+
+    .navbar-logo {
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .navbar-logo img {
+        height: 30px; /* Reduce logo size for mobile */
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-icon .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .navbar-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #2c2c2c;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        padding: 10px 0;
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+    }
+
+    .navbar-links a {
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-icon.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .menu-icon.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    /* Ensure no horizontal overflow */
+    body, html {
+        overflow-x: hidden;
+    }
+
+    /* Avoid any unintended padding or margin causing overflow */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}

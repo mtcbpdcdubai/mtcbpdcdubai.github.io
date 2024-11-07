@@ -1,0 +1,799 @@
+@keyframes typing {
+    0% { width: 0; }
+    70% { width: 100%; }
+    100% { width: 100%; }
+  }
+  
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: white; }
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  .about-content {
+    padding: 40px 15%; /* Padding on left and right */
+    background-color: #1e1e1e; /* Dark background to distinguish section */
+    color: white;
+  }
+  
+  .about-content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+    overflow: hidden; /* Ensures the text is clipped during animation */
+    border-right: .15em solid white; /* Creates the cursor effect */
+    white-space: nowrap; /* Prevents text wrapping */
+    animation: typing 4s steps(20, end) infinite, blink .75s step-end infinite; /* Typing and cursor blink effect */
+    display: inline-block;
+  }
+  
+  .about-content p {
+    font-size: 1.75em;
+    margin-bottom: 30px; /* Increased space between paragraphs */
+    font-family: 'Lato', sans-serif; /* Use Lato for body text */
+  }
+  
+  .core-members-section {
+    padding: 40px 15%;
+    background-color: #1e1e1e; /* Dark background to distinguish section */
+    color: white;
+  }
+  
+  .core-members-section h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  }
+  
+  .core-members-section h3 {
+    font-size: 2em;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  }
+  
+  .core-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tech-team-section {
+    padding: 40px 15%;
+    background-color: #1e1e1e; /* Dark background to distinguish section */
+    color: white;
+  }
+  
+  .tech-team-section h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  }
+  
+  .tech-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .events-team-section {
+    padding: 40px 15%;
+    background-color: #1e1e1e; /* Dark background to distinguish section */
+    color: white;
+  }
+  
+  .events-team-section h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  }
+  
+  .events-team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .marketing-team-section {
+    padding: 40px 15%;
+    background-color: #1e1e1e; /* Dark background to distinguish section */
+    color: white;
+  }
+  
+  .marketing-team-section h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  }
+  
+  .marketing-team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .outreach-team-section {
+    padding: 40px 15%;
+    background-color: #1e1e1e; /* Dark background to distinguish section */
+    color: white;
+}
+
+.outreach-team-section h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+}
+
+.outreach-team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.outreach-team .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outreach-team .member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.outreach-team .member h4 {
+    font-size: 1.5em;
+    margin: 10px 0 5px 0;
+}
+
+.outreach-team .member p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.outreach-team .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.outreach-team .social-icons a {
+    color: white;
+    font-size: 1.2em;
+}
+
+.outreach-team .social-icons a:hover {
+    color: #0078D7; /* Change color on hover */
+}
+
+.faculty-section {
+    padding: 40px 15%;
+    background-color: #1e1e1e;
+    color: white;
+  }
+
+.faculty-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .faculty {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+  }
+
+  .faculty-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faculty-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }  
+
+  .faculty-member h4 {
+    font-size: 1.5em;
+    margin: 10px 0 5px 0;
+  }  
+
+  .faculty-member p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+
+
+  
+  .member {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .member h4 {
+    font-size: 1.5em;
+    margin: 10px 0 5px 0;
+  }
+  
+  .member p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  .social-icons a:hover {
+    color: #0078D7; /* Change color on hover */
+  }
+  
+/*mobile view for about us page*/
+
+/* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px or less */
+@media screen and (max-width: 500px) {
+
+  .about-page {
+    margin-top: 50px; /* Add a top margin to push the content below the navbar */
+    padding: 10px;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    max-height: 300px;
+  }
+
+  .about-content {
+    padding: 20px 5%;
+    background-color: #1e1e1e;
+    color: white;
+  }
+
+  .about-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    border-right: .1em solid white;
+    white-space: nowrap;
+    animation: typing 3s steps(15, end) infinite, blink .75s step-end infinite;
+    display: inline-block;
+  }
+
+  .about-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  @keyframes typing {
+    0% { width: 0; }
+    70% { width: 100%; }
+    100% { width: 100%; }
+  }
+
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: white; }
+  }
+}
+
+
+
+
+
+
+/* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px or less */
+@media screen and (max-width: 500px) {
+
+  .about-page {
+    padding: 10px;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    padding: 20px 5%;
+    background-color: #1e1e1e;
+    color: white;
+  }
+
+  .about-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    border-right: .1em solid white;
+    white-space: nowrap;
+    animation: typing 3s steps(15, end) infinite, blink .75s step-end infinite;
+    display: inline-block;
+  }
+
+  .about-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  /* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px or less */
+@media screen and (max-width: 500px) {
+
+  .about-page {
+    padding: 10px;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    padding: 20px 5%;
+    background-color: #1e1e1e;
+    color: white;
+  }
+
+  .about-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    border-right: .1em solid white;
+    white-space: nowrap;
+    animation: typing 3s steps(15, end) infinite, blink .75s step-end infinite;
+    display: inline-block;
+  }
+
+  .about-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .core-members-section {
+    padding: 20px 5%;
+    background-color: #1e1e1e;
+    color: white;
+  }
+
+  .core-members-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .core-members-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .core-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member img {
+    width: 80px; /* Set a specific width */
+    height: 80px; /* Set a specific height to match width */
+    display: block; /* Ensure image is displayed as a block element */
+    margin: 0 auto 5px; /* Center the image horizontally and add bottom margin */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+  }
+
+  .member h4 {
+    font-size: 0.9em; /* Further reduce name text size */
+    margin: 5px 0; /* Adjust margin for better spacing */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for member names */
+  }
+
+  .member p {
+    font-size: 0.8em; /* Further reduce position text size */
+    margin: 0; /* Remove bottom margin */
+    font-family: 'Lato', sans-serif; /* Use Lato for position text */
+  }
+
+  .social-icons {
+    margin-top: 8px; /* Add some space above the icons */
+    font-size: 1em; /* Maintain reduced icon size */
+  }
+
+  .social-icons a {
+    color: white;
+    margin: 0 3px; /* Space icons out a bit */
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #00aaff; /* Change icon color on hover */
+  }
+}
+}
+
+
+/* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px or less */
+@media screen and (max-width: 500px) {
+
+  .tech-team-section {
+    padding: 20px 5%; /* Reduce padding for smaller screens */
+    background-color: #1e1e1e; /* Dark background to distinguish section */
+    color: white;
+  }
+
+  .tech-team-section h2 {
+    font-size: 1.5em; /* Reduce heading size for mobile */
+    margin-bottom: 20px; /* Adjust margin for better spacing */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  }
+
+  .tech-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    gap: 10px; /* Reduce gap between members */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member img {
+    width: 80px; /* Set a specific width */
+    height: 80px; /* Set a specific height to match width */
+    display: block; /* Ensure image is displayed as a block element */
+    margin: 0 auto 5px; /* Center the image horizontally and add bottom margin */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+  }
+
+  .member h4 {
+    font-size: 0.9em; /* Further reduce name text size */
+    margin: 5px 0; /* Adjust margin for better spacing */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for member names */
+  }
+
+  .member p {
+    font-size: 0.8em; /* Further reduce position text size */
+    margin: 0; /* Remove bottom margin */
+    font-family: 'Lato', sans-serif; /* Use Lato for position text */
+  }
+
+  .social-icons {
+    margin-top: 8px; /* Add some space above the icons */
+    font-size: 1em; /* Maintain reduced icon size */
+  }
+
+  .social-icons a {
+    color: white;
+    margin: 0 3px; /* Space icons out a bit */
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #00aaff; /* Change icon color on hover */
+  }
+}
+
+/* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px or less */
+@media screen and (max-width: 500px) {
+
+  .events-team-section {
+    padding: 20px 5%; /* Reduce padding for smaller screens */
+    background-color: #1e1e1e; /* Dark background to distinguish section */
+    color: white;
+  }
+
+  .events-team-section h2 {
+    font-size: 1.5em; /* Reduce heading size for mobile */
+    margin-bottom: 20px; /* Adjust margin for better spacing */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  }
+
+  .events-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    gap: 20px; /* Reduce gap between members */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member img {
+    width: 80px; /* Set a specific width */
+    height: 80px; /* Set a specific height to match width */
+    display: block; /* Ensure image is displayed as a block element */
+    margin: 0 auto 5px; /* Center the image horizontally and add bottom margin */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+  }
+
+  .member h4 {
+    font-size: 0.9em; /* Further reduce name text size */
+    margin: 5px 0; /* Adjust margin for better spacing */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for member names */
+  }
+
+  .member p {
+    font-size: 0.8em; /* Further reduce position text size */
+    margin: 0; /* Remove bottom margin */
+    font-family: 'Lato', sans-serif; /* Use Lato for position text */
+  }
+
+  .social-icons {
+    margin-top: 8px; /* Add some space above the icons */
+    font-size: 1em; /* Maintain reduced icon size */
+  }
+
+  .social-icons a {
+    color: white;
+    margin: 0 3px; /* Space icons out a bit */
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #00aaff; /* Change icon color on hover */
+  }
+}
+
+/* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px or less */
+@media screen and (max-width: 500px) {
+
+  .marketing-team-section {
+    padding: 20px 5%; /* Reduce padding for smaller screens */
+    background-color: #1e1e1e; /* Dark background to distinguish section */
+    color: white;
+  }
+
+  .marketing-team-section h2 {
+    font-size: 1.5em; /* Reduce heading size for mobile */
+    margin-bottom: 20px; /* Adjust margin for better spacing */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  }
+
+  .marketing-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    gap: 10px; /* Reduce gap between members */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member img {
+    width: 80px; /* Set a specific width */
+    height: 80px; /* Set a specific height to match width */
+    display: block; /* Ensure image is displayed as a block element */
+    margin: 0 auto 5px; /* Center the image horizontally and add bottom margin */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+  }
+
+  .member h4 {
+    font-size: 0.9em; /* Further reduce name text size */
+    margin: 5px 0; /* Adjust margin for better spacing */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for member names */
+  }
+
+  .member p {
+    font-size: 0.8em; /* Further reduce position text size */
+    margin: 0; /* Remove bottom margin */
+    font-family: 'Lato', sans-serif; /* Use Lato for position text */
+  }
+
+  .social-icons {
+    margin-top: 8px; /* Add some space above the icons */
+    font-size: 1em; /* Maintain reduced icon size */
+  }
+
+  .social-icons a {
+    color: white;
+    margin: 0 3px; /* Space icons out a bit */
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #00aaff; /* Change icon color on hover */
+  }
+}
+
+
+
+/* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px or less */
+@media screen and (max-width: 500px) {
+
+  .outreach-team-section {
+    padding: 20px 5%; /* Reduce padding for smaller screens */
+    background-color: #1e1e1e; /* Dark background to distinguish section */
+    color: white;
+  }
+
+  .outreach-team-section h2 {
+    font-size: 1.5em; /* Reduce heading size for mobile */
+    margin-bottom: 20px; /* Adjust margin for better spacing */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  }
+
+  .outreach-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    gap: 10px; /* Reduce gap between members */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outreach-team .member img {
+    width: 80px; /* Set a specific width */
+    height: 80px; /* Set a specific height to match width */
+    display: block; /* Ensure image is displayed as a block element */
+    margin: 0 auto 5px; /* Center the image horizontally and add bottom margin */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+  }
+
+  .outreach-team .member h4 {
+    font-size: 0.9em; /* Further reduce name text size */
+    margin: 5px 0; /* Adjust margin for better spacing */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for member names */
+  }
+
+  .outreach-team .member p {
+    font-size: 0.8em; /* Further reduce position text size */
+    margin: 0; /* Remove bottom margin */
+    font-family: 'Lato', sans-serif; /* Use Lato for position text */
+  }
+
+  .outreach-team .social-icons {
+    display: flex;
+    gap: 5px; /* Reduce gap between icons */
+    font-size: 1em; /* Maintain reduced icon size */
+  }
+
+  .outreach-team .social-icons a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+  .outreach-team .social-icons a:hover {
+    color: #0078D7; /* Change color on hover */
+  }
+}
+
+/* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px or less */
+@media screen and (max-width: 500px) {
+
+  .faculty-section {
+    padding: 20px 0; /* Remove side padding and reduce top and bottom padding */
+    background-color: #1e1e1e; /* Dark background to distinguish section */
+    color: white;
+    text-align: center; /* Center align text in the section */
+  }
+
+  .faculty-section h2 {
+    font-size: 1.5em; /* Reduce heading size for mobile */
+    margin-bottom: 20px; /* Adjust margin for better spacing */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  }
+
+  .faculty {
+    display: flex;
+    justify-content: center; /* Center the faculty member */
+    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    padding: 0; /* Remove any additional padding */
+  }
+
+  .faculty-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content vertically and horizontally */
+    margin: 0 auto; /* Center the entire member content */
+  }
+
+  .faculty-member img {
+    width: 100px; /* Set a specific width */
+    height: 100px; /* Set a specific height to match width */
+    display: block; /* Ensure image is displayed as a block element */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    margin-bottom: 10px; /* Add margin below the image */
+  }  
+
+  .faculty-member h4 {
+    font-size: 1em; /* Reduce name text size */
+    margin: 5px 0; /* Adjust margin for better spacing */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for member names */
+  }  
+
+  .faculty-member p {
+    font-size: 0.9em; /* Further reduce position text size */
+    margin: 5px 0;
+    font-family: 'Lato', sans-serif; /* Use Lato for position text */
+  }
+
+  .social-icons {
+    margin-top: 8px; /* Add some space above the icons */
+    font-size: 1em; /* Maintain reduced icon size */
+  }
+
+  .social-icons a {
+    color: white;
+    margin: 0 3px; /* Space icons out a bit */
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #0078D7; /* Change color on hover */
+  }
+}
+

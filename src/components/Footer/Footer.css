@@ -1,0 +1,77 @@
+/* src/components/Footer/Footer.css */
+
+.footer {
+  background-color: #2c2c2c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+}
+
+.footer-icons {
+  margin-bottom: 10px;
+}
+
+.footer-icon {
+  margin: 0 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-icon:hover {
+  color: #00aaff;
+}
+
+.footer-contact {
+  margin-bottom: 5px;
+}
+
+.footer-contact a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+  color: #00aaff;
+}
+
+.footer-copy {
+  font-size: 0.9em;
+}
+
+/* Mobile CSS */
+/* This will override the desktop styles for screens with a width of 500px or less */
+@media screen and (max-width: 500px) {
+  .footer {
+    padding: 15px 10px; /* Adjust padding for smaller screens */
+    text-align: center; /* Ensure text is centered */
+  }
+
+  .footer-icons {
+    margin-bottom: 15px; /* Increase space between icons and contact info */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+  }
+
+  .footer-icon {
+    margin: 5px 15px; /* Adjust spacing between icons */
+    font-size: 1.3em; /* Slightly reduce icon size for mobile */
+  }
+
+  .footer-contact {
+    margin-bottom: 10px; /* Increase space between contact info and copyright */
+    font-size: 0.9em; /* Adjust font size for contact info */
+  }
+
+  .footer-contact a {
+    font-size: 0.9em; /* Match contact info font size */
+  }
+
+  .footer-copy {
+    font-size: 0.8em; /* Further reduce font size for copyright text */
+  }
+}

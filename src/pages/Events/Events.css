@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .event-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(36, 36, 36, 1);
+    padding: 100px 20px 20px; /* Added top padding to avoid overlap with navbar */
+  }
+  
+  .upcoming-event-title,
+  .past-event-title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 36px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .event-card {
+    display: flex;
+    background-color: rgba(44, 44, 44, 1);
+    border-radius: 16px;
+    width: 90%;
+    max-width: 1080px;
+    height: 550px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px; /* Space between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for a subtle hover effect */
+  }
+  
+  .event-card:hover {
+    transform: translateY(-10px); /* Subtle lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for pop-up effect */
+  }
+  
+  /* Green Line for Upcoming Event */
+  .event-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background-color: rgba(0, 120, 215, 1); /* Green line for upcoming event */
+    border-radius: 16px 0 0 16px;
+  }
+  
+  /* Blue Line for Past Event */
+  .event-card.past::before {
+    background-color: rgba(0, 120, 215, 1); /* Blue line for past event */
+  }
+  
+  .event-card::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background-color: rgba(44, 44, 44, 1); /* Adds padding of 10px */
+    border-radius: 16px 0 0 16px;
+  }
+  
+  .event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the text vertically */
+    align-items: center; /* Centers the text horizontally */
+    color: rgba(255, 255, 255, 1);
+    width: 50%;
+    text-align: center; /* Centers the text within its container */
+    padding-left: 30px; /* Adds padding to the left to align the text */
+  }
+  
+  .event-title {
+    font-size: 32px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .event-topic{
+    font-size: 26px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .event-description {
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .event-time,
+  .event-date {
+    font-size: 24px;
+    font-family: Lato, sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .event-rules{
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: underline;
+    color: rgba(0, 120, 215, 1); 
+  }
+
+  .event-rules:hover {
+    
+    color: rgba(255, 255, 255, 1); /* Text color changes to blue on hover */
+  }
+  
+  .event-button {
+    padding: 14px 62px;
+    background-color: rgba(0, 120, 215, 1); /* Blue background for the button */
+    color: rgba(245, 245, 245, 1);
+    font-size: 24px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .event-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 120, 215, 1); /* Text color changes to blue on hover */
+  }
+  
+  .event-image {
+    width: 45%;
+    height: 100%;
+  }
+  
+  .event-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    transition: none; /* No blur or transition effect on the image */
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    .event-card {
+      flex-direction: column;
+      height: auto;
+      padding: 15px;
+    }
+  
+    .event-info {
+      width: 100%;
+      padding-left: 0;
+      margin-bottom: 20px; /* Adds space between image and text */
+    }
+  
+    .event-title {
+      font-size: 28px;
+    }
+  
+    .event-description {
+      font-size: 16px;
+    }
+  
+    .event-time,
+    .event-date {
+      font-size: 20px;
+    }
+  
+    .event-image {
+      width: 100%;
+      margin-bottom: 20px; /* Adds space between image and text */
+    }
+  
+    .event-image img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .event-button {
+      padding: 12px 50px;
+      font-size: 20px;
+    }
+  }
