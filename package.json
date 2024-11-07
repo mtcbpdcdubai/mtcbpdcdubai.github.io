@@ -1,12 +1,12 @@
 {
-  "homepage": "https://mtcbpdcdubai.github.io/MTC-BITS-Pilani-Dubai-Campus/",
+  "homepage": "https://mtcbpdcdubai.github.io/mtcbpdc/",
   "name": "mtcbpdc",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MTCBPDCDubai/MTC-BITS-Pilani-Dubai-Campus.git"
+    "url": "https://github.com/MTCBPDCDubai/mtcbpdc.git"
   },
   "scripts": {
     "dev": "vite",
