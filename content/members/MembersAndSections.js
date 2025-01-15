@@ -1,33 +1,39 @@
-import coreMember1 from "./core_aryan_satwani.jpg";
-import coreMember2 from "./core_mrudula_rahate.jpg";
-import coreMember3 from "./core_vennela_vallabhaneni.jpg";
-import coreMember4 from "./core_aditya_gopinath.jpg";
-import coreMember5 from "./core_keane_coutinho.jpg";
-import coreMember6 from "./core_lasya_sai.jpg";
-import techMember1 from "./tech_shaik_mohammed_anas.jpg";
-import techMember2 from "./tech_laya_shree_elango.jpg";
-import techMember3 from "./tech_stellin_john_george.jpg";
-import techMember4 from "./tech_srihari_sai.jpg";
-import eventsMember1 from "./events_bhavya_kothari.jpg";
-import eventsMember2 from "./events_karthik_vishal.jpg";
-import eventsMember3 from "./events_narda_zaria.jpg";
-import eventsMember4 from "./events_mahin_poptani.jpg";
-import eventsMember5 from "./events_mysha_iqbal.jpg";
-import eventsMember6 from "./events_reuben_thomas.jpg";
-import marketingMember1 from "./marketing_satvik_sreeram.jpg";
-import marketingMember2 from "./marketing_eshan_tiwari.jpg";
-import marketingMember3 from "./marketing_k_ankita_menon.jpg";
-import marketingMember4 from "./marketing_khyati_jetly.jpg";
-import marketingMember5 from "./marketing_srinjita_roy_chowdhury.jpg";
-import marketingMember6 from "./marketing_hana_riyas.jpg";
-import marketingMember7 from "./marketing_ameyia_wankhede.jpg";
-import outreachMember1 from "./outreach_joel_joseph.jpg";
-import outreachMember2 from "./outreach_utkarsh_tripathi.jpg";
-import outreachMember3 from "./outreach_prasannah_raman.jpg";
-import outreachMember4 from "./outreach_siddharath_nagesh.jpg";
-import outreachMember5 from "./outreach_akash_rajasekar.jpg";
-import outreachMember6 from "./outreach_diya_freddy.jpg";
-import facultyInCharge from "./faculty_dr_elakkiya_r.jpg";
+import coreAryanSatwani              from "./core_aryan_satwani.jpg";
+import coreMrudulaRahate             from "./core_mrudula_rahate.jpg";
+import coreVennelaVallabhaneni       from "./core_vennela_vallabhaneni.jpg";
+import coreAdityaGopinath            from "./core_aditya_gopinath.jpg";
+import coreKeaneCoutinho             from "./core_keane_coutinho.jpg";
+import coreLasyaSai                  from "./core_lasya_sai.jpg";
+
+import techShaikMohammedAnas         from "./tech_shaik_mohammed_anas.jpg";
+import techLayaShreeElango           from "./tech_laya_shree_elango.jpg";
+import techStellinJohnGeorge         from "./tech_stellin_john_george.jpg";
+import techSrihariSai                from "./tech_srihari_sai.jpg";
+
+import eventsBhavyaKothari           from "./events_bhavya_kothari.jpg";
+import eventsKarthikVishal           from "./events_karthik_vishal.jpg";
+import eventsNardaZaria              from "./events_narda_zaria.jpg";
+import eventsMahinPoptani            from "./events_mahin_poptani.jpg";
+import eventsMyshaIqbal              from "./events_mysha_iqbal.jpg";
+import eventsReubenThomas            from "./events_reuben_thomas.jpg";
+
+import marketingSathvikSreeram       from "./marketing_sathvik_sreeram.jpg";
+import marketingEshanTiwari          from "./marketing_eshan_tiwari.jpg";
+import marketingKAnkitaMenon         from "./marketing_k_ankita_menon.jpg";
+import marketingKhyatiJetly          from "./marketing_khyati_jetly.jpg";
+import marketingSrinjitaRoyChowdhury from "./marketing_srinjita_roy_chowdhury.jpg";
+import marketingAmeyiaWankhede       from "./marketing_ameyia_wankhede.jpg";
+
+import outreachJoelJoseph            from "./outreach_joel_joseph.jpg";
+import outreachUtkarshTripathi       from "./outreach_utkarsh_tripathi.jpg";
+import outreachPrasannahRaman        from "./outreach_prasannah_raman.jpg";
+import outreachSiddharathNagesh      from "./outreach_siddharath_nagesh.jpg";
+import outreachAkashRajasekar        from "./outreach_akash_rajasekar.jpg";
+import outreachDiyaFreddy            from "./outreach_diya_freddy.jpg";
+
+import facultyDrElakkiyaR            from "./faculty_dr_elakkiya_r.jpg";
+
+
 
 /** Type definition for a Member.
  * @typedef Member
@@ -50,7 +56,7 @@ import facultyInCharge from "./faculty_dr_elakkiya_r.jpg";
 /** An array of members in the Core Members section @type {Member[]} */
 const sectionCore = [
   {
-    image: coreMember1,
+    image: coreAryanSatwani,
     name: "Aryan Satwani",
     position: "Chair",
     linkInstagram: "https://www.instagram.com/aryan_satwani/",
@@ -58,7 +64,7 @@ const sectionCore = [
     linkGitHub: "https://github.com/aryansatwani",
   },
   {
-    image: coreMember2,
+    image: coreMrudulaRahate,
     name: "Mrudula Rahate",
     position: "Co-Chair",
     linkInstagram: "https://www.instagram.com/mrudula12503/",
@@ -66,7 +72,7 @@ const sectionCore = [
     linkGitHub: "https://github.com/Mrudula1205",
   },
   {
-    image: coreMember3,
+    image: coreVennelaVallabhaneni,
     name: "Vennela Vallabhaneni",
     position: "Vice Chair",
     linkInstagram: "https://www.instagram.com/venn.by/",
@@ -74,7 +80,7 @@ const sectionCore = [
     linkGitHub: "https://github.com/vennby",
   },
   {
-    image: coreMember4,
+    image: coreAdityaGopinath,
     name: "Aditya Gopinath",
     position: "Ex-Officio",
     linkInstagram: "https://www.instagram.com/aditya_gopinath/",
@@ -82,7 +88,7 @@ const sectionCore = [
     linkGitHub: "https://github.com/adi14023",
   },
   {
-    image: coreMember5,
+    image: coreKeaneCoutinho,
     name: "Keane Coutinho",
     position: "Treasurer & DevOps Head",
     linkInstagram: "https://www.instagram.com/keane_2703/",
@@ -90,7 +96,7 @@ const sectionCore = [
     linkGitHub: "https://github.com/keanec27",
   },
   {
-    image: coreMember6,
+    image: coreLasyaSai,
     name: "Lasya Sai",
     position: "General Secretary",
     linkInstagram: "https://www.instagram.com/lasyaasai_/",
@@ -102,7 +108,7 @@ const sectionCore = [
 /** An array of members in the Tech Team @type {Member[]} */
 const sectionTechTeam = [
   {
-    image: techMember1,
+    image: techShaikMohammedAnas,
     name: "Shaik Mohammed Anas",
     position: "Technical Head",
     linkInstagram: "https://www.instagram.com/armaan_0510/",
@@ -110,7 +116,7 @@ const sectionTechTeam = [
     linkGitHub: "https://github.com/Brightlord5",
   },
   {
-    image: techMember2,
+    image: techLayaShreeElango,
     name: "Laya Shree Elango",
     position: "Technical Manager",
     linkInstagram: "https://www.instagram.com/layashreeelango/",
@@ -118,7 +124,7 @@ const sectionTechTeam = [
     linkGitHub: "https://github.com/Laya-Shree",
   },
   {
-    image: techMember3,
+    image: techStellinJohnGeorge,
     name: "Stellin John George",
     position: "Technical Executive",
     linkInstagram: "https://www.instagram.com/Stellin_15/",
@@ -126,7 +132,7 @@ const sectionTechTeam = [
     linkGitHub: "https://github.com/Stellin-15",
   },
   {
-    image: techMember4,
+    image: techSrihariSai,
     name: "Srihari Sai",
     position: "Technical Executive",
     linkInstagram: "http://instagram.com/ft.hyper",
@@ -138,7 +144,7 @@ const sectionTechTeam = [
 /** An array of members in the Events Team @type {Member[]} */
 const sectionEventsTeam = [
   {
-    image: eventsMember1,
+    image: eventsBhavyaKothari,
     name: "Bhavya Kothari",
     position: "Events Head",
     linkInstagram: "https://www.instagram.com/bruhvya/",
@@ -146,7 +152,7 @@ const sectionEventsTeam = [
     linkGitHub: "https://github.com/bruhvya",
   },
   {
-    image: eventsMember2,
+    image: eventsKarthikVishal,
     name: "Karthik Vishal",
     position: "Events Manager",
     linkInstagram: "https://www.instagram.com/karthik_vishal03/",
@@ -154,7 +160,7 @@ const sectionEventsTeam = [
     linkGitHub: "https://github.com/Karthik-Vishal03",
   },
   {
-    image: eventsMember3,
+    image: eventsNardaZaria,
     name: "Narda Zaria",
     position: "Strategy Officer",
     linkInstagram: "https://www.instagram.com/nardazaria/",
@@ -162,7 +168,7 @@ const sectionEventsTeam = [
     linkGitHub: "https://github.com/aina282",
   },
   {
-    image: eventsMember4,
+    image: eventsMahinPoptani,
     name: "Mahin Poptani",
     position: "Events Executive",
     linkInstagram: "https://www.instagram.com/mahin_sp20/",
@@ -170,7 +176,7 @@ const sectionEventsTeam = [
     linkGitHub: "https://github.com/Mahin200405",
   },
   {
-    image: eventsMember5,
+    image: eventsMyshaIqbal,
     name: "Mysha Iqbal",
     position: "Events Executive",
     linkInstagram: "https://www.instagram.com/myshaa.i/",
@@ -178,7 +184,7 @@ const sectionEventsTeam = [
     linkGitHub: "https://github.com/Mysha-BITS",
   },
   {
-    image: eventsMember6,
+    image: eventsReubenThomas,
     name: "Reuben Thomas",
     position: "Events Executive",
     linkInstagram: "https://www.instagram.com/reuben_thooo/",
@@ -190,15 +196,15 @@ const sectionEventsTeam = [
 /** An array of members in the Marketing & Creative Team @type {Member[]} */
 const sectionMarketingTeam = [
   {
-    image: marketingMember1,
-    name: "Satvik Sreeram",
+    image: marketingSathvikSreeram,
+    name: "Sathvik Sreeram",
     position: "Marketing Head",
     linkInstagram: "https://www.instagram.com/sathvikboseman/",
     linkLinkedIn: "https://www.linkedin.com/in/sathvik-sreeram-06b350280/",
     linkGitHub: "https://github.com/sathvikboseman",
   },
   {
-    image: marketingMember2,
+    image: marketingEshanTiwari,
     name: "Eshan Tiwari",
     position: "Creative Head",
     linkInstagram: "https://www.instagram.com/eshan.tiw_/",
@@ -206,7 +212,7 @@ const sectionMarketingTeam = [
     linkGitHub: "https://github.com/Eshan-BlipTweak",
   },
   {
-    image: marketingMember3,
+    image: marketingKAnkitaMenon,
     name: "K Ankita Menon",
     position: "Marketing Executive",
     linkInstagram: "https://www.instagram.com/ankita_menon_04/",
@@ -214,7 +220,7 @@ const sectionMarketingTeam = [
     linkGitHub: "",
   },
   {
-    image: marketingMember4,
+    image: marketingKhyatiJetly,
     name: "Khyati Jetly",
     position: "Marketing Executive",
     linkInstagram: "https://www.instagram.com/_kxyati_/",
@@ -222,7 +228,7 @@ const sectionMarketingTeam = [
     linkGitHub: "https://github.com/khyati2107",
   },
   {
-    image: marketingMember5,
+    image: marketingSrinjitaRoyChowdhury,
     name: "Srinjita Roy Chowdhury",
     position: "Marketing Executive",
     linkInstagram: "https://www.instagram.com/srinxie/",
@@ -230,7 +236,7 @@ const sectionMarketingTeam = [
     linkGitHub: "https://github.com/Srinjita-RC",
   },
   {
-    image: marketingMember7,
+    image: marketingAmeyiaWankhede,
     name: "Ameyia Wankhede",
     position: "Creative Executive",
     linkInstagram: "https://www.instagram.com/ameiya.w/",
@@ -242,7 +248,7 @@ const sectionMarketingTeam = [
 /** An array of members in the Outreach & DevOps Team @type {Member[]} */
 const sectionOutreachTeam = [
   {
-    image: outreachMember1,
+    image: outreachJoelJoseph,
     name: "Joel Joseph",
     position: "Outreach Head",
     linkInstagram: "https://www.instagram.com/joelj.05/",
@@ -250,7 +256,7 @@ const sectionOutreachTeam = [
     linkGitHub: "https://github.com/JJ512-ishere",
   },
   {
-    image: outreachMember2,
+    image: outreachUtkarshTripathi,
     name: "Utkarsh Tripathi",
     position: "Outreach Manager",
     linkInstagram: "https://www.instagram.com/Wtffut/",
@@ -258,7 +264,7 @@ const sectionOutreachTeam = [
     linkGitHub: "https://github.com/btwitsutkarsh",
   },
   {
-    image: outreachMember3,
+    image: outreachPrasannahRaman,
     name: "Prasannah Raman",
     position: "Outreach Manager",
     linkInstagram: "https://www.instagram.com/_prasannargh/",
@@ -266,7 +272,7 @@ const sectionOutreachTeam = [
     linkGitHub: "https://github.com/codeyko-blip",
   },
   {
-    image: outreachMember4,
+    image: outreachSiddharathNagesh,
     name: "Siddharath Nagesh",
     position: "DevOps Manager",
     linkInstagram: "https://www.instagram.com/siddharath_nagesh?igsh=eG11d2JwNmhscGEx",
@@ -274,7 +280,7 @@ const sectionOutreachTeam = [
     linkGitHub: "https://github.com/SiddharathMN",
   },
   {
-    image: outreachMember5,
+    image: outreachAkashRajasekar,
     name: "Akash Rajasekar",
     position: "DevOps Manager",
     linkInstagram: "https://www.instagram.com/akash_r3/",
@@ -282,7 +288,7 @@ const sectionOutreachTeam = [
     linkGitHub: "https://github.com/Akashrajasekar",
   },
   {
-    image: outreachMember6,
+    image: outreachDiyaFreddy,
     name: "Diya Freddy",
     position: "Content Executive",
     linkInstagram: "https://www.instagram.com/diya.freddy/",
@@ -294,7 +300,7 @@ const sectionOutreachTeam = [
 /** An array of members in the Faculty In-Charge section @type {Member[]} */
 const sectionFaculty = [
   {
-    image: facultyInCharge,
+    image: facultyDrElakkiyaR,
     name: "Dr. Elakkiya R.",
     position: "Assistant Professor",
     linkLinkedIn: "https://www.linkedin.com/in/dr-elakkiya-r-581884b1/",

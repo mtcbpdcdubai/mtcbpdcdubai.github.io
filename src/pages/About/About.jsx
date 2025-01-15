@@ -228,8 +228,8 @@ const About = () => {
 
         <div className="marketing-team">
           <div className="member">
-            <img src={marketingMember1} alt="Satvik Sreeram" />
-            <h4>Satvik Sreeram</h4>
+            <img src={marketingMember1} alt="Sathvik Sreeram" />
+            <h4>Sathvik Sreeram</h4>
             <p>Marketing Head</p>
             <div className="social-icons">
               <a href="https://www.instagram.com/sathvikboseman/"><FaInstagram /></a>
