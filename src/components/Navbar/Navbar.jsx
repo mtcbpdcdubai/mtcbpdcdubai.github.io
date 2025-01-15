@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/MTClogo.png';
 import './Navbar.css';
 
-/** @type {str[][]} The menu entries */
+/** The menu entries @type {[str, str][]} */
 const menuItems = [
   ["/",           "Home"],
   ["/about",      "About"],

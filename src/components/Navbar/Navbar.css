@@ -26,6 +26,7 @@
 .navbar-logo img {
     height: 40px;
     margin-right: 20px;
+    transition: 0.25s;
 }
 
 .navbar-links {
@@ -54,8 +55,8 @@
 }
 
 /* Mobile CSS */
-/* This will override the desktop styles for screens with a width of 500px and a height of 1000px or less */
-@media screen and (max-width: 500px) and (max-height: 1000px) {
+/* This will override the desktop styles for screens with a width of <= 750px */
+@media screen and (max-width: 750px) {
     .navbar {
         padding: 10px;
     }
