@@ -91,7 +91,7 @@
         height: 3px;
         background-color: #ffffff;
         margin: 4px 0;
-        transition: 0.4s;
+        transition: 0.25s;
     }
 
     .navbar-links {
@@ -123,7 +123,7 @@
     }
 
     .menu-icon.active .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 5px);
+        transform: translate(0px, 11px) rotate(-45deg);
     }
 
     .menu-icon.active .bar:nth-child(2) {
@@ -131,7 +131,7 @@
     }
 
     .menu-icon.active .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -5px);
+        transform: translate(0px, -11px) rotate(45deg);
     }
 
     /* Ensure no horizontal overflow */

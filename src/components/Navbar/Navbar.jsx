@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/MTClogo.png';
 import './Navbar.css';
 
+/** @type {str[][]} The menu entries */
+const menuItems = [
+  ["/",           "Home"],
+  ["/about",      "About"],
+  ["/membership", "Membership"],
+  ["/events",     "Events"],
+  ["/contact",    "Contact"],
+  ["/articles",   "Articles"],
+]
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,18 +26,13 @@ const Navbar = () => {
         <div className="navbar-logo">
           <img src={logo} alt="Microsoft Tech Club" />
         </div>
-        <div className="menu-icon" onClick={toggleMenu}>
-          <div className={`bar ${isOpen ? 'active' : ''}`}></div>
-          <div className={`bar ${isOpen ? 'active' : ''}`}></div>
-          <div className={`bar ${isOpen ? 'active' : ''}`}></div>
+        <div className={`menu-icon ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
+          <div className="bar" />
+          <div className="bar" />
+          <div className="bar" />
         </div>
         <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
-          <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-          <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
-          <li><Link to="/membership" onClick={toggleMenu}>Membership</Link></li>
-          <li><Link to="/events" onClick={toggleMenu}>Events</Link></li>
-          <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
-          <li><Link to="/articles" onClick={toggleMenu}>Articles</Link></li>
+          {menuItems.map(([to, title]) => <li key={to}><Link to={to} onClick={toggleMenu}>{title}</Link></li>)}
         </ul>
       </div>
     </nav>
