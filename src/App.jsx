@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Membership from './pages/Membership/Membership';
 import Events from './pages/Events/Events';
 import Contact from './pages/Contact/Contact';
 import Articles from './pages/Articles/Articles';
-import Footer from './components/Footer/Footer';
-import LoadingScreen from './components/LoadingScreen/LoadingScreen';
+
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);

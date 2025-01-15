@@ -23,12 +23,12 @@ const About = () => {
 
       <h2>MTC Council 2024-25</h2>
 
-      {sections.map((section) =>
-        <div className="section">
+      {sections.map((section) => // TODO: Make CSS class for section
+        <div className="section" key={section.sectionTitle}>
           <h2>{section.sectionTitle}</h2>
 
           {section.members.map((member) =>
-            <div className="member">
+            <div className="member" key={member.name}>
               <img src={member.image} alt={member.name} />
               <h4>{member.name}</h4>
               <p>{member.position}</p>
