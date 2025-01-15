@@ -1,285 +1,284 @@
 @keyframes typing {
-    0% { width: 0; }
-    70% { width: 100%; }
-    100% { width: 100%; }
-  }
-  
-  @keyframes blink {
-    0%, 100% { border-color: transparent; }
-    50% { border-color: white; }
-  }
-  
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .about-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #1e1e1e;
-    color: white;
-  }
-  
-  .about-image {
-    width: 100%;
-    height: auto;
+  0% { width: 0; }
+  70% { width: 100%; }
+  100% { width: 100%; }
+}
 
-  }
-  
-  .about-content {
-    padding: 40px 15%; /* Padding on left and right */
-    background-color: #1e1e1e; /* Dark background to distinguish section */
-    color: white;
-  }
-  
-  .about-content h1 {
-    font-size: 4em;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
-    overflow: hidden; /* Ensures the text is clipped during animation */
-    border-right: .15em solid white; /* Creates the cursor effect */
-    white-space: nowrap; /* Prevents text wrapping */
-    animation: typing 4s steps(20, end) infinite, blink .75s step-end infinite; /* Typing and cursor blink effect */
-    display: inline-block;
-  }
-  
-  .about-content p {
-    font-size: 1.75em;
-    margin-bottom: 30px; /* Increased space between paragraphs */
-    font-family: 'Lato', sans-serif; /* Use Lato for body text */
-  }
-  
-  .core-members-section {
-    padding: 40px 15%;
-    background-color: #1e1e1e; /* Dark background to distinguish section */
-    color: white;
-  }
-  
-  .core-members-section h2 {
-    font-size: 3em;
-    margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
-  }
-  
-  .core-members-section h3 {
-    font-size: 2em;
-    margin-bottom: 50px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
-  }
-  
-  .core-members {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .tech-team-section {
-    padding: 40px 15%;
-    background-color: #1e1e1e; /* Dark background to distinguish section */
-    color: white;
-  }
-  
-  .tech-team-section h2 {
-    font-size: 3em;
-    margin-bottom: 50px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
-  }
-  
-  .tech-team {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .events-team-section {
-    padding: 40px 15%;
-    background-color: #1e1e1e; /* Dark background to distinguish section */
-    color: white;
-  }
-  
-  .events-team-section h2 {
-    font-size: 3em;
-    margin-bottom: 50px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
-  }
-  
-  .events-team {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .marketing-team-section {
-    padding: 40px 15%;
-    background-color: #1e1e1e; /* Dark background to distinguish section */
-    color: white;
-  }
-  
-  .marketing-team-section h2 {
-    font-size: 3em;
-    margin-bottom: 50px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
-  }
-  
-  .marketing-team {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content:center;
-    align-items: center;
-  }
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
 
-  .outreach-team-section {
-    padding: 40px 15%;
-    background-color: #1e1e1e; /* Dark background to distinguish section */
-    color: white;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+}
+
+.about-content {
+  padding: 40px 15%; /* Padding on left and right */
+  background-color: #1e1e1e; /* Dark background to distinguish section */
+  color: white;
+}
+
+.about-content h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  overflow: hidden; /* Ensures the text is clipped during animation */
+  border-right: .15em solid white; /* Creates the cursor effect */
+  white-space: nowrap; /* Prevents text wrapping */
+  animation: typing 4s steps(20, end) infinite, blink .75s step-end infinite; /* Typing and cursor blink effect */
+  display: inline-block;
+}
+
+.about-content p {
+  font-size: 1.75em;
+  margin-bottom: 30px; /* Increased space between paragraphs */
+  font-family: 'Lato', sans-serif; /* Use Lato for body text */
+}
+
+.core-members-section {
+  padding: 40px 15%;
+  background-color: #1e1e1e; /* Dark background to distinguish section */
+  color: white;
+}
+
+.core-members-section h2 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+}
+
+.core-members-section h3 {
+  font-size: 2em;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+}
+
+.core-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-team-section {
+  padding: 40px 15%;
+  background-color: #1e1e1e; /* Dark background to distinguish section */
+  color: white;
+}
+
+.tech-team-section h2 {
+  font-size: 3em;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+}
+
+.tech-team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-team-section {
+  padding: 40px 15%;
+  background-color: #1e1e1e; /* Dark background to distinguish section */
+  color: white;
+}
+
+.events-team-section h2 {
+  font-size: 3em;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+}
+
+.events-team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.marketing-team-section {
+  padding: 40px 15%;
+  background-color: #1e1e1e; /* Dark background to distinguish section */
+  color: white;
+}
+
+.marketing-team-section h2 {
+  font-size: 3em;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+}
+
+.marketing-team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content:center;
+  align-items: center;
+}
+
+.outreach-team-section {
+  padding: 40px 15%;
+  background-color: #1e1e1e; /* Dark background to distinguish section */
+  color: white;
 }
 
 .outreach-team-section h2 {
-    font-size: 3em;
-    margin-bottom: 50px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
+  font-size: 3em;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for headers */
 }
 
 .outreach-team {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 90px;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+  justify-content: center;
+  align-items: center;
 }
 
 .outreach-team .member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .outreach-team .member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .outreach-team .member h4 {
-    font-size: 1.5em;
-    margin: 10px 0 5px 0;
+  font-size: 1.5em;
+  margin: 10px 0 5px 0;
 }
 
 .outreach-team .member p {
-    font-size: 1.2em;
-    margin: 5px 0;
+  font-size: 1.2em;
+  margin: 5px 0;
 }
 
 .outreach-team .social-icons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .outreach-team .social-icons a {
-    color: white;
-    font-size: 1.2em;
+  color: white;
+  font-size: 1.2em;
 }
 
 .outreach-team .social-icons a:hover {
-    color: #0078D7; /* Change color on hover */
+  color: #0078D7; /* Change color on hover */
 }
 
 .faculty-section {
-    padding: 40px 15%;
-    background-color: #1e1e1e;
-    color: white;
-  }
+  padding: 40px 15%;
+  background-color: #1e1e1e;
+  color: white;
+}
 
 .faculty-section h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
-  }
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
 
-  .faculty {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    padding-left: 400px;
-  }
+.faculty {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 400px;
+}
 
-  .faculty-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.faculty-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .faculty-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }  
+.faculty-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-  .faculty-member h4 {
-    font-size: 1.5em;
-    margin: 10px 0 5px 0;
-  }  
+.faculty-member h4 {
+  font-size: 1.5em;
+  margin: 10px 0 5px 0;
+}
 
-  .faculty-member p {
-    font-size: 1.2em;
-    margin: 5px 0;
-  }
-  
+.faculty-member p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
 
 
-  
-  .member {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .member h4 {
-    font-size: 1.5em;
-    margin: 10px 0 5px 0;
-  }
-  
-  .member p {
-    font-size: 1.2em;
-    margin: 5px 0;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .social-icons a {
-    color: white;
-    font-size: 1.2em;
-  }
-  
-  .social-icons a:hover {
-    color: #0078D7; /* Change color on hover */
-  }
-  
+
+
+.member {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member h4 {
+  font-size: 1.5em;
+  margin: 10px 0 5px 0;
+}
+
+.member p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2em;
+}
+
+.social-icons a:hover {
+  color: #0078D7; /* Change color on hover */
+}
+
 /*mobile view for about us page*/
 
 /* Mobile CSS */
@@ -767,13 +766,13 @@
     border-radius: 50%; /* Make the image circular */
     object-fit: cover; /* Ensure the image covers the container without distortion */
     margin-bottom: 10px; /* Add margin below the image */
-  }  
+  }
 
   .faculty-member h4 {
     font-size: 1em; /* Reduce name text size */
     margin: 5px 0; /* Adjust margin for better spacing */
     font-family: 'Montserrat', sans-serif; /* Use Montserrat for member names */
-  }  
+  }
 
   .faculty-member p {
     font-size: 0.9em; /* Further reduce position text size */
