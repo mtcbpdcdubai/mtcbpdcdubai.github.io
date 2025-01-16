@@ -18,6 +18,7 @@
 
 This GitHub repository contains the code for the official website of Microsoft
 Tech Club.
+
 <br><br>
 
 
@@ -61,6 +62,7 @@ you can either host locally for development purposes, or deploy to GitHub pages.
     https://mtcbpdcdubai.github.io/mtcbpdc/
 
 Source: [How to deploy Vite React App to GitHub Pages | by Prateek Singh | Medium](https://medium.com/@devxprite/how-to-deploy-vite-react-app-to-github-pages-00e150f73961#6474)
+
 <br><br>
 
 
@@ -96,6 +98,7 @@ main sub-folders:
 
 3.  [`assets`](/src/assets/): Contains generic images and media. For
     content-specific media, please use the [`content` folder](#content-folder).
+
 <br><br>
 
 
