@@ -1,7 +1,9 @@
 # /content/
 
-The intent of this folder is to store CONTENT, as in anything which is meant to
-be UPDATED.
+The intent of this folder is to store **content**, as in anything which is meant
+to be **updated**.
+
+See the main [README](/README.md) for more information.
 
 Examples:
 - [Members](members/)
