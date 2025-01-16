@@ -1,8 +1,10 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-            "content/*": ["./content/*"],
-        }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "content/*": ["./content/*"],
+      "src/*": ["./src/*"],
+      "assets/*": ["./src/assets/*"],
     }
+  }
 }

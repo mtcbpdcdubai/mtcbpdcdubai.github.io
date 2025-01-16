@@ -85,17 +85,71 @@ content folder to add type hinting, which helps reduce mistakes.
 The `src` folder contains the main code of the website, and is divided into two
 main sub-folders:
 
-1. [`pages`](/src/pages/): Contains code for whole pages, such as
-   [About](/src/pages/About/About.jsx), [Events](/src/pages/Events/Events.jsx),
-   etc.
+1.  [`pages`](/src/pages/): Contains code for whole pages, such as
+    [About](/src/pages/About/About.jsx), [Events](/src/pages/Events/Events.jsx),
+    etc.
 
-2. [`components`](/src/components/): Contains code for individual components
-   such as [navbar](/src/components/Navbar/Navbar.jsx),
-   [footer](/src/components/Footer/Footer.jsx),
-   [loading screen](/src/components/LoadingScreen/LoadingScreen.jsx), etc.
+2.  [`components`](/src/components/): Contains code for individual components
+    such as [navbar](/src/components/Navbar/Navbar.jsx),
+    [footer](/src/components/Footer/Footer.jsx),
+    [loading screen](/src/components/LoadingScreen/LoadingScreen.jsx), etc.
 
-3. [`assets`](/src/assets/): Contains generic images and media. For
-   content-specific media, please use the [`content` folder](#content-folder).
+3.  [`assets`](/src/assets/): Contains generic images and media. For
+    content-specific media, please use the [`content` folder](#content-folder).
+<br><br>
+
+
+
+---
+# 🛠️ Useful info for future dev reference
+This section contains information and tips that will be useful for developers,
+and mainly aims to serve as future reference material.
+
+## Custom import alias
+Consider an `import` statement that imports a file in a different directory.
+
+```js
+import logo from '../../assets/MTClogo.png';
+```
+
+Instead of typing the entire `../../assets/`&hellip; relative path, won't it be
+easier to just start the path with something simpler, like `assets/`&hellip;?
+**That's where import aliases come to play.** Here's the [instructions](https://medium.com/@pushplaybang/absolutely-dont-use-relative-paths-imports-in-your-vite-react-project-c8593f93bbea):
+
+1.  Edit [`vite.config.js`](vite.config.js) with this template in mind:
+
+    ```js
+    // ...
+      resolve: {
+        alias: {
+          assets: "/src/assets",
+          aliasNameGoesHere1: "/path/to/folder",
+          aliasNameGoesHere2: "/path/to/another/folder",
+          aliasNameGoesHere3: "/path/to/yet/another/folder",
+          // ...
+        }
+      }
+    // ...
+    ```
+
+    where the key is the name of the alias, and the value is a string that
+    points to the full path.
+
+2.  Edit [`jsconfig.json`](jsconfig.json) with this template in mind:
+
+    ```json
+        "paths": {
+          "assets/*": ["./src/assets/*"],
+          "aliasNameGoesHere1/*": ["./path/to/folder/*"],
+          "aliasNameGoesHere2/*": ["./path/to/another/folder/*"],
+          "aliasNameGoesHere3/*": ["./path/to/yet/another/folder/*"],
+        }
+    ```
+
+All done! Now you can write something like this:
+```js
+import logo from 'assets/MTClogo.png';
+```
 <br><br>
 
 
