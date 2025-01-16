@@ -1,16 +1,16 @@
 import React from 'react';
 import './Articles.css';
-import article1Img from '../../assets/article1.jpg';
-import article2Img from '../../assets/article2.jpg';
-import article3Img from '../../assets/article3.jpg';
-import article4Img from '../../assets/article4.jpg';
-import article5Img from '../../assets/article5.jpg';
-import article6Img from '../../assets/article6.jpg';
-import article7Img from '../../assets/article7.jpg';
-import article8Img from '../../assets/article8.jpg';
-import article9Img from '../../assets/article9.jpg';
-import article10Img from '../../assets/article10.jpg';
-import article11Img from '../../assets/article11.jpg';
+import article1Img from 'assets/article1.jpg';
+import article2Img from 'assets/article2.jpg';
+import article3Img from 'assets/article3.jpg';
+import article4Img from 'assets/article4.jpg';
+import article5Img from 'assets/article5.jpg';
+import article6Img from 'assets/article6.jpg';
+import article7Img from 'assets/article7.jpg';
+import article8Img from 'assets/article8.jpg';
+import article9Img from 'assets/article9.jpg';
+import article10Img from 'assets/article10.jpg';
+import article11Img from 'assets/article11.jpg';
 const Articles = () => {
   return (
     <div className="articles-page">

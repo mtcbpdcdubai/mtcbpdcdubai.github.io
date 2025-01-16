@@ -12,6 +12,7 @@ export default defineConfig({
       content: "/content",
       src: "/src",
       assets: "/src/assets",
+      components: "/src/components",
     }
   }
-})
+});

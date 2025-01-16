@@ -1,27 +1,27 @@
 // src/pages/Home/Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import TestimonialSlider from '../../components/Testimonials/TestimonialSlider.jsx';
+import TestimonialSlider from 'components/Testimonials/TestimonialSlider.jsx';
 import './Home.css';
 
-import backgroundImage from '../../assets/b2.jpg';
-import workshopsImg from '../../assets/workshops.jpg';
-import speakerSessionsImg from '../../assets/speaker_sessions.jpg';
-import technicalBlogsImg from '../../assets/technical_blogs.jpg';
-import competitionsImg from '../../assets/competitions.jpg';
-import icebreakersImg from '../../assets/icebreakers.jpg';
-import btfAksiImg from '../../assets/btf_aksi.jpg';
-import typingContestImg from '../../assets/typing_contest.jpg';
-import signQuestImg from '../../assets/sign_quest.jpg';
-import ambassadorProgramImg from '../../assets/ambassador_program.jpeg';
-import matlabWorkshopImg from '../../assets/matlab_workshop.jpg';
-import vsCodeWorkshopImg from '../../assets/vscode_workshop.jpg';
-import thinkAIImg from '../../assets/think_ai.jpg';
-import researchTalkImg from '../../assets/research_talk.jpg';
-import mythMondayImg from '../../assets/myth_monday.jpg';
-import quizQuestImg from '../../assets/quiz_quest.jpg';
-import tipTuesdayImg from '../../assets/tip_tuesday.jpg';
-import techTribuneImg from '../../assets/tech_tribune.jpg';
+import backgroundImage from 'assets/b2.jpg';
+import workshopsImg from 'assets/workshops.jpg';
+import speakerSessionsImg from 'assets/speaker_sessions.jpg';
+import technicalBlogsImg from 'assets/technical_blogs.jpg';
+import competitionsImg from 'assets/competitions.jpg';
+import icebreakersImg from 'assets/icebreakers.jpg';
+import btfAksiImg from 'assets/btf_aksi.jpg';
+import typingContestImg from 'assets/typing_contest.jpg';
+import signQuestImg from 'assets/sign_quest.jpg';
+import ambassadorProgramImg from 'assets/ambassador_program.jpeg';
+import matlabWorkshopImg from 'assets/matlab_workshop.jpg';
+import vsCodeWorkshopImg from 'assets/vscode_workshop.jpg';
+import thinkAIImg from 'assets/think_ai.jpg';
+import researchTalkImg from 'assets/research_talk.jpg';
+import mythMondayImg from 'assets/myth_monday.jpg';
+import quizQuestImg from 'assets/quiz_quest.jpg';
+import tipTuesdayImg from 'assets/tip_tuesday.jpg';
+import techTribuneImg from 'assets/tech_tribune.jpg';
 
 const Home = () => {
   return (

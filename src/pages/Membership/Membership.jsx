@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import Modal from '../../components/Modal/Modal';
+import Modal from 'components/Modal/Modal';
 import './Membership.css';
 
 const Membership = () => {
