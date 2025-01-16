@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/MTClogo.png';
 import './Navbar.css';
@@ -23,9 +23,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-content">
-        <div className="navbar-logo">
-          <img src={logo} alt="Microsoft Tech Club" />
-        </div>
+        <img className="navbar-logo" src={logo} alt="Microsoft Tech Club" />
         <div className={`menu-icon ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
           <div className="bar" />
           <div className="bar" />
