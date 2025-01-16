@@ -49,6 +49,7 @@ import facultyDrElakkiyaR            from "./faculty_dr_elakkiya_r.jpg";
  * @typedef Section
  * @property {string} sectionTitle Title of section.
  * @property {Member[]} members List of members in this section.
+ * @property {number} numCols Number of columns to display in the webpage.
  */
 
 
@@ -311,12 +312,12 @@ const sectionFaculty = [
 
 /** An array of all sections in the About page. @type {Section[]} */
 const sections = [
-  {sectionTitle: "Core Members", members: sectionCore},
-  {sectionTitle: "Tech Team", members: sectionTechTeam},
-  {sectionTitle: "Events Team", members: sectionEventsTeam},
-  {sectionTitle: "Marketing & Creative Team", members: sectionMarketingTeam},
-  {sectionTitle: "Outreach & DevOps Team", members: sectionOutreachTeam},
-  {sectionTitle: "Faculty In-Charge", members: sectionFaculty},
+  {numCols: 3, sectionTitle: "Core Members", members: sectionCore},
+  {numCols: 2, sectionTitle: "Tech Team", members: sectionTechTeam},
+  {numCols: 3, sectionTitle: "Events Team", members: sectionEventsTeam},
+  {numCols: 3, sectionTitle: "Marketing & Creative Team", members: sectionMarketingTeam},
+  {numCols: 3, sectionTitle: "Outreach & DevOps Team", members: sectionOutreachTeam},
+  {numCols: 1, sectionTitle: "Faculty In-Charge", members: sectionFaculty},
 ];
 
 export default sections;
