@@ -1,6 +1,6 @@
 import "./About.css";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import aboutImage from "../../assets/about_us.jpg";
+import aboutImage from "assets/about_us.jpg";
 import sections from "content/members/MembersAndSections";
 
 const About = () => {
@@ -23,11 +23,13 @@ const About = () => {
 
       <h2>MTC Council 2024-25</h2>
 
+      {/* Section for each Team */}
       {sections.map((section) =>
         <div className="section" key={section.sectionTitle}>
           <h3>{section.sectionTitle}</h3>
 
           <div className="members-container" style={{maxWidth: `${section.numCols * (20 + 270) + 10}px`}}>
+            {/* Each member */}
             {section.members.map((member) =>
               <div className="member" key={member.name}>
                 <img src={member.image} alt={member.name} />
