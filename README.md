@@ -19,6 +19,9 @@
 This GitHub repository contains the code for the official website of Microsoft
 Tech Club.
 
+⚠️ Please read the [**🛠️ Useful info for future dev reference**](#️-useful-info-for-future-dev-reference)
+section **before** contributing to this project. ⚠️
+
 <br><br>
 
 
@@ -154,20 +157,70 @@ All done! Now you can write something like this:
 import logo from 'assets/MTClogo.png';
 ```
 
+## CSS nesting
+CSS has a cool feature called "[CSS nesting](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting)"
+where you can declare CSS selectors *within* another selector.
+
+For example, consider the following HTML document:
+```html
+<p>This has font size 12px.</p>
+<div>
+    <p>
+        <b>This has font size 14px.</b>
+        <i>This has font size 16px.</i>
+        <u>This has font size 18px.</u>
+    </p>
+    <span>This has font size 20px.</span>
+</div>
+```
+
+The traditional way to style the above elements is as follows:
+```css
+p {font-size: 12px;}
+div p b {font-size: 14px;}
+div p i {font-size: 16px;}
+div p u {font-size: 18px;}
+div span {font-size: 20px;}
+```
+You might have noticed how the `div` selector has to be repeated each time, for
+every element inside the `div` that you want to style. Similarly, even the `p`
+selector is repeated.
+
+Using nesting logic, you can simply rewrite the CSS like this:
+```css
+p {font-size: 12px;}
+div {
+    p {
+        b {font-size: 14px;} /* equivalent to:   div p b {...}   */
+        i {font-size: 16px;} /* equivalent to:   div p i {...}   */
+        u {font-size: 18px;} /* equivalent to:   div p u {...}   */
+    }
+    span {font-size: 20px;}  /* equivalent to:   div span {...}   */
+}
+```
+In other words, the CSS now follows a **hierarchial** structure, which resembles
+the hierarchial structure of the HTML code as well!
+
+You can read more about this in the [MDN guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting).
+
+Regarding compatibility, CSS nesting is a very recent feature (released in
+roughly December of 2024). But Vite's build process converts all the nested
+declarations to regular selectors, hence backward compatibility is ensured.
+
 ## Load sequence
 This section shows the sequence/chain in which modules are imported.
 
 - [🌐 index.html](index.html) <!--✅-->
     - [⚛️ index.jsx](src/index.jsx) <!--✅-->
         - [⚛️ App.jsx](src/App.jsx) <!--✅-->
-            - [🎨 App.css](src/App.css) <!--🟡-->
+            - [🎨 App.css](src/App.css) <!--✅-->
             - [⚛️ Navbar.jsx](src/components/Navbar/Navbar.jsx) <!--✅-->
                 - [🎨 Navbar.css](src/components/Navbar/Navbar.css) <!--✅-->
                 - [📄 Paths.js](src/Paths.js) <!--✅-->
             - [⚛️ LoadingScreen.jsx](src/components/LoadingScreen/LoadingScreen.jsx) <!--✅-->
                 - [🎨 LoadingScreen.css](src/components/LoadingScreen/LoadingScreen.css) <!--✅-->
             - [⚛️ Home.jsx](src/pages/Home/Home.jsx) <!--🟡-->
-                - [🎨 Home.css](src/pages/Home/Home.css) <!--❌-->
+                - [🎨 Home.css](src/pages/Home/Home.css) <!--🟡-->
                 - [⚛️ TestimonialSlider.jsx](src/components/Testimonials/TestimonialSlider.jsx) <!--✅-->
                     - [🎨 TestimonialSlider.css](src/components/Testimonials/TestimonialSlider.css) <!--✅-->
                     - [📄 Testimonials.js](content/testimonials/Testimonials.js) <!--✅-->
