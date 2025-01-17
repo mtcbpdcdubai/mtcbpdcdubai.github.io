@@ -1,4 +1,5 @@
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import PropTypes from 'prop-types';
 
 /** @param {import("content/members/MembersAndSections").Member} props */
 function Member(props) {
@@ -13,5 +14,14 @@ function Member(props) {
     </div>
   </div>
 }
+
+Member.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  position: PropTypes.string.isRequired,
+  linkInstagram: PropTypes.string,
+  linkLinkedIn: PropTypes.string,
+  linkGitHub: PropTypes.string,
+};
 
 export default Member;

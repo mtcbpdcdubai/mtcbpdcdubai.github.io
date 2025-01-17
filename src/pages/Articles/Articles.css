@@ -81,29 +81,12 @@
   transform: scale(1.1);
 }
 
-.blue-button:hover {
-  color: #0078D7;
-}
-
-.green-button:hover {
-  color: #00BC28;
-}
-
-.orange-button:hover {
-  color: #D83B01;
-}
-
-.yellow-button:hover {
-  color: #FFB900;
-}
-
-.purple-button:hover {
-  color: #6A0DAD;
-}
-
-.lightblue-button:hover {
-  color: #0078D7;
-}
+.blue-button:hover {color: #0078D7;}
+.green-button:hover {color: #00BC28;}
+.orange-button:hover {color: #D83B01;}
+.yellow-button:hover {color: #FFB900;}
+.purple-button:hover {color: #6A0DAD;}
+.lightblue-button:hover {color: #0078D7;}
 
 .article-card.card-1::before,
 .article-card.card-2::before,
@@ -121,61 +104,20 @@
   height: 100%;
 }
 
-.article-card.card-1::before {
-  background-color: #0078D7;
-}
-
-.article-card.card-2::before {
-  background-color: #00BC28;
-}
-
-.article-card.card-3::before {
-  background-color: #D83B01;
-}
-
-.article-card.card-4::before {
-  background-color: #FFB900;
-}
-
-.article-card.card-5::before {
-  background-color: #6A0DAD;
-}
-
-.article-card.card-6::before {
-  background-color: #0078D7;
-}
-
-.article-card.card-7::before {
-  background-color: #00BC28;
-}
-
-.article-card.card-8::before {
-  background-color: #D83B01;
-}
-
-.blue-button {
-  background-color: #0078D7;
-}
-
-.green-button {
-  background-color: #00BC28;
-}
-
-.orange-button {
-  background-color: #D83B01;
-}
-
-.yellow-button {
-  background-color: #FFB900;
-}
-
-.purple-button {
-  background-color: #6A0DAD;
-}
-
-.lightblue-button {
-  background-color: #0078D7;
-}
+.article-card.card-1::before {background-color: #0078D7;}
+.article-card.card-2::before {background-color: #00BC28;}
+.article-card.card-3::before {background-color: #D83B01;}
+.article-card.card-4::before {background-color: #FFB900;}
+.article-card.card-5::before {background-color: #6A0DAD;}
+.article-card.card-6::before {background-color: #0078D7;}
+.article-card.card-7::before {background-color: #00BC28;}
+.article-card.card-8::before {background-color: #D83B01;}
+.blue-button {background-color: #0078D7;}
+.green-button {background-color: #00BC28;}
+.orange-button {background-color: #D83B01;}
+.yellow-button {background-color: #FFB900;}
+.purple-button {background-color: #6A0DAD;}
+.lightblue-button {background-color: #0078D7;}
 
 /* Mobile Styles */
 

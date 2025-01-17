@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import testimonials from "content/testimonials/Testimonials";
 import "./TestimonialSlider.css";
 
@@ -19,13 +19,13 @@ const TestimonialSlider = () => {
   return (
     <div className="testimonial-slider">
       <h2>Past Ambassador Testimonials</h2>
-      <h4>Don't take our word for it. Take theirs:</h4>
+      <h4>Don’t take our word for it. Take theirs:</h4>
 
       <div className="testimonial">
         <button onClick={prvSlide} className="slider-button left">‹</button>
 
         <div className="testimonial-content">
-          <p>"{testimonials[currentSlide].quote}"</p>
+          <p>“{testimonials[currentSlide].quote}”</p>
           <img
             src={testimonials[currentSlide].image}
             alt={testimonials[currentSlide].name}

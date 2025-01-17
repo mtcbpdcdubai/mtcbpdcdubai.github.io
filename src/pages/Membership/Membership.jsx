@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Modal from 'components/Modal/Modal';
 import './Membership.css';
@@ -78,7 +78,7 @@ const Membership = () => {
   <h3>Membership Renewal</h3>
   <h4>Membership Benefits Summary</h4>
   <p>
-  Welcome back! We’re glad you’ve decided to renew your membership with us. Let’s get started! Be the first to know about our exciting events—whether it's workshops, competitions, guest speakers, or more! By signing up, you'll:
+  Welcome back! We’re glad you’ve decided to renew your membership with us. Let’s get started! Be the first to know about our exciting events—whether it’s workshops, competitions, guest speakers, or more! By signing up, you’ll:
   </p>
   <ul>
     <li><b>Exclusive Blog Insights</b></li>

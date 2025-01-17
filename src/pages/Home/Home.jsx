@@ -1,5 +1,4 @@
 // src/pages/Home/Home.jsx
-import React from 'react';
 import { Link } from 'react-router-dom';
 import TestimonialSlider from 'components/Testimonials/TestimonialSlider.jsx';
 import './Home.css';
@@ -23,7 +22,7 @@ import quizQuestImg from 'assets/quiz_quest.jpg';
 import tipTuesdayImg from 'assets/tip_tuesday.jpg';
 import techTribuneImg from 'assets/tech_tribune.jpg';
 
-const Home = () => {
+export default function Home() {
   return (
     <div>
       <div className="home-container">
@@ -37,7 +36,7 @@ const Home = () => {
 
       <div className="offer-section">
         <h2>What do we offer?</h2>
-        <p>Microsoft Tech Club fosters collaboration through workshops, competitions, and events. Whether you're into web development, programming, or data analysis, there's something here for you.</p>
+        <p>Microsoft Tech Club fosters collaboration through workshops, competitions, and events. Whether you’re into web development, programming, or data analysis, there’s something here for you.</p>
         <div className="offer-cards">
           <div className="card card-1">
             <img src={workshopsImg} alt="Workshops" />
@@ -113,7 +112,7 @@ const Home = () => {
       </div>
 
       <div className="social-media-section">
-        <h2>Stay ahead in the tech world with MTC's dynamic social media lineup!</h2>
+        <h2>Stay ahead in the tech world with MTC’s dynamic social media lineup!</h2>
         <div className="social-media-cards">
           <div className="social-media-card">
             <img src={mythMondayImg} alt="Myth Monday" />
@@ -136,5 +135,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

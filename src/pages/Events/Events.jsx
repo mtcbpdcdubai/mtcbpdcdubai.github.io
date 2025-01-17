@@ -1,4 +1,3 @@
-import React from "react";
 import "./Events.css";
 import excelChampionship from "assets/excelChampionship.jpg";
 import introProgrammingImage from "assets/intro_programming.jpg";
@@ -46,7 +45,7 @@ const EventCard = () => {
         <div className="event-info">
           <p className="event-title">Excel Championship</p>
           <p className="event-description">
-          MTC's Excel Championship was a 3-hour Microsoft Excel-based time trial covering themes such 
+          MTC’s Excel Championship was a 3-hour Microsoft Excel-based time trial covering themes such 
           as data analysis, financial modeling, and data cleaning, with questions split into easy, medium, 
           and hard levels, each with different weightage for a total of 100 points. The competition was divided 
           into three themed sessions: Harry Potter, Marvel, and Uncharted, where participants solved questions related 
@@ -222,9 +221,9 @@ const EventCard = () => {
         <div className="event-info">
           <p className="event-title">How To Start Programming</p>
           <p className="event-description">
-            The "How To Start Programming" workshop began with the MTC core
-            council outlining the club's goals and upcoming events. The speakers
-            then covered programming basics, highlighted BITS Pilani's
+            The “How To Start Programming” workshop began with the MTC core
+            council outlining the club’s goals and upcoming events. The speakers
+            then covered programming basics, highlighted BITS Pilani’s
             offerings, and provided an introduction to competitive programming
             and open-source projects. Participants also received a curated list
             of resources to start learning their preferred languages.
@@ -262,9 +261,9 @@ const EventCard = () => {
         <div className="event-info">
           <p className="event-title">VS Code Workshop</p>
           <p className="event-description">
-            The "VS Code" workshop kicked off with MTC's Heramb and Akash
+            The “VS Code” workshop kicked off with MTC’s Heramb and Akash
             introducing the agenda and providing a brief overview of VS Code.
-            They discussed programming, VS Code's features, customization tips,
+            They discussed programming, VS Code’s features, customization tips,
             API integration, built-in AI tools, and shared resources to help
             participants get familiar with the VS Code environment.
           </p>
@@ -281,8 +280,8 @@ const EventCard = () => {
         <div className="event-info">
           <p className="event-title">Typing Contest</p>
           <p className="event-description">
-            The Typing Contest, Microsoft Tech Club's flagship event, tested
-            participants' auditory comprehension and typing speed in a Computer
+            The Typing Contest, Microsoft Tech Club’s flagship event, tested
+            participants’ auditory comprehension and typing speed in a Computer
             Lab. Participants had two hours to attempt the challenge, with the
             opportunity for two retries. Each hour featured four unique audio
             clips, and participants were evaluated on speed and accuracy. The
@@ -320,9 +319,9 @@ const EventCard = () => {
 
       <div className="event-card past">
         <div className="event-info">
-          <p className="event-title">ThinkAI'23</p>
+          <p className="event-title">ThinkAI’23</p>
           <p className="event-description">
-            ThinkAI'23 sought to find students with AI-driven solutions to
+            ThinkAI’23 sought to find students with AI-driven solutions to
             global challenges, providing mentorship for the 2024 Microsoft
             Imagine Cup. Fourteen out of 16 registered teams presented ideas in
             areas like sustainability, healthcare, and education to 8 judges.
@@ -349,7 +348,7 @@ const EventCard = () => {
             Pears, a Computer Vision expert from the University of York.
             Attended by BITS Pilani Dubai Campus director Dr. Srinivasan
             Madapusi and Computer Science HoD Dr. Vijaykumar, the event covered
-            AI, Cyber Security, and Professor Pears' work in craniofacial shape
+            AI, Cyber Security, and Professor Pears’ work in craniofacial shape
             modeling, sparking discussions on the future of Computer Vision.
           </p>
           <a href="https://www.linkedin.com/posts/microsoft-tech-club_microsofttechclub-computervision-techinnovation-activity-7143636619009466368-QdG9?utm_source=share&utm_medium=member_desktop">
