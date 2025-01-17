@@ -2,15 +2,16 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from 'assets/MTClogo.png';
 import './Navbar.css';
+import * as Paths from "src/Paths";
 
 /** The menu entries @type {[str, str][]} */
 const menuItems = [
-  ["/",           "Home"],
-  ["/about",      "About"],
-  ["/membership", "Membership"],
-  ["/events",     "Events"],
-  ["/contact",    "Contact"],
-  ["/articles",   "Articles"],
+  [Paths.ROOT,       "Home"],
+  [Paths.ABOUT,      "About"],
+  [Paths.MEMBERSHIP, "Membership"],
+  [Paths.EVENTS,     "Events"],
+  [Paths.CONTACT,    "Contact"],
+  [Paths.ARTICLES,   "Articles"],
 ]
 
 const Navbar = () => {
