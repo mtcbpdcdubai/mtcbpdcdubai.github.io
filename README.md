@@ -158,9 +158,9 @@ import logo from 'assets/MTClogo.png';
 This section shows the sequence/chain in which modules are imported.
 
 - [🌐 index.html](index.html)
-    - [⚛️ main.jsx](src/main.jsx)
-        - [🎨 index.css](src/index.css)
+    - [⚛️ index.jsx](src/index.jsx)
         - [⚛️ App.jsx](src/App.jsx)
+            - [🎨 App.css](src/App.css)
             - [⚛️ Navbar.jsx](src/components/Navbar/Navbar.jsx)
                 - [🎨 Navbar.css](src/components/Navbar/Navbar.css)
                 - [⚛️ Paths.js](src/Paths.js)
