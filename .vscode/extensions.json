@@ -2,6 +2,11 @@
     "recommendations": [
         "planbcoding.vscode-react-refactor",
         "dsznajder.es7-react-js-snippets",
-        "wix.vscode-import-cost"
+        "wix.vscode-import-cost",
+        "streetsidesoftware.code-spell-checker",
+        "dbaeumer.vscode-eslint",
+        "yoavbls.pretty-ts-errors",
+        "wayou.vscode-todo-highlight",
+        "oderwat.indent-rainbow"
     ]
 }
