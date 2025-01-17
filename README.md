@@ -24,7 +24,7 @@ Tech Club.
 
 
 ---
-# 🌐 Getting the website up and running
+# **🌐 Getting the website up and running**
 1.  Go to [Node.js&reg;](https://nodejs.org/en/download)'s download page, and
     download the prebuilt Node.js&reg; installer for your operating system.
     Complete its installation process.
@@ -68,7 +68,7 @@ Source: [How to deploy Vite React App to GitHub Pages | by Prateek Singh | Mediu
 
 
 ---
-# 📂 Structure of project
+# **📂 Structure of project**
 This section explains the folder structure and organization of this repo.
 
 ## [`/content/`](/content/) folder
@@ -104,7 +104,7 @@ main sub-folders:
 
 
 ---
-# 🛠️ Useful info for future dev reference
+# **🛠️ Useful info for future dev reference**
 This section contains information and tips that will be useful for developers,
 and mainly aims to serve as future reference material.
 
@@ -153,12 +153,46 @@ All done! Now you can write something like this:
 ```js
 import logo from 'assets/MTClogo.png';
 ```
+
+## Load sequence
+This section shows the sequence/chain in which modules are imported.
+
+- [🌐 index.html](index.html)
+    - [⚛️ main.jsx](src/main.jsx)
+        - [🎨 index.css](src/index.css)
+        - [⚛️ App.jsx](src/App.jsx)
+            - [⚛️ Navbar.jsx](src/components/Navbar/Navbar.jsx)
+                - [🎨 Navbar.css](src/components/Navbar/Navbar.css)
+                - [⚛️ Paths.js](src/Paths.js)
+            - [⚛️ LoadingScreen.jsx](src/components/LoadingScreen/LoadingScreen.jsx)
+                - [🎨 LoadingScreen.css](src/components/LoadingScreen/LoadingScreen.css)
+            - [⚛️ Home.jsx](src/pages/Home/Home.jsx)
+                - [🎨 Home.css](src/pages/Home/Home.css)
+                - [⚛️ TestimonialSlider.jsx](src/components/Testimonials/TestimonialSlider.jsx)
+                    - [🎨 TestimonialSlider.css](src/components/Testimonials/TestimonialSlider.css)
+                    - [⚛️ Testimonials.js](content/testimonials/Testimonials.js)
+            - [⚛️ About.jsx](src/pages/About/About.jsx)
+                - [🎨 About.css](src/pages/About/About.css)
+                - [⚛️ MembersAndSections.js](content/members/MembersAndSections.js)
+            - [⚛️ Membership.jsx](src/pages/Membership/Membership.jsx)
+                - [🎨 Membership.css](src/pages/Membership/Membership.css)
+                - [⚛️ Modal.jsx](src/components/Modal/Modal.jsx)
+                    - [🎨 Modal.css](src/components/Modal/Modal.css)
+            - [⚛️ Events.jsx](src/pages/Events/Events.jsx)
+                - [🎨 Events.css](src/pages/Events/Events.css)
+            - [⚛️ Contact.jsx](src/pages/Contact/Contact.jsx)
+                - [🎨 Contact.css](src/pages/Contact/Contact.css)
+            - [⚛️ Articles.jsx](src/pages/Articles/Articles.jsx)
+                - [🎨 Articles.css](src/pages/Articles/Articles.css)
+            - [⚛️ Footer.jsx](src/components/Footer/Footer.jsx)
+                - [🎨 Footer.css](src/components/Footer/Footer.css)
+
 <br><br>
 
 
 
 ---
-# 💻 Authors
+# **💻 Authors**
+- Sreenikethan I - [@SreenikethanI](https://github.com/SreenikethanI/)
 - Stellin J - [@Stellin-15](https://github.com/Stellin-15/)
 - Mrudula R - [@Mrudula1205](https://github.com/Mrudula1205/)
-- Sreenikethan I - [@SreenikethanI](https://github.com/SreenikethanI/)
