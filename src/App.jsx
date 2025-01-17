@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css'
+
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
@@ -12,7 +14,7 @@ import Articles from './pages/Articles/Articles';
 
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false); // TODO: change to true
 
   useEffect(() => {
     const timer = setTimeout(() => {

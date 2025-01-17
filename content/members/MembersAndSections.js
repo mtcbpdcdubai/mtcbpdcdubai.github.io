@@ -166,7 +166,7 @@ const sectionEventsTeam = [
     position: "Strategy Officer",
     linkInstagram: "https://www.instagram.com/nardazaria/",
     linkLinkedIn: "https://www.linkedin.com/in/narda-zaria-60254823b/",
-    linkGitHub: "https://github.com/aina282",
+    // linkGitHub: "https://github.com/aina282", // NOT WORKING
   },
   {
     image: eventsMahinPoptani,
@@ -189,7 +189,7 @@ const sectionEventsTeam = [
     name: "Reuben Thomas",
     position: "Events Executive",
     linkInstagram: "https://www.instagram.com/reuben_thooo/",
-    linkLinkedIn: "https://www.linkedin.com/in/reuben-thomas-689893263/",
+    linkLinkedIn: "https://www.linkedin.com/in/reuben-thomas-thovelil-689893263/",
     linkGitHub: "https://github.com/reuben-tho",
   },
 ];
@@ -218,7 +218,7 @@ const sectionMarketingTeam = [
     position: "Marketing Executive",
     linkInstagram: "https://www.instagram.com/ankita_menon_04/",
     linkLinkedIn: "https://www.linkedin.com/in/k-ankita-menon-4513b8232/",
-    linkGitHub: "",
+    // linkGitHub: "",
   },
   {
     image: marketingKhyatiJetly,
@@ -270,7 +270,7 @@ const sectionOutreachTeam = [
     position: "Outreach Manager",
     linkInstagram: "https://www.instagram.com/_prasannargh/",
     linkLinkedIn: "https://www.linkedin.com/in/prasannah-raman-0a7a6926b/",
-    linkGitHub: "https://github.com/codeyko-blip",
+    // linkGitHub: "https://github.com/codeyko-blip", // NOT WORKING
   },
   {
     image: outreachSiddharathNagesh,
@@ -304,7 +304,7 @@ const sectionFaculty = [
     image: facultyDrElakkiyaR,
     name: "Dr. Elakkiya R.",
     position: "Assistant Professor",
-    linkLinkedIn: "https://www.linkedin.com/in/dr-elakkiya-r-581884b1/",
+    linkLinkedIn: "https://www.linkedin.com/in/elakkiya-r-581884b1/",
   }
 ]
 
