@@ -9,7 +9,7 @@
 }
 
 /* MARK: BANNER */
-.home-container {
+.home-banner {
   height: 100vh;
   margin: 0;
   padding: 0 15px;
@@ -20,7 +20,7 @@
   align-items: center;
   text-align: center;
 
-  .background-image {
+  .home-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -49,7 +49,7 @@
     margin-bottom: 1em;
   }
 
-  .join-button {
+  button {
     background-color: black;
     color: white;
     border: none;
@@ -68,7 +68,7 @@
 }
 
 /* MARK: OFFER */
-.offer-section {
+.home-offer {
   padding: 50px 15%;
   background-color: #1e1e1e;
   color: white;
@@ -84,7 +84,7 @@
     margin-bottom: 40px;
   }
 
-  .offer-cards {
+  .home-offer-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -92,7 +92,7 @@
     padding: 0 500px; /* TODO: what is this?? */
     margin: 0 auto;
 
-    .card {
+    .home-offer-card {
       position: relative;
       width: 320px;
       height: 320px;
@@ -107,7 +107,7 @@
         object-fit:cover;
       }
 
-      .card-content {
+      h3 {
         position: absolute;
         bottom: 0;
         left: 10px;
@@ -117,11 +117,8 @@
         color: white;
         padding: 20px;
         text-align: center;
-
-        h3 {
-          margin: 0;
-          font-size: 1.8em;
-        }
+        margin: 0;
+        font-size: 1.8em;
       }
 
       /* Card hover */
@@ -148,7 +145,7 @@
 }
 
 /* MARK: AMBASSADOR */
-.ambassador-section {
+.home-ambassador {
   padding: 50px 15%;
   background-color: #1e1e1e;
   color: white;
@@ -164,7 +161,7 @@
     margin-bottom: 40px;
   }
 
-  .ambassador-cards {
+  .home-ambassador-cards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto auto;
@@ -173,7 +170,7 @@
     align-items: center;
     margin: 0 auto;
 
-    .ambassador-card {
+    .home-ambassador-card {
       position: relative;
       width: 320px;
       height: 320px;
@@ -196,7 +193,7 @@
         object-fit: cover;
       }
 
-      .ambassador-card-content {
+      h3 {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -205,11 +202,8 @@
         color: white;
         padding: 10px;
         text-align: center;
-
-        h3 {
-          margin: 0;
-          font-size: 1.8em;
-        }
+        margin: 0;
+        font-size: 1.8em;
       }
 
       &:hover {
@@ -218,7 +212,7 @@
     }
   }
 
-  .Join-Now-button {
+  button {
     margin-top: 50px;
     background-color: #fff;
     color: #000;
@@ -238,7 +232,7 @@
 }
 
 /* MARK: EVENTS */
-.events-section {
+.home-events {
   padding: 50px 15%;
   background-color: #1e1e1e;
   color: white;
@@ -254,7 +248,7 @@
     margin-bottom: 40px;
   }
 
-  .events-cards {
+  .home-event-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     grid-gap: 10px;
@@ -262,7 +256,7 @@
     margin: 0 auto;
     max-width: 1200px;
 
-    .event-card {
+    .home-event-card {
       position: relative;
       overflow: hidden;
       border-radius: 10px;
@@ -278,7 +272,7 @@
         transition: filter 0.3s ease;
       }
 
-      .event-card-content {
+      button {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -297,7 +291,7 @@
 
       &:hover {
         img {filter: blur(5px);}
-        .event-card-content {opacity: 1;}
+        button {opacity: 1;}
       }
     }
   }
@@ -322,7 +316,7 @@
 }
 
 /* MARK: SOCIAL MEDIA */
-.social-media-section {
+.home-social-media {
   padding: 50px 15%;
   background-color: #1e1e1e;
   color: white;
@@ -338,14 +332,14 @@
     margin-bottom: 40px;
   } */
 
-  .social-media-cards {
+  .home-social-media-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-content: center;
     margin: 0 500px; /* TODO: what is this?? */
 
-    .social-media-card {
+    .home-social-media-card {
       position: relative;
       overflow: hidden;
       border-radius: 15px;
@@ -361,7 +355,7 @@
         transition: filter 0.3s ease;
       }
 
-      .social-media-card-content {
+      .home-social-media-card-content {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -380,7 +374,7 @@
 
       &:hover {
         /* TODO: do something similar to Events section */
-        .social-media-card-content {opacity: 1;}
+        .home-social-media-card-content {opacity: 1;}
       }
     }
   }
@@ -390,22 +384,22 @@
 
 /* MARK: 📱 events */
 @media only screen and (max-width: 600px) {
-  .events-section {
+  .home-events {
     padding: 30px 5%;
 
     h2 {font-size: 1.5em;}
 
     p {font-size: 1em;}
 
-    .events-cards {
+    .home-event-cards {
       grid-template-columns: 1fr; /* Single column layout for mobile */
 
-      .event-card {
+      .home-event-card {
         height: auto;
 
         img {height: auto;}
 
-        .event-card-content {font-size: 1.25em;}
+        button {font-size: 1.25em;}
       }
     }
 
@@ -418,10 +412,10 @@
 
 @media screen and (max-width: 500px) {
   /* MARK: 📱 banner */
-  .home-container {
+  .home-banner {
     height: 50vh;
 
-    .background-image {
+    .home-background {
       width: 100%;
       height: auto; /* Maintain aspect ratio */
       min-height: 50vh;
@@ -432,34 +426,33 @@
 
     p {font-size: 0.9em;}
 
-    .join-button {
+    button {
       padding: 0.6em 1.2em;
       font-size: 0.9em;
     }
   }
 
   /* MARK: 📱 offer */
-  .offer-section {
+  .home-offer {
     padding: 20px 5%;
 
     h2 {font-size: 1.8em;}
 
     p {font-size: 1em;}
 
-    .offer-cards {
+    .home-offer-cards {
       grid-template-columns: 1fr; /* Stack cards one below the other */
       padding: 0 20px;
 
-      .card {
+      .home-offer-card {
         width: 100%;
         height: 200px;
         border-radius: 8px;
 
-        .card-content {
+        h3 {
           left: 8px;
           padding: 15px;
-
-          h3 {font-size: 1.3em;}
+          font-size: 1.3em;
         }
 
         /* Card color stripe on left side */
@@ -478,10 +471,10 @@
 
     p {font-size: 1em;}
 
-    .ambassador-cards {
+    .home-ambassador-cards {
       grid-template-columns: 1fr; /* Stack cards one below the other */
 
-      .ambassador-card {
+      .home-ambassador-card {
         width: 100%;
         height: 200px;
         border-radius: 15px;
@@ -495,8 +488,8 @@
           padding: 15px;
         }
 
-        .ambassador-card-content {
-          h3 {font-size: 1.3em;}
+        h3 {
+          font-size: 1.3em;
         }
       }
     }
@@ -504,19 +497,19 @@
 
 
   /* MARK: 📱 social media */
-  .social-media-section {
+  .home-social-media {
     padding: 20px 5%;
 
     h2 {font-size: 1em;}
 
     /* p {font-size: 1.5em;} */
 
-    .social-media-cards {
+    .home-social-media-cards {
       grid-template-columns: 1fr; /* Stack cards one below the other */
       margin: 0 auto;
       padding: 0 20px;
 
-      .social-media-card {
+      .home-social-media-card {
         width: 100%;
         height: 200px;
 
@@ -527,7 +520,7 @@
           transition: filter 0.3s ease;
         }
 
-        .social-media-card-content {
+        .home-social-media-card-content {
           padding: 8px 15px;
           font-size: 1.2em;
         }
@@ -535,7 +528,7 @@
         &:hover {
           /* TODO: do something similar to Events section */
           img {filter: blur(5px);}
-          .social-media-card-content {opacity: 1;}
+          .home-social-media-card-content {opacity: 1;}
         }
       }
     }
