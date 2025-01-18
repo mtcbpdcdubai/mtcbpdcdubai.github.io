@@ -1,6 +1,5 @@
-// src/pages/Home/Home.jsx
-import { Link } from 'react-router-dom';
 import TestimonialSlider from './TestimonialSlider.jsx';
+import LinkButton from 'src/components/LinkButton/LinkButton.jsx';
 import './Home.css';
 
 import backgroundImage from 'assets/b2.jpg';
@@ -29,7 +28,7 @@ export default function Home() {
         <img src={backgroundImage} className="home-background" alt="Background" />
         <h1>Microsoft Tech Club</h1>
         <p>Boot Up Your Ambition. Excel in Technology with Us!</p>
-        <Link to="/membership"><button className="join-button">JOIN US</button></Link>
+        <LinkButton to="/membership">JOIN US</LinkButton>
       </div>
 
       <div className="home-offer">
@@ -80,7 +79,7 @@ export default function Home() {
             <h3>Sign-Quest</h3>
           </div>
         </div>
-        <Link to="https://forms.gle/irvTUisXzDz18VB28"><button className="Join-Now-button">Join Now ➔</button></Link>
+        <LinkButton to="https://forms.gle/irvTUisXzDz18VB28">Join Now ➔</LinkButton>
       </div>
 
       <TestimonialSlider />
@@ -91,22 +90,22 @@ export default function Home() {
         <div className="home-event-cards">
           <div className="home-event-card">
             <img src={matlabWorkshopImg} alt="MATLAB Workshop" />
-            <Link to="https://www.linkedin.com/posts/microsoft-tech-club_techeducation-techcommunity-studentcommunity-activity-7108388988855484416-VNIv"><button className="event-card-content">Read More</button></Link>
+            <LinkButton to="https://www.linkedin.com/posts/microsoft-tech-club_techeducation-techcommunity-studentcommunity-activity-7108388988855484416-VNIv">Read More</LinkButton>
           </div>
           <div className="home-event-card">
             <img src={vsCodeWorkshopImg} alt="VS Code Workshop" />
-            <Link to="https://www.instagram.com/p/Czv9N40NEYV/"><button className="event-card-content">Read More</button></Link>
+            <LinkButton to="https://www.instagram.com/p/Czv9N40NEYV/">Read More</LinkButton>
           </div>
           <div className="home-event-card">
             <img src={thinkAIImg} alt="Think AI'23" />
-            <Link to="https://www.instagram.com/p/C0rSVqlPBpe/"><button className="event-card-content">Read More</button></Link>
+            <LinkButton to="https://www.instagram.com/p/C0rSVqlPBpe/">Read More</LinkButton>
           </div>
           <div className="home-event-card">
             <img src={researchTalkImg} alt="Research Talk" />
-            <Link to="https://www.linkedin.com/posts/microsoft-tech-club_microsofttechclub-computervision-techinnovation-activity-7143636619009466368-QdG9"><button className="event-card-content">Read More</button></Link>
+            <LinkButton to="https://www.linkedin.com/posts/microsoft-tech-club_microsofttechclub-computervision-techinnovation-activity-7143636619009466368-QdG9">Read More</LinkButton>
           </div>
         </div>
-        <Link to="/events"><button className="view-all-button">View All ➔</button></Link>
+        <LinkButton to="/events" className="view-all-button">View All ➔</LinkButton>
       </div>
 
       <div className="home-social-media">
