@@ -3,23 +3,23 @@ import LinkButton from 'src/components/LinkButton/LinkButton.jsx';
 import './Home.css';
 
 import backgroundImage from 'assets/b2.jpg';
-import workshopsImg from 'assets/workshops.jpg';
-import speakerSessionsImg from 'assets/speaker_sessions.jpg';
-import technicalBlogsImg from 'assets/technical_blogs.jpg';
-import competitionsImg from 'assets/competitions.jpg';
-import icebreakersImg from 'assets/icebreakers.jpg';
-import btfAksiImg from 'assets/btf_aksi.jpg';
-import typingContestImg from 'assets/typing_contest.jpg';
-import signQuestImg from 'assets/sign_quest.jpg';
-import ambassadorProgramImg from 'assets/ambassador_program.jpeg';
-import matlabWorkshopImg from 'assets/matlab_workshop.jpg';
-import vsCodeWorkshopImg from 'assets/vscode_workshop.jpg';
-import thinkAIImg from 'assets/think_ai.jpg';
-import researchTalkImg from 'assets/research_talk.jpg';
-import mythMondayImg from 'assets/myth_monday.jpg';
-import quizQuestImg from 'assets/quiz_quest.jpg';
-import tipTuesdayImg from 'assets/tip_tuesday.jpg';
-import techTribuneImg from 'assets/tech_tribune.jpg';
+import imgOffer_workshops from 'assets/home_offer_workshops.jpg';
+import imgOffer_speakerSessions from 'assets/home_offer_speaker_sessions.jpg';
+import imgOffer_technicalBlogs from 'assets/home_offer_technical_blogs.jpg';
+import imgOffer_competitions from 'assets/home_offer_competitions.jpg';
+import imgAmbassador_icebreakers20232024 from 'assets/home_ambassador_icebreakers_2023_2024.jpg';
+import imgAmbassador_btfAksi2023 from 'assets/home_ambassador_btf_aksi_2023.jpg';
+import imgAmbassador_ambassadorProgram from 'assets/home_ambassador_ambassador_program.jpg';
+import imgAmbassador_typingContest from 'assets/home_ambassador_typing_contest.jpg';
+import imgAmbassador_signQuest from 'assets/home_ambassador_sign_quest.jpg';
+import imgEvents_matlabWorkshop from 'assets/home_events_matlab_workshop.jpg';
+import imgEvents_vsCodeWorkshop from 'assets/home_events_vs_code_workshop.jpg';
+import imgEvents_thinkAi23 from 'assets/home_events_think_ai23.jpg';
+import imgEvents_researchTalk from 'assets/home_events_research_talk.jpg';
+import imgSocial_mythMonday from 'assets/home_social_myth_monday.jpg';
+import imgSocial_quizQuest from 'assets/home_social_quiz_quest.jpg';
+import imgSocial_tipTuesday from 'assets/home_social_tip_tuesday.jpg';
+import imgSocial_techTribune from 'assets/home_social_tech_tribune.jpg';
 
 export default function Home() {
   return (
@@ -36,19 +36,19 @@ export default function Home() {
         <p>Microsoft Tech Club fosters collaboration through workshops, competitions, and events. Whether you’re into web development, programming, or data analysis, there’s something here for you.</p>
         <div className="home-offer-cards">
           <div className="home-offer-card card-1">
-            <img src={workshopsImg} alt="Workshops" />
+            <img src={imgOffer_workshops} alt="Workshops" />
             <h3>Workshops</h3>
           </div>
           <div className="home-offer-card card-2">
-            <img src={speakerSessionsImg} alt="Speaker Sessions" />
+            <img src={imgOffer_speakerSessions} alt="Speaker Sessions" />
             <h3>Speaker Sessions</h3>
           </div>
           <div className="home-offer-card card-3">
-            <img src={technicalBlogsImg} alt="Technical Blogs" />
+            <img src={imgOffer_technicalBlogs} alt="Technical Blogs" />
             <h3>Technical Blogs</h3>
           </div>
           <div className="home-offer-card card-4">
-            <img src={competitionsImg} alt="Competitions" />
+            <img src={imgOffer_competitions} alt="Competitions" />
             <h3>Competitions</h3>
           </div>
         </div>
@@ -59,23 +59,23 @@ export default function Home() {
         <p>MTC Student Ambassador program provides an invaluable opportunity for first-year students to actively participate in MTC by assuming the role of a council member in your chosen domain.</p>
         <div className="home-ambassador-cards">
           <div className="home-ambassador-card">
-            <img src={icebreakersImg} alt="Icebreakers 2023-2024" />
+            <img src={imgAmbassador_icebreakers20232024} alt="Icebreakers 2023-2024" />
             <h3>Icebreakers 2023-2024</h3>
           </div>
           <div className="home-ambassador-card">
-            <img src={btfAksiImg} alt="BTF-AKSI-2023" />
+            <img src={imgAmbassador_btfAksi2023} alt="BTF-AKSI-2023" />
             <h3>BTF-AKSI-2023</h3>
           </div>
           <div className="home-ambassador-card poster">
-            <img src={ambassadorProgramImg} alt="Ambassador Program" />
+            <img src={imgAmbassador_ambassadorProgram} alt="Ambassador Program" />
             <h3>Ambassador Program</h3>
           </div>
           <div className="home-ambassador-card">
-            <img src={typingContestImg} alt="Typing Contest" />
+            <img src={imgAmbassador_typingContest} alt="Typing Contest" />
             <h3>Typing Contest</h3>
           </div>
           <div className="home-ambassador-card">
-            <img src={signQuestImg} alt="Sign-Quest" />
+            <img src={imgAmbassador_signQuest} alt="Sign-Quest" />
             <h3>Sign-Quest</h3>
           </div>
         </div>
@@ -89,19 +89,19 @@ export default function Home() {
         <p>Some of our recently conducted events</p>
         <div className="home-event-cards">
           <div className="home-event-card">
-            <img src={matlabWorkshopImg} alt="MATLAB Workshop" />
+            <img src={imgEvents_matlabWorkshop} alt="MATLAB Workshop" />
             <LinkButton to="https://www.linkedin.com/posts/microsoft-tech-club_techeducation-techcommunity-studentcommunity-activity-7108388988855484416-VNIv">Read More</LinkButton>
           </div>
           <div className="home-event-card">
-            <img src={vsCodeWorkshopImg} alt="VS Code Workshop" />
+            <img src={imgEvents_vsCodeWorkshop} alt="VS Code Workshop" />
             <LinkButton to="https://www.instagram.com/p/Czv9N40NEYV/">Read More</LinkButton>
           </div>
           <div className="home-event-card">
-            <img src={thinkAIImg} alt="Think AI'23" />
+            <img src={imgEvents_thinkAi23} alt="Think AI'23" />
             <LinkButton to="https://www.instagram.com/p/C0rSVqlPBpe/">Read More</LinkButton>
           </div>
           <div className="home-event-card">
-            <img src={researchTalkImg} alt="Research Talk" />
+            <img src={imgEvents_researchTalk} alt="Research Talk" />
             <LinkButton to="https://www.linkedin.com/posts/microsoft-tech-club_microsofttechclub-computervision-techinnovation-activity-7143636619009466368-QdG9">Read More</LinkButton>
           </div>
         </div>
@@ -112,19 +112,19 @@ export default function Home() {
         <h2>Stay ahead in the tech world with MTC’s dynamic social media lineup!</h2>
         <div className="home-social-media-cards">
           <div className="home-social-media-card">
-            <img src={mythMondayImg} alt="Myth Monday" />
+            <img src={imgSocial_mythMonday} alt="Myth Monday" />
             
           </div>
           <div className="home-social-media-card">
-            <img src={quizQuestImg} alt="Quiz Quest" />
+            <img src={imgSocial_quizQuest} alt="Quiz Quest" />
             
           </div>
           <div className="home-social-media-card">
-            <img src={tipTuesdayImg} alt="Tip Tuesday" />
+            <img src={imgSocial_tipTuesday} alt="Tip Tuesday" />
             
           </div>
           <div className="home-social-media-card">
-            <img src={techTribuneImg} alt="Tech Tribune" />
+            <img src={imgSocial_techTribune} alt="Tech Tribune" />
             
           </div>
         </div>
