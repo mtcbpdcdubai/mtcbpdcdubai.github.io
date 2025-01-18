@@ -98,9 +98,10 @@ main sub-folders:
     such as [navbar](/src/components/Navbar/Navbar.jsx),
     [footer](/src/components/Footer/Footer.jsx),
     [loading screen](/src/components/LoadingScreen/LoadingScreen.jsx), etc.
+    which are meant to be used **more than once** in **multiple pages**.
 
 3.  [`assets`](/src/assets/): Contains generic images and media. For
-    content-specific media, please use the [`content` folder](#content-folder).
+    content-specific media, please use the `content` folder as explained [above](#content-folder).
 
 <br><br>
 
@@ -221,8 +222,8 @@ This section shows the sequence/chain in which modules are imported.
                 - [🎨 LoadingScreen.css](src/components/LoadingScreen/LoadingScreen.css) <!--✅-->
             - [⚛️ Home.jsx](src/pages/Home/Home.jsx) <!--🟡-->
                 - [🎨 Home.css](src/pages/Home/Home.css) <!--🟡-->
-                - [⚛️ TestimonialSlider.jsx](src/components/Testimonials/TestimonialSlider.jsx) <!--✅-->
-                    - [🎨 TestimonialSlider.css](src/components/Testimonials/TestimonialSlider.css) <!--✅-->
+                - [⚛️ TestimonialSlider.jsx](src/pages/Home/TestimonialSlider.jsx) <!--✅-->
+                    - [🎨 TestimonialSlider.css](src/pages/Home/TestimonialSlider.css) <!--✅-->
                     - [📄 Testimonials.js](content/testimonials/Testimonials.js) <!--✅-->
             - [⚛️ About.jsx](src/pages/About/About.jsx) <!--✅-->
                 - [🎨 About.css](src/pages/About/About.css) <!--✅-->

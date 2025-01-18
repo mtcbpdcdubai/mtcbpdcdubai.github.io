@@ -1,6 +1,6 @@
 // src/pages/Home/Home.jsx
 import { Link } from 'react-router-dom';
-import TestimonialSlider from 'components/Testimonials/TestimonialSlider.jsx';
+import TestimonialSlider from './TestimonialSlider.jsx';
 import './Home.css';
 
 import backgroundImage from 'assets/b2.jpg';
