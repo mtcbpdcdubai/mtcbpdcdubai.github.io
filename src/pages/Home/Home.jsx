@@ -20,13 +20,26 @@ import imgSocial_mythMonday from 'assets/home_social_myth_monday.jpg';
 import imgSocial_quizQuest from 'assets/home_social_quiz_quest.jpg';
 import imgSocial_tipTuesday from 'assets/home_social_tip_tuesday.jpg';
 import imgSocial_techTribune from 'assets/home_social_tech_tribune.jpg';
-
+import { TypeAnimation } from 'react-type-animation';
 export default function Home() {
   return (
     <div>
       <div className="home-banner">
         <img src={backgroundImage} className="home-background" alt="Background" />
-        <h1>Microsoft Tech Club</h1>
+        <TypeAnimation
+          sequence={[
+            "",
+            1000,
+            "Microsoft Tech Club",
+            1000,
+            "",
+            1000,
+
+          ]}
+          wrapper="h1"
+          repeat={Infinity}
+          speed={300}
+        />
         <p>Boot Up Your Ambition. Excel in Technology with Us!</p>
         <LinkButton to="/membership">JOIN US</LinkButton>
       </div>
