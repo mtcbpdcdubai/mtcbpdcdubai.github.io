@@ -17,34 +17,28 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="testimonial-slider">
+    <div className="home-testimonial-slider">
       <h2>Past Ambassador Testimonials</h2>
-      <h4>Don’t take our word for it. Take theirs:</h4>
+      <h3>Don’t take our word for it. Take theirs:</h3>
 
-      <div className="testimonial">
-        <button onClick={prvSlide} className="slider-button left">‹</button>
+      <div className="home-testimonial">
+        <button onClick={prvSlide} className="home-testimonial-slider-button">‹</button>
 
-        <div className="testimonial-content">
+        <div className="home-testimonial-content">
           <p>“{testimonials[currentSlide].quote}”</p>
-          <img
-            src={testimonials[currentSlide].image}
-            alt={testimonials[currentSlide].name}
-            className="testimonial-image"
-          />
-          <h4>{testimonials[currentSlide].name}</h4>
-          <p className="testimonial-position">
-            {testimonials[currentSlide].year}
-          </p>
+          <img src={testimonials[currentSlide].image} alt={testimonials[currentSlide].name} />
+          <p className="home-testimonial-name">{testimonials[currentSlide].name}</p>
+          <p className="home-testimonial-position">{testimonials[currentSlide].year}</p>
         </div>
 
-        <button onClick={nextSlide} className="slider-button right">›</button>
+        <button onClick={nextSlide} className="home-testimonial-slider-button">›</button>
       </div>
 
-      <div className="ondots">
+      <div className="home-testimonial-dots">
       {testimonials.map((_, index) => (
           <span
             key={index}
-            className={index === currentSlide ? 'dot active' : 'dot'}
+            className={"home-testimonial-dot" + (index === currentSlide ? ' active' : '')}
             onClick={() => setCurrentSlide(index)}
           ></span>
         ))}
