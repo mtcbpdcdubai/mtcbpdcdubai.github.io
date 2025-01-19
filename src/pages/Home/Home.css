@@ -36,12 +36,12 @@
     margin-bottom: 0.5em;
 
     /* Typing and cursor blink effect */
-    animation: typing 4s steps(30, end) infinite, blink .75s step-end infinite;
+    /* animation: typing 4s steps(30, end) infinite, blink .75s step-end infinite;
     border-right: .15em solid white;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    max-width: fit-content;
+    max-width: fit-content; */
   }
 
   p {

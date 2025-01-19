@@ -2,13 +2,22 @@ import "./About.css";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import aboutImage from "assets/about_us.jpg";
 import sections from "content/members/MembersAndSections";
-
+import { TypeAnimation } from "react-type-animation";
 const About = () => {
   return (
     <div className="about-page">
       <img src={aboutImage} alt="About Us" className="about-image" />
       <div className="about-content">
-        <h1>About Us</h1>
+        <TypeAnimation
+          sequence={[
+            "About Us",
+            1000,
+
+          ]}
+          wrapper="h1"
+          repeat={Infinity}
+          speed={300}
+        />
         <p>
           The Microsoft Tech Club is a student-led organization that is
           dedicated to fostering a community of like-minded individuals who are
