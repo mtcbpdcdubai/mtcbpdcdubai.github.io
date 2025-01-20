@@ -1,3 +1,4 @@
+import { TypeAnimation } from 'react-type-animation';
 import TestimonialSlider from './TestimonialSlider.jsx';
 import LinkButton from 'src/components/LinkButton/LinkButton.jsx';
 import './Home.css';
@@ -20,7 +21,8 @@ import imgSocial_mythMonday from 'assets/home_social_myth_monday.jpg';
 import imgSocial_quizQuest from 'assets/home_social_quiz_quest.jpg';
 import imgSocial_tipTuesday from 'assets/home_social_tip_tuesday.jpg';
 import imgSocial_techTribune from 'assets/home_social_tech_tribune.jpg';
-import { TypeAnimation } from 'react-type-animation';
+
+
 export default function Home() {
   return (
     <div>
@@ -122,7 +124,8 @@ export default function Home() {
       </div>
 
       <div className="home-social-media">
-        <h2>Stay ahead in the tech world with MTC’s dynamic social media lineup!</h2>
+        <h2>Follow Us</h2>
+        <p>Stay ahead in the tech world with MTC’s dynamic social media lineup!</p>
         <div className="home-social-media-cards">
           <div className="home-social-media-card">
             <img src={imgSocial_mythMonday} alt="Myth Monday" />

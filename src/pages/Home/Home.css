@@ -1,18 +1,45 @@
-@keyframes typing {
+/* Store "constants" here */
+:root {
+  --home-breakpoint: 750px;
+
+  /* values for any spacing e.g. padding, margin, etc. */
+  --home-space-small: 20px;
+  --home-space-large: 40px;
+
+  /* font sizes */
+  --home-font-large: 3.5em;
+  --home-font-medium: 1.75em;
+  --home-font-small: 1.25em;
+
+  /* colors */
+  --home-color-text-dark: #e0e0e0;
+  --home-color-text-darker: #cccccc;
+  --home-color-back: #1e1e1e;
+
+  --home-border-radius: 10px; /* thickness of strip on left side */
+  --home-hover-scale: 1.05;
+  --home-blur: 5px;
+  --home-transition: 0.3s;
+}
+
+/* @keyframes typing {
   0% { width: 0; }
   70%, 100% { width: 100%; }
 }
-
 @keyframes blink {
   0%, 100% { border-color: transparent; }
   50% { border-color: white; }
+} */
+
+body {
+  background-color: var(--home-color-back);
 }
 
 /* MARK: BANNER */
 .home-banner {
   height: 100vh;
+  padding: 0 var(--home-space-small);
   margin: 0;
-  padding: 0 15px;
 
   display: flex;
   flex-direction: column;
@@ -27,13 +54,14 @@
     width: 100vw;
     height: 100vh;
     z-index: -100;
-    filter: blur(5px);
+    filter: brightness(0.5) blur(var(--home-blur));
+    transform: scale(var(--home-hover-scale));
     object-fit: cover;
   }
 
   h1 {
     font-size: 5em;
-    margin-bottom: 0.5em;
+    margin-bottom: var(--home-space-large);
 
     /* Typing and cursor blink effect */
     /* animation: typing 4s steps(30, end) infinite, blink .75s step-end infinite;
@@ -46,84 +74,83 @@
 
   p {
     font-size: 2em;
-    margin-bottom: 1em;
+    margin-bottom: var(--home-space-large);
   }
 
   button {
     background-color: black;
     color: white;
     border: none;
-    padding: 1em 2em;
-    font-size: 1.5em;
+    padding: var(--home-space-small) var(--home-space-large);
+    font-size: var(--home-font-medium);
     font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s ease;
+    border-radius: var(--home-border-radius);
+    transition: var(--home-transition) ease;
 
     &:hover {
       background-color: white;
       color: black;
-      transform: scale(1.1);
+      transform: scale(var(--home-hover-scale));
     }
   }
 }
 
 /* MARK: OFFER */
 .home-offer {
-  padding: 50px 15%;
-  background-color: #1e1e1e;
-  color: white;
+  padding: var(--home-space-large) var(--home-space-small);
+  background-color: var(--home-color-back);
   text-align: center;
+  align-items: center;
 
   h2 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
+    font-size: var(--home-font-large);
   }
 
   p {
-    font-size: 1.75em;
-    margin-bottom: 40px;
+    font-size: var(--home-font-medium);
+    margin: var(--home-space-small) 15%;
+    color: var(--home-color-text-dark);
   }
 
   .home-offer-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: var(--home-space-small);
     justify-content: center;
-    padding: 0 500px; /* TODO: what is this?? */
+    width: fit-content;
     margin: 0 auto;
 
     .home-offer-card {
       position: relative;
-      width: 320px;
-      height: 320px;
       overflow: hidden;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
+      border-radius: var(--home-border-radius);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      transition: transform var(--home-transition) ease;
+      max-width: 400px;
+      max-height: 400px;
 
       img {
         width: 100%;
         height: 100%;
-        object-fit:cover;
+        object-fit: cover;
       }
 
       h3 {
         position: absolute;
         bottom: 0;
-        left: 10px;
+        left: var(--home-border-radius);
         width: 100%;
         background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(5px);
-        color: white;
-        padding: 20px;
+        backdrop-filter: blur(var(--home-blur));
+        padding: var(--home-space-small);
         text-align: center;
         margin: 0;
-        font-size: 1.8em;
+        font-size: var(--home-font-small);
       }
 
       /* Card hover */
       &:hover {
-        transform: scale(1.05);
+        transform: scale(var(--home-hover-scale));
       }
 
       /* Card color stripe on left side */
@@ -132,7 +159,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 10px;
+        width: var(--home-border-radius);
         height: 100%;
       }
 
@@ -146,49 +173,44 @@
 
 /* MARK: AMBASSADOR */
 .home-ambassador {
-  padding: 50px 15%;
+  margin-top: var(--home-space-large);
+  padding: var(--home-space-large) var(--home-space-small);
   background-color: #1e1e1e;
-  color: white;
   text-align: center;
 
   h2 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
+    font-size: var(--home-font-large);
   }
 
   p {
-    font-size: 1.75em;
-    margin-bottom: 40px;
+    font-size: var(--home-font-medium);
+    padding: var(--home-space-small) 15%;
+    color: var(--home-color-text-dark);
   }
 
   .home-ambassador-cards {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-rows: auto auto;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    gap: var(--home-space-small);
+    justify-items: stretch;
+    align-items: stretch;
     margin: 0 auto;
 
     .home-ambassador-card {
       position: relative;
-      width: 320px;
-      height: 320px;
       overflow: hidden;
-      border-radius: 15px;
+      border-radius: var(--home-border-radius);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
+      transition: transform var(--home-transition) ease;
 
       &.poster {
-        grid-column: 2 / span 3;
+        grid-column: 2;
         grid-row: 1 / span 2;
-        width: 640px;
-        height: 680px;
-        padding: 25px;
+        width: 100%;
       }
 
       img {
-        width: 100%;
         height: 100%;
         object-fit: cover;
       }
@@ -199,77 +221,75 @@
         left: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 10px;
+        backdrop-filter: blur(var(--home-blur));
+        padding: var(--home-space-small);
         text-align: center;
         margin: 0;
-        font-size: 1.8em;
+        font-size: var(--home-font-small);
       }
 
       &:hover {
-        transform: scale(1.05);
+        transform: scale(var(--home-hover-scale));
       }
     }
   }
 
   button {
-    margin-top: 50px;
-    background-color: #fff;
-    color: #000;
+    margin-top: var(--home-space-large);
+    background-color: white;
+    color: black;
     border: none;
-    padding: 10px 25px;
-    font-size: 1.50em;
+    padding: var(--home-space-small) var(--home-space-large);
+    font-size: var(--home-font-medium);
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: var(--home-border-radius);
+    transition: var(--home-transition) ease;
 
     &:hover {
-      background-color: #000;
-      color: #fff;
-      transform: scale(1.1);
+      background-color: black;
+      color: white;
+      transform: scale(var(--home-hover-scale));
     }
   }
 }
 
 /* MARK: EVENTS */
 .home-events {
-  padding: 50px 15%;
-  background-color: #1e1e1e;
-  color: white;
+  margin-top: var(--home-space-large);
+  padding: var(--home-space-large) var(--home-space-small);
+  background-color: var(--home-color-back);
   text-align: center;
 
   h2 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
+    font-size: var(--home-font-large);
   }
 
   p {
-    font-size: 1.75em;
-    margin-bottom: 40px;
+    font-size: var(--home-font-medium);
+    margin: var(--home-space-small) 15%;
+    color: var(--home-color-text-dark);
   }
 
   .home-event-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--home-space-small);
     justify-content: center;
     margin: 0 auto;
-    max-width: 1200px;
+    width: fit-content;
 
     .home-event-card {
       position: relative;
       overflow: hidden;
-      border-radius: 10px;
+      border-radius: var(--home-border-radius);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-      width: 100%;
-      height: 350px; /* Adjusted height for better fit */
+      transition: transform var(--home-transition) ease;
+      max-width: 400px;
+      max-height: 400px;
 
       img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        transition: filter 0.3s ease;
+        object-fit: cover;
+        transition: filter var(--home-transition) ease;
       }
 
       button {
@@ -280,79 +300,78 @@
         background-color: rgba(0, 0, 0, 0.7);
         color: white;
         border: none;
-        padding: 10px 20px;
-        font-size: 1.25em;
+        padding: var(--home-space-small) var(--home-space-large);
+        font-size: var(--home-font-small);
         cursor: pointer;
-        border-radius: 5px;
+        border-radius: var(--home-border-radius);
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: opacity var(--home-transition) ease;
         text-align: center;
       }
 
       &:hover {
-        img {filter: blur(5px);}
+        img {filter: blur(var(--home-blur));}
         button {opacity: 1;}
       }
     }
   }
 
   .view-all-button {
-    margin-top: 20px;
-    background-color: #fff;
-    color: #000;
+    margin-top: var(--home-space-large);
+    background-color: white;
+    color: black;
     border: none;
-    padding: 10px 25px;
-    font-size: 1.5em;
+    padding: var(--home-space-small) var(--home-space-large);
+    font-size: var(--home-font-medium);
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: var(--home-border-radius);
+    transition: var(--home-transition) ease;
 
     &:hover {
-      background-color: #000;
-      color: #fff;
-      transform: scale(1.1);
+      background-color: black;
+      color: white;
+      transform: scale(var(--home-hover-scale));
     }
   }
 }
 
 /* MARK: SOCIAL MEDIA */
 .home-social-media {
-  padding: 50px 15%;
-  background-color: #1e1e1e;
-  color: white;
+  margin-top: var(--home-space-large);
+  padding: var(--home-space-large) var(--home-space-small);
+  background-color: var(--home-color-back);
   text-align: center;
 
   h2 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
+    font-size: var(--home-font-large);
   }
 
-  /* p {
-    font-size: 1.75em;
-    margin-bottom: 40px;
-  } */
+  p {
+    font-size: var(--home-font-medium);
+    margin: var(--home-space-small) 15%;
+    color: var(--home-color-text-dark);
+  }
 
   .home-social-media-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: var(--home-space-small);
     justify-content: center;
-    margin: 0 500px; /* TODO: what is this?? */
+    width: fit-content;
+    margin: 0 auto;
 
     .home-social-media-card {
       position: relative;
       overflow: hidden;
-      border-radius: 15px;
+      border-radius: var(--home-border-radius);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-      width: 320px;
-      height: 320px;
+      transition: transform var(--home-transition) ease;
+      max-width: 400px;
+      max-height: 400px;
 
       img {
-        width: 100%;
-        height: 100%;
         object-fit: cover;
-        transition: filter 0.3s ease;
+        transition: filter var(--home-transition) ease;
       }
 
       .home-social-media-card-content {
@@ -361,19 +380,19 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: rgba(0, 0, 0, 0.7);
-        color: white;
         border: none;
-        padding: 10px 20px;
-        font-size: 1.5em;
+        padding: var(--home-space-small);
+        font-size: var(--home-font-small);
         cursor: pointer;
-        border-radius: 5px;
+        border-radius: var(--home-border-radius);
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: opacity var(--home-transition) ease;
         text-align: center;
       }
 
       &:hover {
         /* TODO: do something similar to Events section */
+        img {filter: blur(var(--home-blur));}
         .home-social-media-card-content {opacity: 1;}
       }
     }
@@ -382,15 +401,63 @@
 
 /* ============================= Mobile layout ============================= */
 
-/* MARK: 📱 events */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
+  /* MARK: 📱 */
+  :root {
+    /* values for any spacing e.g. padding, margin, etc. */
+    --home-space-small: 10px;
+    --home-space-large: 20px;
+
+    /* font sizes */
+    --home-font-large: 1.8em;
+    --home-font-medium: 1.25em;
+    --home-font-small: 1em;
+
+    --home-border-radius: 8px; /* thickness of strip on left side */
+    --home-hover-scale: 1.025;
+    --home-blur: 3px;
+  }
+
+  /* MARK: 📱 banner */
+  .home-banner {
+    h1 {font-size: 3em;}
+
+    p {font-size: 1.25em;}
+  }
+
+  /* MARK: 📱 offer */
+  .home-offer {
+    .home-offer-cards {
+      /* Change to Flex instead of Grid */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .home-offer-card {
+        width: 100%;
+        height: 250px;
+      }
+    }
+  }
+
+  /* MARK: 📱 ambassador */
+  .home-ambassador {
+    .home-ambassador-cards {
+      grid-template-columns: repeat(2, 1fr); /* Stack cards one below the other */
+
+      .home-ambassador-card {
+        &.poster {
+          grid-column: 1 / span 2;
+          grid-row: 2;
+
+          img {width: 100%;}
+        }
+      }
+    }
+  }
+
+  /* MARK: 📱 events */
   .home-events {
-    padding: 30px 5%;
-
-    h2 {font-size: 1.5em;}
-
-    p {font-size: 1em;}
-
     .home-event-cards {
       grid-template-columns: 1fr; /* Single column layout for mobile */
 
@@ -398,139 +465,14 @@
         height: auto;
 
         img {height: auto;}
-
-        button {font-size: 1.25em;}
-      }
-    }
-
-    .view-all-button {
-      padding: 10px 15px;
-      font-size: 1.25em;
-    }
-  }
-}
-
-@media screen and (max-width: 500px) {
-  /* MARK: 📱 banner */
-  .home-banner {
-    height: 50vh;
-
-    .home-background {
-      width: 100%;
-      height: auto; /* Maintain aspect ratio */
-      min-height: 50vh;
-      filter: blur(3px);
-    }
-
-    h1 {font-size: 1.8em;}
-
-    p {font-size: 0.9em;}
-
-    button {
-      padding: 0.6em 1.2em;
-      font-size: 0.9em;
-    }
-  }
-
-  /* MARK: 📱 offer */
-  .home-offer {
-    padding: 20px 5%;
-
-    h2 {font-size: 1.8em;}
-
-    p {font-size: 1em;}
-
-    .home-offer-cards {
-      grid-template-columns: 1fr; /* Stack cards one below the other */
-      padding: 0 20px;
-
-      .home-offer-card {
-        width: 100%;
-        height: 200px;
-        border-radius: 8px;
-
-        h3 {
-          left: 8px;
-          padding: 15px;
-          font-size: 1.3em;
-        }
-
-        /* Card color stripe on left side */
-        &.card-1::before, &.card-2::before, &.card-3::before, &.card-4::before {
-          width: 8px;
-        }
       }
     }
   }
-
-  /* MARK: 📱 ambassador */
-  .ambassador-section {
-    padding: 20px 5%;
-
-    h2 {font-size: 1.8em;}
-
-    p {font-size: 1em;}
-
-    .home-ambassador-cards {
-      grid-template-columns: 1fr; /* Stack cards one below the other */
-
-      .home-ambassador-card {
-        width: 100%;
-        height: 200px;
-        border-radius: 15px;
-
-        &.poster {
-          /* Remove the spanning across multiple columns */
-          grid-column: auto;
-          grid-row: auto;
-          width: 100%;
-          height: 300px;
-          padding: 15px;
-        }
-
-        h3 {
-          font-size: 1.3em;
-        }
-      }
-    }
-  }
-
 
   /* MARK: 📱 social media */
   .home-social-media {
-    padding: 20px 5%;
-
-    h2 {font-size: 1em;}
-
-    /* p {font-size: 1.5em;} */
-
     .home-social-media-cards {
       grid-template-columns: 1fr; /* Stack cards one below the other */
-      margin: 0 auto;
-      padding: 0 20px;
-
-      .home-social-media-card {
-        width: 100%;
-        height: 200px;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: filter 0.3s ease;
-        }
-
-        .home-social-media-card-content {
-          padding: 8px 15px;
-          font-size: 1.2em;
-        }
-
-        &:hover {
-          /* TODO: do something similar to Events section */
-          img {filter: blur(5px);}
-          .home-social-media-card-content {opacity: 1;}
-        }
-      }
     }
   }
 }

@@ -19,13 +19,13 @@ const TestimonialSlider = () => {
   return (
     <div className="home-testimonial-slider">
       <h2>Past Ambassador Testimonials</h2>
-      <h3>Don’t take our word for it. Take theirs:</h3>
+      <p>Don’t take our word for it. Take theirs:</p>
 
       <div className="home-testimonial">
         <button onClick={prvSlide} className="home-testimonial-slider-button">‹</button>
 
         <div className="home-testimonial-content">
-          <p>“{testimonials[currentSlide].quote}”</p>
+          <p className="home-testimonial-quote">“{testimonials[currentSlide].quote}”</p>
           <img src={testimonials[currentSlide].image} alt={testimonials[currentSlide].name} />
           <p className="home-testimonial-name">{testimonials[currentSlide].name}</p>
           <p className="home-testimonial-position">{testimonials[currentSlide].year}</p>

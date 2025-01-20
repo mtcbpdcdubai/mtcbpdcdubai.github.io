@@ -1,8 +1,11 @@
-import "./About.css";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
+import "./About.css";
+
 import aboutImage from "assets/about_us.jpg";
 import sections from "content/members/MembersAndSections";
-import { TypeAnimation } from "react-type-animation";
+
+
 const About = () => {
   return (
     <div className="about-page">
