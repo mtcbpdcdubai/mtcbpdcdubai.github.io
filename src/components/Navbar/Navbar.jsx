@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-content">
-        <img className="navbar-logo" src={logo} alt="Microsoft Tech Club" />
+        <Link to={Paths.ROOT}><img className="navbar-logo" src={logo} alt="Microsoft Tech Club" /></Link>
         <div className={`menu-icon ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
           <div className="bar" />
           <div className="bar" />
