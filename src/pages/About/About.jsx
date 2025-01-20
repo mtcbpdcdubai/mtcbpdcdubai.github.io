@@ -12,14 +12,10 @@ const About = () => {
       <img src={aboutImage} alt="About Us" className="about-image" />
       <div className="about-content">
         <TypeAnimation
-          sequence={[
-            "About Us",
-            1000,
-
-          ]}
+          sequence={["About Us",]}
           wrapper="h1"
           repeat={Infinity}
-          speed={300}
+          speed={200}
         />
         <p>
           The Microsoft Tech Club is a student-led organization that is

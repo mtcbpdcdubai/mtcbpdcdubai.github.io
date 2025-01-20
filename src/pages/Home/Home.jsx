@@ -33,14 +33,11 @@ export default function Home() {
             "",
             1000,
             "Microsoft Tech Club",
-            1000,
-            "",
-            1000,
-
+            3000,
           ]}
           wrapper="h1"
           repeat={Infinity}
-          speed={300}
+          speed={200}
         />
         <p>Boot Up Your Ambition. Excel in Technology with Us!</p>
         <LinkButton to="/membership">JOIN US</LinkButton>
