@@ -1,5 +1,5 @@
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import { TypeAnimation } from "react-type-animation";
+import { ReactTyped } from 'react-typed';
 import "./About.css";
 
 import aboutImage from "assets/about_us.jpg";
@@ -11,11 +11,11 @@ const About = () => {
     <div className="about-page">
       <img src={aboutImage} alt="About Us" className="about-image" />
       <div className="about-content">
-        <TypeAnimation
-          sequence={["About Us",]}
-          wrapper="h1"
-          repeat={Infinity}
-          speed={200}
+        <ReactTyped
+          strings={["About Us"]}
+          typeSpeed={100}
+          startDelay={100}
+          className="h1"
         />
         <p>
           The Microsoft Tech Club is a student-led organization that is

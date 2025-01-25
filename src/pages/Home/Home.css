@@ -59,7 +59,7 @@ body {
     object-fit: cover;
   }
 
-  h1 {
+  h1, .h1 {
     font-size: 5em;
     margin-bottom: var(--home-space-large);
 

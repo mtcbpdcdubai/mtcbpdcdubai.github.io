@@ -1,4 +1,4 @@
-import { TypeAnimation } from 'react-type-animation';
+import { ReactTyped } from 'react-typed';
 import TestimonialSlider from './TestimonialSlider.jsx';
 import LinkButton from 'src/components/LinkButton/LinkButton.jsx';
 import './Home.css';
@@ -28,16 +28,11 @@ export default function Home() {
     <div>
       <div className="home-banner">
         <img src={backgroundImage} className="home-background" alt="Background" />
-        <TypeAnimation
-          sequence={[
-            "",
-            1000,
-            "Microsoft Tech Club",
-            3000,
-          ]}
-          wrapper="h1"
-          repeat={Infinity}
-          speed={200}
+        <ReactTyped
+          strings={["Microsoft Tech Club"]}
+          typeSpeed={100}
+          startDelay={100}
+          className="h1"
         />
         <p>Boot Up Your Ambition. Excel in Technology with Us!</p>
         <LinkButton to="/membership">JOIN US</LinkButton>

@@ -39,7 +39,7 @@ html, body {
   background-color: #1e1e1e;
   color: white;
 
-  h1 {
+  h1, .h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 4em;
     margin-bottom: 20px;
