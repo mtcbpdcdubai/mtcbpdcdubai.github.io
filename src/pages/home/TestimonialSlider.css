@@ -7,6 +7,7 @@
     --home-color-text-dark
     --home-color-text-darker
     --home-color-back
+    --home-border-radius
     --home-transition
 */
 
@@ -14,6 +15,7 @@
   padding: var(--home-space-large) var(--home-space-small);
   text-align: center;
   background-color: var(--home-color-back);
+  border-radius: 0 0 var(--home-border-radius) var(--home-border-radius);
 
   h2 {
     font-size: var(--home-font-large);

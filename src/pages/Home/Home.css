@@ -101,6 +101,7 @@ body {
   background-color: var(--home-color-back);
   text-align: center;
   align-items: center;
+  border-radius: var(--home-border-radius);
 
   h2 {
     font-size: var(--home-font-large);
@@ -124,8 +125,7 @@ body {
       position: relative;
       overflow: hidden;
       border-radius: var(--home-border-radius);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-      transition: transform var(--home-transition) ease;
+      transition: var(--home-transition) ease;
       max-width: 400px;
       max-height: 400px;
 
@@ -151,6 +151,7 @@ body {
       /* Card hover */
       &:hover {
         transform: scale(var(--home-hover-scale));
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       }
 
       /* Card color stripe on left side */
@@ -177,6 +178,7 @@ body {
   padding: var(--home-space-large) var(--home-space-small);
   background-color: #1e1e1e;
   text-align: center;
+  border-radius: var(--home-border-radius) var(--home-border-radius) 0 0;
 
   h2 {
     font-size: var(--home-font-large);
@@ -201,8 +203,7 @@ body {
       position: relative;
       overflow: hidden;
       border-radius: var(--home-border-radius);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform var(--home-transition) ease;
+      transition: var(--home-transition) ease;
 
       &.poster {
         grid-column: 2;
@@ -230,6 +231,7 @@ body {
 
       &:hover {
         transform: scale(var(--home-hover-scale));
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       }
     }
   }
@@ -259,6 +261,7 @@ body {
   padding: var(--home-space-large) var(--home-space-small);
   background-color: var(--home-color-back);
   text-align: center;
+  border-radius: var(--home-border-radius);
 
   h2 {
     font-size: var(--home-font-large);
@@ -282,7 +285,7 @@ body {
       position: relative;
       overflow: hidden;
       border-radius: var(--home-border-radius);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       transition: transform var(--home-transition) ease;
       max-width: 400px;
       max-height: 400px;
@@ -341,6 +344,7 @@ body {
   padding: var(--home-space-large) var(--home-space-small);
   background-color: var(--home-color-back);
   text-align: center;
+  border-radius: var(--home-border-radius) var(--home-border-radius) 0 0;
 
   h2 {
     font-size: var(--home-font-large);
@@ -364,7 +368,7 @@ body {
       position: relative;
       overflow: hidden;
       border-radius: var(--home-border-radius);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       transition: transform var(--home-transition) ease;
       max-width: 400px;
       max-height: 400px;
@@ -390,11 +394,10 @@ body {
         text-align: center;
       }
 
-      &:hover {
-        /* TODO: do something similar to Events section */
+      /* &:hover {
         img {filter: blur(var(--home-blur));}
         .home-social-media-card-content {opacity: 1;}
-      }
+      } */
     }
   }
 }
