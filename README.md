@@ -241,6 +241,8 @@ This section shows the sequence/chain in which modules are imported.
                 - [🎨 Articles.css](src/pages/Articles/Articles.css) <!--❌-->
             - [⚛️ Footer.jsx](src/components/Footer/Footer.jsx) <!--❌-->
                 - [🎨 Footer.css](src/components/Footer/Footer.css) <!--❌-->
+            - [⚛️ NotFound.jsx](src/pages/NotFound/NotFound.jsx) <!--❌-->
+                - [🎨 NotFound.css](src/pages/NotFound/NotFound.css) <!--❌-->
 
 <br><br>
 

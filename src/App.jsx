@@ -12,6 +12,7 @@ import Membership from './pages/Membership/Membership';
 import Events from './pages/Events/Events';
 import Contact from './pages/Contact/Contact';
 import Articles from './pages/Articles/Articles';
+import NotFound from './pages/NotFound/NotFound';
 
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
           <Route path={Paths.EVENTS} element={<Events />} />
           <Route path={Paths.CONTACT} element={<Contact />} />
           <Route path={Paths.ARTICLES} element={<Articles />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </>}
