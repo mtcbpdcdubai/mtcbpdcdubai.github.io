@@ -62,6 +62,8 @@ body {
   h1, .h1 {
     font-size: 5em;
     margin-bottom: var(--home-space-large);
+    max-width: 100%;
+    overflow: hidden;
 
     /* Typing and cursor blink effect */
     /* animation: typing 4s steps(30, end) infinite, blink .75s step-end infinite;
@@ -423,7 +425,7 @@ body {
 
   /* MARK: 📱 banner */
   .home-banner {
-    h1 {font-size: 3em;}
+    h1, .h1 {font-size: 3em;}
 
     p {font-size: 1.25em;}
   }
