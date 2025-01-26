@@ -1,4 +1,31 @@
-@keyframes typing {
+/* Store "constants" here */
+:root {
+  --about-breakpoint: 750px;
+
+  /* values for any spacing e.g. padding, margin, etc. */
+  --about-space-small: 20px;
+  --about-space-large: 40px;
+  --about-member-width: 270px;
+  --about-member-image-size: 150px;
+
+  /* font sizes */
+  --about-font-heading: 5em;
+  --about-font-large: 3.5em;
+  --about-font-medium: 1.75em;
+  --about-font-small: 1.25em;
+
+  /* colors */
+  --about-color-text-dark: #e0e0e0;
+  --about-color-text-darker: #cccccc;
+  --about-color-back: #1e1e1e;
+
+  --about-border-radius: 10px;
+  --about-hover-scale: 1.05;
+  --about-blur: 5px;
+  --about-transition: 0.3s;
+}
+
+/* @keyframes typing {
   0% { width: 0; }
   70%, 100% { width: 100%; }
 }
@@ -6,12 +33,10 @@
 @keyframes blink {
   0%, 100% { border-color: transparent; }
   50% { border-color: white; }
-}
+} */
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+body {
+  background-color: var(--about-color-back);
 }
 
 /* The entire About page */
@@ -31,18 +56,17 @@ html, body {
   display: block;
   min-width: 300px;
   overflow-x: scroll;
+  margin-bottom: var(--about-space-large);
 }
 
 /* The About page paragraphs */
 .about-content {
-  padding: 40px 15%;
   background-color: #1e1e1e;
   color: white;
 
   h1, .h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4em;
-    margin-bottom: 20px;
+    font-size: var(--about-font-heading);
+    margin-bottom: var(--about-space-large);
 
     /* Typing and cursor blink effect */
     /* animation: typing 4s steps(20, end), blink .75s step-end infinite;
@@ -54,52 +78,69 @@ html, body {
   }
 
   p {
-    font-size: 1.75em;
-    margin-bottom: 30px;
-    font-family: 'Lato', sans-serif;
+    font-size: var(--about-font-medium);
+    margin: var(--about-space-small) 15%;
+    color: var(--about-color-text-dark);
   }
+}
+
+h2 {
+  font-size: var(--about-font-large);
+  margin-bottom: var(--about-space-large);
 }
 
 /* Section = one Team of the MTC Council */
 .section {
-  padding: 40px 0;
+  margin-bottom: var(--about-space-large);
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h3 {
-    font-size: 2em;
-    margin-bottom: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: var(--about-font-medium);
+    margin-bottom: var(--about-space-small);
   }
 
   .members-container {
-    gap: 20px;
+    margin: 0px var(--about-space-small);
+    gap: var(--about-space-small);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
 
+    /* Idea from https://stackoverflow.com/a/40815884/3425496 lmao
+    Reason being that we can't really use attr() inside calc() */
+    --num-cols: 6; /* Fallback value */
+    &[data-num-cols="1"] {--num-cols: 1;}
+    &[data-num-cols="2"] {--num-cols: 2;}
+    &[data-num-cols="3"] {--num-cols: 3;}
+    &[data-num-cols="4"] {--num-cols: 4;}
+    &[data-num-cols="5"] {--num-cols: 5;}
+    &[data-num-cols="6"] {--num-cols: 6;}
+    max-width: calc((var(--about-member-width) + var(--about-space-small)) * var(--num-cols));
+
     .member {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 270px;
+      width: var(--about-member-width);
+      border-radius: var(--about-border-radius);
       background-color: #2a2a2a;
-      padding: 20px 20px;
-      transition: 0.1s ease-out;
+      padding: var(--about-space-small);
+      transition: background-color var(--about-transition) ease-out;
 
       img {
-        width: 150px;
-        height: 150px;
+        width: var(--about-member-image-size);
+        height: var(--about-member-image-size);
         border-radius: 50%;
         object-fit: cover;
       }
 
-      h4 {font-size: 1.5em; margin: 10px 0 5px 0;}
+      h4 {font-size: var(--about-font-small); margin: 10px 0 0 0;}
 
-      p {font-size: 1.2em; margin: 5px 0;}
+      p {font-size: var(--about-font-small); margin: 5px 0;}
 
       .social-icons {
         display: flex;
@@ -107,8 +148,8 @@ html, body {
 
         a {
           color: white;
-          font-size: 1.2em;
-          transition: color 0.1s ease;
+          font-size: var(--about-font-small);
+          transition: color var(--about-transition) ease;
           &:hover {color: #0078D7;}
         }
       }
@@ -121,11 +162,29 @@ html, body {
 
 /* Mobile layout */
 @media screen and (max-width: 750px) {
+  :root {
+    /* values for any spacing e.g. padding, margin, etc. */
+    --about-space-small: 10px;
+    --about-space-large: 20px;
+    --about-member-width: 150px;
+    --about-member-image-size: 100px;
+
+    /* font sizes */
+    --about-font-heading: 2.5em;
+    --about-font-large: 1.8em;
+    --about-font-medium: 1.25em;
+    --about-font-small: 1em;
+
+    --about-border-radius: 8px;
+    --about-hover-scale: 1.025;
+    --about-blur: 3px;
+  }
+
   .about-content {
-    padding: 20px 5%;
+    p {margin: var(--about-space-large);}
+  }
 
-    h1 {font-size: 2.5em; border-right: .1em solid white;}
-
-    p {font-size: 1.2em;}
+  .section {
+    .members-container {max-width: unset;}
   }
 }

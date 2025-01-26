@@ -36,7 +36,8 @@ const About = () => {
         <div className="section" key={section.sectionTitle}>
           <h3>{section.sectionTitle}</h3>
 
-          <div className="members-container" style={{maxWidth: `${section.numCols * (20 + 270) + 10}px`}}>
+          {/* data-num-cols attribute is used by CSS to set max-width */}
+          <div className="members-container" data-num-cols={section.numCols}>
             {/* Each member */}
             {section.members.map((member) =>
               <div className="member" key={member.name}>
