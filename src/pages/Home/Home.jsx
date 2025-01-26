@@ -3,24 +3,24 @@ import TestimonialSlider from './TestimonialSlider.jsx';
 import LinkButton from 'src/components/LinkButton/LinkButton.jsx';
 import './Home.css';
 
-import backgroundImage from 'assets/home_background.jpg';
-import imgOffer_workshops from 'assets/home_offer_workshops.jpg';
-import imgOffer_speakerSessions from 'assets/home_offer_speaker_sessions.jpg';
-import imgOffer_technicalBlogs from 'assets/home_offer_technical_blogs.jpg';
-import imgOffer_competitions from 'assets/home_offer_competitions.jpg';
-import imgAmbassador_icebreakers20232024 from 'assets/home_ambassador_icebreakers_2023_2024.jpg';
-import imgAmbassador_btfAksi2023 from 'assets/home_ambassador_btf_aksi_2023.jpg';
-import imgAmbassador_ambassadorProgram from 'assets/home_ambassador_ambassador_program.jpg';
-import imgAmbassador_typingContest from 'assets/home_ambassador_typing_contest.jpg';
-import imgAmbassador_signQuest from 'assets/home_ambassador_sign_quest.jpg';
-import imgEvents_matlabWorkshop from 'assets/home_events_matlab_workshop.jpg';
-import imgEvents_vsCodeWorkshop from 'assets/home_events_vs_code_workshop.jpg';
-import imgEvents_thinkAi23 from 'assets/home_events_think_ai23.jpg';
-import imgEvents_researchTalk from 'assets/home_events_research_talk.jpg';
-import imgSocial_mythMonday from 'assets/home_social_myth_monday.jpg';
-import imgSocial_quizQuest from 'assets/home_social_quiz_quest.jpg';
-import imgSocial_tipTuesday from 'assets/home_social_tip_tuesday.jpg';
-import imgSocial_techTribune from 'assets/home_social_tech_tribune.jpg';
+import backgroundImage from 'assets/home/background.jpg';
+import imgOffer_workshops from 'assets/home/offer_workshops.jpg';
+import imgOffer_speakerSessions from 'assets/home/offer_speaker_sessions.jpg';
+import imgOffer_technicalBlogs from 'assets/home/offer_technical_blogs.jpg';
+import imgOffer_competitions from 'assets/home/offer_competitions.jpg';
+import imgAmbassador_icebreakers20232024 from 'assets/home/ambassador_icebreakers_2023_2024.jpg';
+import imgAmbassador_btfAksi2023 from 'assets/home/ambassador_btf_aksi_2023.jpg';
+import imgAmbassador_ambassadorProgram from 'assets/home/ambassador_ambassador_program.jpg';
+import imgAmbassador_typingContest from 'assets/home/ambassador_typing_contest.jpg';
+import imgAmbassador_signQuest from 'assets/home/ambassador_sign_quest.jpg';
+import imgEvents_matlabWorkshop from 'assets/home/events_matlab_workshop.jpg';
+import imgEvents_vsCodeWorkshop from 'assets/home/events_vs_code_workshop.jpg';
+import imgEvents_thinkAi23 from 'assets/home/events_think_ai23.jpg';
+import imgEvents_researchTalk from 'assets/home/events_research_talk.jpg';
+import imgSocial_mythMonday from 'assets/home/social_myth_monday.jpg';
+import imgSocial_quizQuest from 'assets/home/social_quiz_quest.jpg';
+import imgSocial_tipTuesday from 'assets/home/social_tip_tuesday.jpg';
+import imgSocial_techTribune from 'assets/home/social_tech_tribune.jpg';
 
 
 export default function Home() {
