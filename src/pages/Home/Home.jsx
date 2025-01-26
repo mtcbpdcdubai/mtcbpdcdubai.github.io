@@ -3,7 +3,7 @@ import TestimonialSlider from './TestimonialSlider.jsx';
 import LinkButton from 'src/components/LinkButton/LinkButton.jsx';
 import './Home.css';
 
-import backgroundImage from 'assets/b2.jpg';
+import backgroundImage from 'assets/home_background.jpg';
 import imgOffer_workshops from 'assets/home_offer_workshops.jpg';
 import imgOffer_speakerSessions from 'assets/home_offer_speaker_sessions.jpg';
 import imgOffer_technicalBlogs from 'assets/home_offer_technical_blogs.jpg';

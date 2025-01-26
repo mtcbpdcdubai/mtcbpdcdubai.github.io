@@ -2,7 +2,7 @@ import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { ReactTyped } from 'react-typed';
 import "./About.css";
 
-import aboutImage from "assets/about_us.jpg";
+import aboutImage from "assets/about_us2.jpg";
 import sections from "content/members/MembersAndSections";
 
 
