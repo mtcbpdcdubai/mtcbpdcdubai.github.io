@@ -215,13 +215,13 @@ This section shows the sequence/chain in which modules are imported.
     - [⚛️ index.jsx](src/index.jsx) <!--✅-->
         - [⚛️ App.jsx](src/App.jsx) <!--✅-->
             - [🎨 App.css](src/App.css) <!--✅-->
+            - [📄 Paths.js](src/Paths.js) <!--✅-->
             - [⚛️ Navbar.jsx](src/components/Navbar/Navbar.jsx) <!--✅-->
                 - [🎨 Navbar.css](src/components/Navbar/Navbar.css) <!--✅-->
-                - [📄 Paths.js](src/Paths.js) <!--✅-->
             - [⚛️ LoadingScreen.jsx](src/components/LoadingScreen/LoadingScreen.jsx) <!--✅-->
                 - [🎨 LoadingScreen.css](src/components/LoadingScreen/LoadingScreen.css) <!--✅-->
-            - [⚛️ Home.jsx](src/pages/Home/Home.jsx) <!--🟡-->
-                - [🎨 Home.css](src/pages/Home/Home.css) <!--🟡-->
+            - [⚛️ Home.jsx](src/pages/Home/Home.jsx) <!--✅-->
+                - [🎨 Home.css](src/pages/Home/Home.css) <!--✅-->
                 - [⚛️ LinkButton.jsx](src/components/LinkButton/LinkButton.jsx) <!--✅-->
                 - [⚛️ TestimonialSlider.jsx](src/pages/Home/TestimonialSlider.jsx) <!--✅-->
                     - [🎨 TestimonialSlider.css](src/pages/Home/TestimonialSlider.css) <!--✅-->

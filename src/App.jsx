@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
+import * as Paths from "src/Paths";
 
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
@@ -26,22 +27,18 @@ const App = () => {
 
   return (
     <Router>
-      {isLoading ? (
-        <LoadingScreen />
-      ) : (
-        <>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/membership" element={<Membership />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/articles" element={<Articles />} />
-          </Routes>
-          <Footer />
-        </>
-      )}
+      {isLoading ? <LoadingScreen /> : <>
+        <Navbar />
+        <Routes>
+          <Route path={Paths.ROOT} element={<Home />} />
+          <Route path={Paths.ABOUT} element={<About />} />
+          <Route path={Paths.MEMBERSHIP} element={<Membership />} />
+          <Route path={Paths.EVENTS} element={<Events />} />
+          <Route path={Paths.CONTACT} element={<Contact />} />
+          <Route path={Paths.ARTICLES} element={<Articles />} />
+        </Routes>
+        <Footer />
+      </>}
     </Router>
   );
 };
