@@ -52,6 +52,14 @@ import facultyDrElakkiyaR            from "./faculty_dr_elakkiya_r.jpg";
  * @property {number} numCols Number of columns to display in the webpage.
  */
 
+/** Generates the URL for a placeholder image.
+ * @param {string} personName Name of person to display inside the image.
+ * @param {number} size Size of the square image, in pixels.
+ */
+function generatePlaceholderURL(personName, size=150) {
+  return `https://placehold.co/${size}/1E1E1E/FFFFFF/svg?text=${encodeURIComponent(personName)}&font=Montserrat`;
+}
+
 
 
 /** An array of members in the Core Members section @type {Member[]} */
@@ -139,6 +147,38 @@ const sectionTechTeam = [
     linkInstagram: "https://instagram.com/ft.hyper",
     linkLinkedIn: "https://linkedin.com/in/sri-hari-sai-subramanian-737279322",
     linkGitHub: "https://github.com/HyperPlexG",
+  },
+  {
+    image: generatePlaceholderURL("Sreenikethan Iyer"),
+    name: "Sreenikethan Iyer",
+    position: "Technical Executive",
+    linkInstagram: "https://instagram.com/sreenikethan.i",
+    linkLinkedIn: "https://linkedin.com/in/sreenikethan-i",
+    linkGitHub: "https://github.com/SreenikethanI",
+  },
+  {
+    image: generatePlaceholderURL("Vaibhav Vinil"),
+    name: "Vaibhav Vinil",
+    position: "Technical Executive",
+    linkInstagram: "https://instagram.com/vaibhav_vinil",
+    linkLinkedIn: "https://linkedin.com/in/vaibhav-vinil-87683a280",
+    linkGitHub: "https://github.com/Vaibhav-Vinil",
+  },
+  {
+    image: generatePlaceholderURL("Durga Pritam"),
+    name: "Durga Pritam",
+    position: "Technical Executive",
+    linkInstagram: "https://instagram.com/pritam_lite",
+    linkLinkedIn: "",
+    linkGitHub: "",
+  },
+  {
+    image: generatePlaceholderURL("Akshat Singh"),
+    name: "Akshat Singh",
+    position: "Technical Executive",
+    linkInstagram: "https://instagram.com/akshatlovesyou",
+    linkLinkedIn: "https://linkedin.com/in/akshatsingh-ind",
+    linkGitHub: "https://github.com/Akshatcodesyou",
   },
 ];
 
@@ -313,7 +353,7 @@ const sectionFaculty = [
 /** An array of all sections in the About page. @type {Section[]} */
 const sections = [
   {numCols: 3, sectionTitle: "Core Members", members: sectionCore},
-  {numCols: 2, sectionTitle: "Tech Team", members: sectionTechTeam},
+  {numCols: 4, sectionTitle: "Tech Team", members: sectionTechTeam},
   {numCols: 3, sectionTitle: "Events Team", members: sectionEventsTeam},
   {numCols: 3, sectionTitle: "Marketing & Creative Team", members: sectionMarketingTeam},
   {numCols: 3, sectionTitle: "Outreach & DevOps Team", members: sectionOutreachTeam},
