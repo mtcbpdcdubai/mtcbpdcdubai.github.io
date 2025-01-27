@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from 'assets/MTClogo.png';
 import './Navbar.css';
 import * as Paths from "src/Paths";
@@ -14,7 +14,7 @@ const menuItems = [
   [Paths.ARTICLES,   "Articles"],
 ]
 
-const Navbar = () => {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -31,11 +31,13 @@ const Navbar = () => {
           <div className="bar" />
         </div>
         <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
-          {menuItems.map(([to, title]) => <li key={to}><Link to={to} onClick={toggleMenu}>{title}</Link></li>)}
+          {menuItems.map(([to, title]) => (
+            <li key={to}>
+              <NavLink to={to} onClick={toggleMenu} className={({isActive}) => isActive ? "active" : ""}>{title}</NavLink>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}

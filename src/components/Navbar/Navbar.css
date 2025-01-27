@@ -47,9 +47,14 @@ img.navbar-logo {
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
 
+    &.active {
+      background-color: dimgrey;
+      color: white;
+    }
+
     &:hover {
-      background-color: #ffffff;
-      color: #000000;
+      background-color: white;
+      color: black;
     }
   }
 }
