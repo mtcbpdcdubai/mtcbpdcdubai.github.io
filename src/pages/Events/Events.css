@@ -1,195 +1,126 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .event-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: rgba(36, 36, 36, 1);
-    padding: 100px 20px 20px; /* Added top padding to avoid overlap with navbar */
-  }
-  
-  .upcoming-event-title,
-  .past-event-title {
-    color: rgba(255, 255, 255, 1);
-    font-size: 36px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .event-card {
-    display: flex;
-    background-color: rgba(44, 44, 44, 1);
-    border-radius: 16px;
-    width: 90%;
-    max-width: 1080px;
-    height: 550px;
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    margin-bottom: 40px; /* Space between cards */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for a subtle hover effect */
-  }
-  
-  .event-card:hover {
-    transform: translateY(-10px); /* Subtle lift effect on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for pop-up effect */
-  }
-  
-  /* Green Line for Upcoming Event */
-  .event-card::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background-color: rgba(0, 120, 215, 1); /* Green line for upcoming event */
-    border-radius: 16px 0 0 16px;
-  }
-  
-  /* Blue Line for Past Event */
-  .event-card.past::before {
-    background-color: rgba(0, 120, 215, 1); /* Blue line for past event */
-  }
-  
-  .event-card::after {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-    width: 10px;
-    background-color: rgba(44, 44, 44, 1); /* Adds padding of 10px */
-    border-radius: 16px 0 0 16px;
-  }
-  
+/* Store "constants" here */
+:root {
+  /* values for any spacing e.g. padding, margin, etc. */
+  --events-space-navbar: 65px;
+  --events-space-large: 40px;
+  --events-space-small: 20px;
+  --events-card-max-width: 1080px;
+
+  /* font sizes */
+  --events-font-large: 3.5em;
+  --events-font-medium: 1.75em;
+  --events-font-small: 1.25em;
+
+  /* colors */
+  --events-color-text-dark: #e0e0e0;
+  --events-color-back: #1e1e1e;
+  --events-color-back-light: #2a2a2a;
+  --events-color-back-lighter: #393939;
+
+  --events-border-radius: 10px; /* thickness of strip on left side */
+  --events-hover-scale: 1.05;
+  --events-transition: 0.3s;
+}
+
+body {
+  background-color: var(--events-color-back);
+}
+
+.event-container {
+  padding: var(--events-space-large);
+  padding-top: calc(var(--events-space-navbar) + var(--events-space-small));
+  display: flex;
+  flex-direction: column;
+  gap: var(--events-space-large);
+  align-items: center;
+  text-align: center;
+
+  h1.section-title {font-size: var(--events-font-large);}
+}
+
+.event-container .event-card {
+  display: flex;
+  gap: var(--events-space-small);
+  background-color: var(--events-color-back-light);
+  max-width: var(--events-card-max-width);
+  padding: var(--events-space-small);
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--events-transition) ease;
+  border-radius: var(--events-border-radius);
+
+  /* Card color stripe on left side */
+  --event-card-accent-color: #0078d7;
+  &.upcoming {--event-card-accent-color: #00d778;}
+  border-left: var(--events-border-radius) solid var(--event-card-accent-color);
+
+  &:hover {background-color: var(--events-color-back-lighter);}
+
   .event-info {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers the text vertically */
-    align-items: center; /* Centers the text horizontally */
-    color: rgba(255, 255, 255, 1);
-    width: 50%;
-    text-align: center; /* Centers the text within its container */
-    padding-left: 30px; /* Adds padding to the left to align the text */
-  }
-  
-  .event-title {
-    font-size: 32px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
+    flex: 1.25; /* 1.25 : 1.00 ratio for Info : Image */
+    gap: var(--events-space-small);
+    align-items: center;
 
-  .event-topic{
-    font-size: 26px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  
-  .event-description {
-    font-size: 18px;
-    font-family: Lato, sans-serif;
-    margin-bottom: 20px;
-  }
-  
-  .event-time,
-  .event-date {
-    font-size: 24px;
-    font-family: Lato, sans-serif;
-    margin-bottom: 20px;
-  }
-
-  .event-rules{
-    font-size: 20px;
-    margin: 20px;
-    text-decoration: underline;
-    color: rgba(0, 120, 215, 1); 
-  }
-
-  .event-rules:hover {
-    
-    color: rgba(255, 255, 255, 1); /* Text color changes to blue on hover */
-  }
-  
-  .event-button {
-    padding: 14px 62px;
-    background-color: rgba(0, 120, 215, 1); /* Blue background for the button */
-    color: rgba(245, 245, 245, 1);
-    font-size: 24px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    border-radius: 16px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .event-button:hover {
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(0, 120, 215, 1); /* Text color changes to blue on hover */
-  }
-  
-  .event-image {
-    width: 45%;
-    height: 100%;
-  }
-  
-  .event-image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    transition: none; /* No blur or transition effect on the image */
-  }
-  
-
-  @media only screen and (max-width: 600px) {
-    .event-card {
-      flex-direction: column;
-      height: auto;
-      padding: 15px;
+    h2 {
+      text-align: center;
+      font-size: var(--events-font-medium);
     }
-  
-    .event-info {
-      width: 100%;
-      padding-left: 0;
-      margin-bottom: 20px; /* Adds space between image and text */
-    }
-  
-    .event-title {
-      font-size: 28px;
-    }
-  
+
     .event-description {
-      font-size: 16px;
+      align-self: flex-start;
+      text-align: justify;
+      color: var(--events-color-text-dark);
     }
-  
-    .event-time,
-    .event-date {
-      font-size: 20px;
-    }
-  
-    .event-image {
-      width: 100%;
-      margin-bottom: 20px; /* Adds space between image and text */
-    }
-  
-    .event-image img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .event-button {
-      padding: 12px 50px;
-      font-size: 20px;
+
+    .event-datetime {font-size: var(--events-font-small);}
+
+    button {
+      padding: var(--events-space-small) var(--events-space-large);
+      border: none;
+      color: white;
+      background-color: var(--event-card-accent-color);
+      font-size: var(--events-font-small);
+      font-weight: bold;
+      border-radius: var(--events-border-radius);
+      cursor: pointer;
+      transition: var(--events-transition) ease;
+
+      &:hover {
+        color: var(--event-card-accent-color);
+        background-color: white;
+        transform: scale(var(--events-hover-scale));
+      }
     }
   }
+
+  .event-image {
+    flex: 1;
+    align-items: stretch;
+
+    img {
+      border-radius: var(--events-border-radius);
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  :root {
+    /* values for any spacing e.g. padding, margin, etc. */
+    --events-space-large: 20px;
+    --events-space-small: 10px;
+
+    /* font sizes */
+    --events-font-large: 1.8em;
+    --events-font-medium: 1.25em;
+    --events-font-small: 1em;
+
+    --events-border-radius: 8px;
+    --events-hover-scale: 1.025;
+  }
+
+  .event-container .event-card {
+    flex-direction: column;
+  }
+}

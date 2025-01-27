@@ -27,8 +27,7 @@ body {
 }
 
 .membership-page {
-  margin: var(--mem-space-large);
-  margin-top: 0;
+  padding: var(--mem-space-large);
   padding-top: var(--mem-space-navbar); /* to account for navbar */
   display: flex;
   flex-direction: column;

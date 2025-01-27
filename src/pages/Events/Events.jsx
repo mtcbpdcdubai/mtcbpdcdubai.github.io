@@ -1,36 +1,37 @@
+import LinkButton from "components/LinkButton/LinkButton";
 import "./Events.css";
-import excelChampionship from "assets/excelChampionship.jpg";
-import introProgrammingImage from "assets/intro_programming.jpg";
-import matlabWorkshopImage from "assets/matlab_workshop.jpg";
-import vsCodeWorkshopImage from "assets/vscode_workshop.jpg";
-import typingContestImage from "assets/typing_contest.jpg";
-import signQuestImage from "assets/signquest.jpg";
-import thinkAIImage from "assets/thinkai.jpg";
-import speakerSessionImage from "assets/speaker_session.jpg";
-import GameWeek from "assets/GW-1_new.jpg";
-import IceBreakers from "assets/Icebreakers-1_new.jpg"; 
-import Orientation from "assets/Orientation-5_new2.jpg";
-import Mediathon from "assets/Mediathon.jpg";
-import DataScience from "assets/DataScience_new.jpg";
-import PowerBI from "assets/PowerBI.jpg";
-import Timeseries from "assets/Timeseries1_new2.jpg";
-import Cybersecuritytalk from "assets/cybersecuritytalk.jpg";
 
-const EventCard = () => {
+import excelChampionship     from "assets/excelChampionship.jpg";
+import introProgrammingImage from "assets/intro_programming.jpg";
+import matlabWorkshopImage   from "assets/matlab_workshop.jpg";
+import vsCodeWorkshopImage   from "assets/vscode_workshop.jpg";
+import typingContestImage    from "assets/typing_contest.jpg";
+import signQuestImage        from "assets/signquest.jpg";
+import thinkAIImage          from "assets/thinkai.jpg";
+import speakerSessionImage   from "assets/speaker_session.jpg";
+import GameWeek              from "assets/GW-1_new.jpg";
+import IceBreakers           from "assets/Icebreakers-1_new.jpg";
+import Orientation           from "assets/Orientation-5_new2.jpg";
+import Mediathon             from "assets/Mediathon.jpg";
+import DataScience           from "assets/DataScience_new.jpg";
+import PowerBI               from "assets/PowerBI.jpg";
+import Timeseries            from "assets/Timeseries1_new2.jpg";
+import Cybersecuritytalk     from "assets/cybersecuritytalk.jpg";
+
+
+export default function EventCard() {
   return (
     <div className="event-container">
-      {/* Upcoming Event Section */}
-      <p className="upcoming-event-title">Upcoming Event</p>
-      <div className="event-card">
+
+      {/* Upcoming Events Section */}
+      <h1 className="section-title">Upcoming Events</h1>
+
+      <div className="event-card upcoming">
         <div className="event-info">
-        <p className="event-title">Cybersecurity Talk</p>
-          <p className="event-topic">Introduction to Cybersecurity and how to get started in UAE</p>
-          <p className="event-time">6:30 PM</p>
-          <p className="event-date">Friday, 11th October 2024</p>
-           <a href="https://meet.google.com/fgc-uzoc-pzq">
-            <div className="event-button">JOIN MEETING</div>
-          </a>
-         
+          <h2>Cybersecurity Talk</h2>
+          <p className="event-description">Introduction to Cybersecurity and how to get started in UAE</p>
+          <p className="event-datetime">6:30 PM on 11/Oct/2024 (Friday)</p>
+          <LinkButton to="https://meet.google.com/fgc-uzoc-pzq">Join Meeting</LinkButton>
         </div>
         <div className="event-image">
           <img src={Cybersecuritytalk} alt="Cybersecuritytalk" />
@@ -38,57 +39,49 @@ const EventCard = () => {
       </div>
 
       {/* Past Events Section */}
-      <p className="past-event-title">Past Events</p>
+      <h1 className="section-title">Past Events</h1>
 
-
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">Excel Championship</p>
+          <h2>Excel Championship</h2>
           <p className="event-description">
-          MTC’s Excel Championship was a 3-hour Microsoft Excel-based time trial covering themes such 
-          as data analysis, financial modeling, and data cleaning, with questions split into easy, medium, 
-          and hard levels, each with different weightage for a total of 100 points. The competition was divided 
-          into three themed sessions: Harry Potter, Marvel, and Uncharted, where participants solved questions related 
-          to each theme, with team support available to clear doubts. The winners for each session were Aaryan Sinha (Session 1), 
-          Aakar Mathur (Session 2), and Sreenikethan Iyer (Session 3).
+            MTC’s Excel Championship was a 3-hour Microsoft Excel-based time trial covering themes such
+            as data analysis, financial modeling, and data cleaning, with questions split into easy, medium,
+            and hard levels, each with different weightage for a total of 100 points. The competition was divided
+            into three themed sessions: Harry Potter, Marvel, and Uncharted, where participants solved questions related
+            to each theme, with team support available to clear doubts. The winners for each session were Aaryan Sinha (Session 1),
+            Aakar Mathur (Session 2), and Sreenikethan Iyer (Session 3).
           </p>
-          <a href="">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={excelChampionship} alt="excelChampionship" />
         </div>
       </div>
 
-
-
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">Time Series Analysis</p>
+          <h2>Time Series Analysis</h2>
           <p className="event-description">
-          The Microsoft Tech Club hosted the final session of their Data Science Bootcamp, 
-          a Time Series EDA workshop, conducted by Events Head Bhavya Kothari and Treasurer Keane Coutinho. 
-          Keane introduced the topic, explaining the types of time series data analysis, its practical 
-          applications, and the components of a time series. Bhavya then demonstrated a matplotlib program 
-          using an electric production dataset, showcasing how to model trends, seasonality, and forecast 
-          patterns. The session ended with a quiz, where Adindy Sharma and Chethan Suresh Devadiga won 
-          LinkedIn Premium as prizes. Participants were encouraged to explore further and start their 
-          own projects.
-          
+            The Microsoft Tech Club hosted the final session of their Data Science Bootcamp,
+            a Time Series EDA workshop, conducted by Events Head Bhavya Kothari and Treasurer Keane Coutinho.
+            Keane introduced the topic, explaining the types of time series data analysis, its practical
+            applications, and the components of a time series. Bhavya then demonstrated a matplotlib program
+            using an electric production dataset, showcasing how to model trends, seasonality, and forecast
+            patterns. The session ended with a quiz, where Adindy Sharma and Chethan Suresh Devadiga won
+            LinkedIn Premium as prizes. Participants were encouraged to explore further and start their
+            own projects.
           </p>
-          <a href="https://www.linkedin.com/posts/microsoft-tech-club_dubai-bitsdubai-datascience-activity-7241436266892840960-AnPx?utm_source=share&utm_medium=member_ios">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://linkedin.com/posts/microsoft-tech-club_dubai-bitsdubai-datascience-activity-7241436266892840960-AnPx">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={Timeseries} alt="Timeseries" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">Introduction to Power BI</p>
+          <h2>Introduction to Power BI</h2>
           <p className="event-description">
             The Microsoft Tech Club hosted the second session of its Data
             Science bootcamp, a brief introduction to Power BI by MTC Outreach
@@ -101,18 +94,16 @@ const EventCard = () => {
             reports, how to visualize the data as per their requirements, and
             how to share them.
           </p>
-          <a href="https://www.linkedin.com/posts/microsoft-tech-club_mtc-webdevelopment-workshops-activity-7240037659786592257-7PZ2?utm_source=share&utm_medium=member_desktop">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://linkedin.com/posts/microsoft-tech-club_mtc-webdevelopment-workshops-activity-7240037659786592257-7PZ2">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={PowerBI} alt="Power BI" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">Introduction to Data Science</p>
+          <h2>Introduction to Data Science</h2>
           <p className="event-description">
             The Microsoft Tech Club hosted the first session of its Data Science
             bootcamp; it was an introduction to the world of Data Science by MTC
@@ -123,18 +114,16 @@ const EventCard = () => {
             consideration, on the programming language Python incorporating
             python libraries such as Pandas, NumPy, Matplotlib and Seaborn.
           </p>
-          <a href="https://www.linkedin.com/posts/microsoft-tech-club_mtc-datascience-microsofttechclub-activity-7239307200475602945-MXF-?utm_source=share&utm_medium=member_desktop">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://linkedin.com/posts/microsoft-tech-club_mtc-datascience-microsofttechclub-activity-7239307200475602945-MXF-">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={DataScience} alt="DataScience" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">MTC x Reflexions Mediathon</p>
+          <h2>MTC x Reflexions Mediathon</h2>
           <p className="event-description">
             The MTC x Reflexions Mediathon was a week-long event where
             participants formed teams of 1-4 to create a portfolio website for
@@ -143,18 +132,16 @@ const EventCard = () => {
             period. The website was required to reflect any of the given four
             themes—Academia, Student Life, Sports, and Nature.
           </p>
-          <a href="https://www.linkedin.com/posts/microsoft-tech-club_bitsdubai-reflexions-mtc-activity-7237496629564497920-3ZJG?utm_source=share&utm_medium=member_desktop">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://linkedin.com/posts/microsoft-tech-club_bitsdubai-reflexions-mtc-activity-7237496629564497920-3ZJG">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={Mediathon} alt="Mediathon" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">MTC Orientation</p>
+          <h2>MTC Orientation</h2>
           <p className="event-description">
             The Microsoft Tech Club hosted an exciting orientation for new
             members to the club, giving them a valuable insight to how the rest
@@ -167,18 +154,16 @@ const EventCard = () => {
             clues from the club’s instagram page which led them to the final
             destination.
           </p>
-          <a href="https://www.linkedin.com/posts/microsoft-tech-club_fyp-microsofttechclub-bitsdubai-activity-7236759779837128704-T3Wn?utm_source=share&utm_medium=member_desktop">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://linkedin.com/posts/microsoft-tech-club_fyp-microsofttechclub-bitsdubai-activity-7236759779837128704-T3Wn">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={Orientation} alt="Orientation" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">Icebreakers Day</p>
+          <h2>Icebreakers Day</h2>
           <p className="event-description">
             The Microsoft Tech Club opened their membership registrations on 29
             August, in the Sports Complex. Registrations were available for
@@ -189,18 +174,16 @@ const EventCard = () => {
             MTC stall had its own attractive features which incentivised future
             members to join with a discounted price .
           </p>
-          <a href="https://www.linkedin.com/posts/microsoft-tech-club_fyp-microsofttechclub-bitsdubai-activity-7235164364851314688-Nt8r?utm_source=share&utm_medium=member_desktop">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://linkedin.com/posts/microsoft-tech-club_fyp-microsofttechclub-bitsdubai-activity-7235164364851314688-Nt8r">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={IceBreakers} alt="IceBreakers" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">GameWeek Series</p>
+          <h2>GameWeek Series</h2>
           <p className="event-description">
             The Microsoft Tech Club (MTC) hosted its highly anticipated GameWeek
             Series online throughout August, engaging members in a thrilling
@@ -208,18 +191,16 @@ const EventCard = () => {
             attention and participation, with members eagerly vying for the top
             spots in a display of wit, observation, and technical acumen.
           </p>
-          <a href="https://www.instagram.com/p/C-xa_5KSoB5/?igsh=MXNic2xqcGR6ZThvMQ==">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://instagram.com/p/C-xa_5KSoB5">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={GameWeek} alt="Game Week" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">How To Start Programming</p>
+          <h2>How To Start Programming</h2>
           <p className="event-description">
             The “How To Start Programming” workshop began with the MTC core
             council outlining the club’s goals and upcoming events. The speakers
@@ -228,18 +209,16 @@ const EventCard = () => {
             and open-source projects. Participants also received a curated list
             of resources to start learning their preferred languages.
           </p>
-          <a href="https://www.instagram.com/reel/CwxdLidvP2h/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://instagram.com/reel/CwxdLidvP2h">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={introProgrammingImage} alt="How To Start Programming" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">MATLAB Workshop</p>
+          <h2>MATLAB Workshop</h2>
           <p className="event-description">
             The “MATLAB Workshop” began with the two speakers introducing the UI
             of MATLAB and its basic syntax and functionalities. They moved on to
@@ -248,18 +227,16 @@ const EventCard = () => {
             problems that aimed to demonstrate problem-solving and plotting
             graphs in MATLAB.
           </p>
-          <a href="https://www.instagram.com/p/CxDTqwDv-l0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://instagram.com/p/CxDTqwDv-l0">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={matlabWorkshopImage} alt="MATLAB Workshop" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">VS Code Workshop</p>
+          <h2>VS Code Workshop</h2>
           <p className="event-description">
             The “VS Code” workshop kicked off with MTC’s Heramb and Akash
             introducing the agenda and providing a brief overview of VS Code.
@@ -267,18 +244,16 @@ const EventCard = () => {
             API integration, built-in AI tools, and shared resources to help
             participants get familiar with the VS Code environment.
           </p>
-          <a href="https://www.instagram.com/p/Czv9N40NEYV/">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://instagram.com/p/Czv9N40NEYV">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={vsCodeWorkshopImage} alt="VS Code Workshop" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">Typing Contest</p>
+          <h2>Typing Contest</h2>
           <p className="event-description">
             The Typing Contest, Microsoft Tech Club’s flagship event, tested
             participants’ auditory comprehension and typing speed in a Computer
@@ -287,18 +262,16 @@ const EventCard = () => {
             clips, and participants were evaluated on speed and accuracy. The
             competition had a total of 9 winners, with 3 winners from each hour.
           </p>
-          <a href="https://www.instagram.com/p/Cxa9BRFvVWh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://instagram.com/p/Cxa9BRFvVWh">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={typingContestImage} alt="Typing Contest" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">SignQuest</p>
+          <h2>SignQuest</h2>
           <p className="event-description">
             The MTC SignQuest is a promotional event for the ESL Global Summit
             Generative AI Competition, organized by MTC during the CINS 2023
@@ -308,18 +281,16 @@ const EventCard = () => {
             assist. The competition aimed to raise awareness of Emirati Sign
             Language and the Generative AI competition.
           </p>
-          <a href="https://www.instagram.com/p/CyQ5r_ivx8Q/?utm_source=ig_web_copy_link">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://instagram.com/p/CyQ5r_ivx8Q">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={signQuestImage} alt="SignQuest" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">ThinkAI’23</p>
+          <h2>ThinkAI’23</h2>
           <p className="event-description">
             ThinkAI’23 sought to find students with AI-driven solutions to
             global challenges, providing mentorship for the 2024 Microsoft
@@ -329,20 +300,16 @@ const EventCard = () => {
             Garg) and Team IntelliTrack (Anurag Kumar Jha, Mohammed Husamuddin,
             Sstuti D Mehra, Abdul Rahmaan Ansari).
           </p>
-          <a href="https://www.linkedin.com/posts/microsoft-tech-club_%F0%9D%97%A0%F0%9D%97%B6%F0%9D%97%B0%F0%9D%97%BF%F0%9D%97%BC%F0%9D%98%80%F0%9D%97%BC%F0%9D%97%B3%F0%9D%98%81-%F0%9D%97%A7%F0%9D%97%B2%F0%9D%97%B0%F0%9D%97%B5-%F0%9D%97%96%F0%9D%97%B9%F0%9D%98%82%F0%9D%97%AF%F0%9D%98%80-%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B8%F0%9D%97%94%F0%9D%97%9C-activity-7140743739425153024-at_b?utm_source=share&utm_medium=member_desktop">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://linkedin.com/posts/microsoft-tech-club_%F0%9D%97%A0%F0%9D%97%B6%F0%9D%97%B0%F0%9D%97%BF%F0%9D%97%BC%F0%9D%98%80%F0%9D%97%BC%F0%9D%97%B3%F0%9D%98%81-%F0%9D%97%A7%F0%9D%97%B2%F0%9D%97%B0%F0%9D%97%B5-%F0%9D%97%96%F0%9D%97%B9%F0%9D%98%82%F0%9D%97%AF%F0%9D%98%80-%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B8%F0%9D%97%94%F0%9D%97%9C-activity-7140743739425153024-at_b">Read More</LinkButton>
         </div>
         <div className="event-image">
           <img src={thinkAIImage} alt="ThinkAI'23" />
         </div>
       </div>
 
-      <div className="event-card past">
+      <div className="event-card">
         <div className="event-info">
-          <p className="event-title">
-            Speaker Session with Professor Nick Pears
-          </p>
+          <h2>Speaker Session with Professor Nick Pears</h2>
           <p className="event-description">
             The Microsoft Tech Club hosted a speaker session with Professor Nick
             Pears, a Computer Vision expert from the University of York.
@@ -351,19 +318,12 @@ const EventCard = () => {
             AI, Cyber Security, and Professor Pears’ work in craniofacial shape
             modeling, sparking discussions on the future of Computer Vision.
           </p>
-          <a href="https://www.linkedin.com/posts/microsoft-tech-club_microsofttechclub-computervision-techinnovation-activity-7143636619009466368-QdG9?utm_source=share&utm_medium=member_desktop">
-            <div className="event-button blue-button">Read More</div>
-          </a>
+          <LinkButton to="https://linkedin.com/posts/microsoft-tech-club_microsofttechclub-computervision-techinnovation-activity-7143636619009466368-QdG9">Read More</LinkButton>
         </div>
         <div className="event-image">
-          <img
-            src={speakerSessionImage}
-            alt="Speaker Session with Professor Nick Pears"
-          />
+          <img src={speakerSessionImage} alt="Speaker Session with Professor Nick Pears" />
         </div>
       </div>
     </div>
   );
-};
-
-export default EventCard;
+}
