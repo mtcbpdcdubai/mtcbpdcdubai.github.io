@@ -9,12 +9,12 @@ import thinkAIImage from "assets/thinkai.jpg";
 import speakerSessionImage from "assets/speaker_session.jpg";
 import GameWeek from "assets/GW-1_new.jpg";
 import IceBreakers from "assets/Icebreakers-1_new.jpg"; 
-import Orientation from "assets/Orientation-5_new2.jpeg";
-import Mediathon from "assets/Mediathon.jpeg";
+import Orientation from "assets/Orientation-5_new2.jpg";
+import Mediathon from "assets/Mediathon.jpg";
 import DataScience from "assets/DataScience_new.jpg";
 import PowerBI from "assets/PowerBI.jpg";
 import Timeseries from "assets/Timeseries1_new2.jpg";
-import Cybersecuritytalk from "assets/cybersecuritytalk.jpeg";
+import Cybersecuritytalk from "assets/cybersecuritytalk.jpg";
 
 const EventCard = () => {
   return (
