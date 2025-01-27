@@ -1,6 +1,6 @@
 export const ROOT       = "/";
-export const ABOUT      = "/about";
-export const MEMBERSHIP = "/membership";
-export const EVENTS     = "/events";
-export const CONTACT    = "/contact";
-export const ARTICLES   = "/articles";
+export const ABOUT      = `${ROOT}about`;
+export const MEMBERSHIP = `${ROOT}membership`;
+export const EVENTS     = `${ROOT}events`;
+export const CONTACT    = `${ROOT}contact`;
+export const ARTICLES   = `${ROOT}articles`;
