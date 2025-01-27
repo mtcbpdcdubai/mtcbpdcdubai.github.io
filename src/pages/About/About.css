@@ -1,10 +1,9 @@
 /* Store "constants" here */
 :root {
-  --about-breakpoint: 750px;
-
   /* values for any spacing e.g. padding, margin, etc. */
-  --about-space-small: 20px;
+  --about-space-navbar: 65px;
   --about-space-large: 40px;
+  --about-space-small: 20px;
   --about-member-width: 270px;
   --about-member-image-size: 150px;
 
@@ -15,9 +14,12 @@
   --about-font-small: 1.25em;
 
   /* colors */
+  --about-color-text: white;
   --about-color-text-dark: #e0e0e0;
-  --about-color-text-darker: #cccccc;
   --about-color-back: #1e1e1e;
+  --about-color-back-light: #2a2a2a;
+  --about-color-back-lighter: #393939;
+  --about-color-social: #0078D7;
 
   --about-border-radius: 10px;
   --about-hover-scale: 1.05;
@@ -41,28 +43,28 @@ body {
 
 /* The entire About page */
 .about-page {
-  padding-top: 60px; /* to account for navbar */
+  padding-top: var(--about-space-navbar); /* to account for navbar */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #1e1e1e;
-  color: white;
-}
+  background-color: var(--about-color-back);
+  color: var(--about-color-text);
 
-/* The About page banner image */
-.about-image {
-  width: 100%;
-  display: block;
-  min-width: 300px;
-  overflow-x: scroll;
-  margin-bottom: var(--about-space-large);
+  /* The About page banner image */
+  .about-image {
+    width: 100%;
+    display: block;
+    min-width: 300px;
+    overflow-x: scroll;
+    margin-bottom: var(--about-space-large);
+  }
 }
 
 /* The About page paragraphs */
-.about-content {
-  background-color: #1e1e1e;
-  color: white;
+.about-page .about-content {
+  background-color: var(--about-color-back);
+  color: var(--about-color-text);
 
   h1, .h1 {
     font-size: var(--about-font-heading);
@@ -84,15 +86,14 @@ body {
   }
 }
 
-h2 {
+.about-page h2 {
   font-size: var(--about-font-large);
   margin-bottom: var(--about-space-large);
 }
 
 /* Section = one Team of the MTC Council */
-.section {
+.about-page .section {
   margin-bottom: var(--about-space-large);
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,7 +128,7 @@ h2 {
       align-items: center;
       width: var(--about-member-width);
       border-radius: var(--about-border-radius);
-      background-color: #2a2a2a;
+      background-color: var(--about-color-back-light);
       padding: var(--about-space-small);
       transition: background-color var(--about-transition) ease-out;
 
@@ -147,15 +148,14 @@ h2 {
         gap: 10px;
 
         a {
-          color: white;
           font-size: var(--about-font-small);
-          transition: color var(--about-transition) ease;
-          &:hover {color: #0078D7;}
+          /* transition: color var(--about-transition) ease; */
+          &:hover {color: var(--about-color-social);}
         }
       }
 
       /* Member hover */
-      &:hover {background-color: #393939;}
+      &:hover {background-color: var(--about-color-back-lighter);}
     }
   }
 }
@@ -164,8 +164,8 @@ h2 {
 @media screen and (max-width: 750px) {
   :root {
     /* values for any spacing e.g. padding, margin, etc. */
-    --about-space-small: 10px;
     --about-space-large: 20px;
+    --about-space-small: 10px;
     --about-member-width: 150px;
     --about-member-image-size: 100px;
 
@@ -180,11 +180,11 @@ h2 {
     --about-blur: 3px;
   }
 
-  .about-content {
+  .about-page .about-content {
     p {margin: var(--about-space-large);}
   }
 
-  .section {
+  .about-page .section {
     .members-container {max-width: unset;}
   }
 }

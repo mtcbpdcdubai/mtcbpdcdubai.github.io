@@ -1,184 +1,135 @@
-/* Base Styles (Desktop) */
+/* Store "constants" here */
+:root {
+  /* values for any spacing e.g. padding, margin, etc. */
+  --mem-space-navbar: 65px;
+  --mem-space-large: 40px;
+  --mem-space-small: 20px;
+
+  /* font sizes */
+  --mem-font-large: 3.5em;
+  --mem-font-medium: 1.75em;
+  --mem-font-small: 1.25em;
+
+  /* colors */
+  --mem-color-text: white;
+  --mem-color-text-dark: #e0e0e0;
+  --mem-color-text-darker: #cccccc;
+  --mem-color-back: #1e1e1e;
+  --mem-color-back-light: #2a2a2a;
+
+  --mem-border-radius: 10px; /* thickness of strip on left side */
+  --mem-hover-scale: 1.05;
+  --mem-transition: 0.3s;
+}
+
+body {
+  background-color: var(--mem-color-back);
+}
+
 .membership-page {
+  margin: var(--mem-space-large);
+  margin-top: 0;
+  padding-top: var(--mem-space-navbar); /* to account for navbar */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 15%;
-  background-color: #1e1e1e;
-  color: white;
   text-align: center;
+  background-color: var(--mem-color-back);
+  color: var(--mem-color-text);
+
+  h1 {
+    font-size: var(--mem-font-large);
+    margin: var(--mem-space-small) 0px;
+  }
 }
 
-.membership-page h2 {
-  font-size: 3em;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.membership-cards {
+.membership-page .membership-cards {
   display: flex;
-  flex-direction: row; /* Ensure cards are side by side on desktop */
-  gap: 40px;
+  flex-direction: row;
+  gap: var(--mem-space-small);
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
-}
-
-.membership-card {
-  background-color: #2c2c2c;
-  border-radius: 10px;
-  padding: 30px;
-  flex: 1;
-  max-width: 400px;
-  position: relative;
-  text-align: left; /* Align the content to the left */
-}
-
-.membership-card h3 {
-  font-size: 1.75em;
-  margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.membership-card h4 {
-  font-size: 1.25em;
-  margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.membership-card p,
-.membership-card ul {
-  font-size: 1em;
-  line-height: 1.5;
-  font-family: 'Lato', sans-serif;
-}
-
-.membership-card ul {
-  margin-bottom: 20px;
-  list-style: none;
-  padding: 0;
-  text-align: left; /* Ensure bullet points are left-aligned */
-}
-
-.membership-card ul li {
-  margin-bottom: 10px;
-  padding-left: 1.5em; /* Add padding to align bullets correctly */
-  text-align: left; /* Ensure the text is left-aligned */
-}
-
-.card-member ul li:before {
-  content: "•";
-  color: #0078D7; /* Customize the bullet color */
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.card-updates ul li:before {
-  content: "•";
-  color: #6A0DAD; /* Customize the bullet color for updates section */
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center; /* Center the button horizontally */
-  margin-top: 20px; /* Add space above the button */
-}
-
-.card-member .register-button, 
-.card-updates .subscribe-button {
-  background-color: #0078D7;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.card-updates .subscribe-button {
-  background-color: #6A0DAD;
-}
-
-.card-member .register-button:hover, 
-.card-updates .subscribe-button:hover {
-  background-color: white;
-  transform: scale(1.1); /* Add scaling effect */
-}
-
-.card-member .register-button:hover {
-  color: #0078D7; /* Change text color to blue for Register Now button */
-}
-
-.card-updates .subscribe-button:hover {
-  color: #6A0DAD; /* Change text color to purple for Subscribe button */
-}
-
-.membership-card.card-member {
-  border-left: 5px solid #0078D7; /* Add the blue strip */
-}
-
-.membership-card.card-updates {
-  border-left: 5px solid #6A0DAD; /* Add the purple strip */
-}
-
-/* Mobile Styles */
-@media screen and (max-width: 768px) {
-  .membership-page {
-    padding: 20px 5%;
-  }
-
-  .membership-page h2 {
-    font-size: 2em;
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-
-  .membership-cards {
-    flex-direction: column; /* Stack the cards vertically on mobile */
-    gap: 20px;
-  }
 
   .membership-card {
-    padding: 20px;
-    max-width: 100%; /* Make the cards full width on mobile */
+    background-color: var(--mem-color-back-light);
+    border-radius: var(--mem-border-radius);
+    padding: var(--mem-space-small);
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+    text-align: left;
+    border-left: var(--mem-border-radius) solid var(--mem-card-accent-color);
+
+    --mem-card-accent-color: white;
+    &.card-member {--mem-card-accent-color: #0078D7;}
+    &.card-updates {--mem-card-accent-color: #6A0DAD;}
+
+    h2, h3, p, ul li {
+      margin-bottom: var(--mem-space-small);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: var(--mem-font-medium);
+    }
+
+    h3 {
+      font-size: var(--mem-font-small);
+    }
+
+    ul li {
+      margin-left: var(--mem-font-medium);
+
+      &::marker {
+        color: var(--mem-card-accent-color);
+      }
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+
+      button {
+        background-color: var(--mem-card-accent-color);
+        color: white;
+        border: none;
+        padding: var(--mem-space-small) var(--mem-space-large);
+        font-size: var(--mem-font-small);
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: var(--mem-border-radius);
+        transition: var(--mem-transition) ease;
+
+        &:hover {
+          background-color: white;
+          color: var(--mem-card-accent-color);
+          transform: scale(var(--mem-hover-scale));
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  :root {
+    /* values for any spacing e.g. padding, margin, etc. */
+    --mem-space-large: 20px;
+    --mem-space-small: 10px;
+
+    /* font sizes */
+    --mem-font-large: 1.8em;
+    --mem-font-medium: 1.25em;
+    --mem-font-small: 1em;
+
+    --mem-border-radius: 8px;
+    --mem-hover-scale: 1.025;
   }
 
-  .membership-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-  }
+  .membership-page .membership-cards {
+    flex-direction: column;
 
-  .membership-card h4 {
-    font-size: 1.1em;
-    margin-bottom: 15px;
-  }
-
-  .membership-card p,
-  .membership-card ul {
-    font-size: 0.9em;
-    line-height: 1.4;
-  }
-
-  .membership-card ul li {
-    margin-bottom: 8px;
-  }
-
-  .button-container {
-    margin-top: 15px;
-  }
-
-  .card-member .register-button, 
-  .card-updates .subscribe-button {
-    padding: 8px 15px;
-    font-size: 1em;
+    .membership-card {
+      max-width: unset;
+    }
   }
 }

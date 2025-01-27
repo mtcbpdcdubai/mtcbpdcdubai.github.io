@@ -1,10 +1,8 @@
 /* Store "constants" here */
 :root {
-  --home-breakpoint: 750px;
-
   /* values for any spacing e.g. padding, margin, etc. */
-  --home-space-small: 20px;
   --home-space-large: 40px;
+  --home-space-small: 20px;
 
   /* font sizes */
   --home-font-large: 3.5em;

@@ -229,10 +229,10 @@ This section shows the sequence/chain in which modules are imported.
             - [⚛️ About.jsx](src/pages/About/About.jsx) <!--✅-->
                 - [🎨 About.css](src/pages/About/About.css) <!--✅-->
                 - [📄 MembersAndSections.js](content/members/MembersAndSections.js) <!--✅-->
-            - [⚛️ Membership.jsx](src/pages/Membership/Membership.jsx) <!--❌-->
-                - [🎨 Membership.css](src/pages/Membership/Membership.css) <!--❌-->
-                - [⚛️ Modal.jsx](src/components/Modal/Modal.jsx) <!--❌-->
-                    - [🎨 Modal.css](src/components/Modal/Modal.css) <!--❌-->
+            - [⚛️ Membership.jsx](src/pages/Membership/Membership.jsx) <!--✅-->
+                - [🎨 Membership.css](src/pages/Membership/Membership.css) <!--✅-->
+                <!-- - [⚛️ Modal.jsx](src/components/Modal/Modal.jsx) <!--❌-->
+                <!--     - [🎨 Modal.css](src/components/Modal/Modal.css) <!--❌-->
             - [⚛️ Events.jsx](src/pages/Events/Events.jsx) <!--❌-->
                 - [🎨 Events.css](src/pages/Events/Events.css) <!--❌-->
             - [⚛️ Contact.jsx](src/pages/Contact/Contact.jsx) <!--❌-->
