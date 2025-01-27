@@ -9,6 +9,10 @@ import techShaikMohammedAnas         from "./tech_shaik_mohammed_anas.jpg";
 import techLayaShreeElango           from "./tech_laya_shree_elango.jpg";
 import techStellinJohnGeorge         from "./tech_stellin_john_george.jpg";
 import techSrihariSai                from "./tech_srihari_sai.jpg";
+import techSreenikethanIyer          from "./tech_sreenikethan_iyer.jpg"
+import techVaibhavVinil              from "./tech_vaibhav_vinil.jpg"
+import techDurgaPritam               from "./tech_durga_pritam.jpg"
+import techAkshatSingh               from "./tech_akshat_singh.jpg"
 
 import eventsBhavyaKothari           from "./events_bhavya_kothari.jpg";
 import eventsKarthikVishal           from "./events_karthik_vishal.jpg";
@@ -149,7 +153,7 @@ const sectionTechTeam = [
     linkGitHub: "https://github.com/HyperPlexG",
   },
   {
-    image: generatePlaceholderURL("Sreenikethan Iyer"),
+    image: techSreenikethanIyer,
     name: "Sreenikethan Iyer",
     position: "Technical Executive",
     linkInstagram: "https://instagram.com/sreenikethan.i",
@@ -157,7 +161,7 @@ const sectionTechTeam = [
     linkGitHub: "https://github.com/SreenikethanI",
   },
   {
-    image: generatePlaceholderURL("Vaibhav Vinil"),
+    image: techVaibhavVinil,
     name: "Vaibhav Vinil",
     position: "Technical Executive",
     linkInstagram: "https://instagram.com/vaibhav_vinil",
@@ -165,15 +169,15 @@ const sectionTechTeam = [
     linkGitHub: "https://github.com/Vaibhav-Vinil",
   },
   {
-    image: generatePlaceholderURL("Durga Pritam"),
+    image: techDurgaPritam,
     name: "Durga Pritam",
     position: "Technical Executive",
     linkInstagram: "https://instagram.com/pritam_lite",
-    linkLinkedIn: "",
-    linkGitHub: "",
+    linkLinkedIn: "https://linkedin.com/in/durgapritam",
+    linkGitHub: "https://github.com/DurgaPritam",
   },
   {
-    image: generatePlaceholderURL("Akshat Singh"),
+    image: techAkshatSingh,
     name: "Akshat Singh",
     position: "Technical Executive",
     linkInstagram: "https://instagram.com/akshatlovesyou",
@@ -206,7 +210,7 @@ const sectionEventsTeam = [
     position: "Strategy Officer",
     linkInstagram: "https://instagram.com/nardazaria",
     linkLinkedIn: "https://linkedin.com/in/narda-zaria-60254823b",
-    // linkGitHub: "https://github.com/aina282", // NOT WORKING
+    linkGitHub: "https://github.com/nardazaria",
   },
   {
     image: eventsMahinPoptani,
@@ -258,7 +262,7 @@ const sectionMarketingTeam = [
     position: "Marketing Executive",
     linkInstagram: "https://instagram.com/ankita_menon_04",
     linkLinkedIn: "https://linkedin.com/in/k-ankita-menon-4513b8232",
-    // linkGitHub: "",
+    linkGitHub: "https://github.com/ankita-17-09",
   },
   {
     image: marketingKhyatiJetly,
@@ -310,7 +314,7 @@ const sectionOutreachTeam = [
     position: "Outreach Manager",
     linkInstagram: "https://instagram.com/_prasannargh",
     linkLinkedIn: "https://linkedin.com/in/prasannah-raman-0a7a6926b",
-    // linkGitHub: "https://github.com/codeyko-blip", // NOT WORKING
+    linkGitHub: "https://github.com/prastostart",
   },
   {
     image: outreachSiddharathNagesh,
