@@ -75,7 +75,7 @@ export default function Membership() {
         </ul>
         <p>Ready to elevate your tech journey?</p>
         <div className="button-container">
-          <LinkButton to="https://forms.gle/F6NgdzjqZCJyRaAe6">Register Now</LinkButton>
+          <LinkButton to="https://forms.gle/F6NgdzjqZCJyRaAe6" newTab>Register Now</LinkButton>
         </div>
       </div>
 
@@ -95,7 +95,7 @@ export default function Membership() {
         </ul>
         <p>Ready to join the MTC Community once again?</p>
         <div className="button-container">
-          <LinkButton to="https://forms.gle/JuCbSPMFjuFVrjJq8">Renew Now</LinkButton>
+          <LinkButton to="https://forms.gle/JuCbSPMFjuFVrjJq8" newTab>Renew Now</LinkButton>
         </div>
       </div>
     </div>
