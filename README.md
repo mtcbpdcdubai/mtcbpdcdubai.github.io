@@ -233,16 +233,18 @@ This section shows the sequence/chain in which modules are imported.
                 - [🎨 Membership.css](src/pages/Membership/Membership.css) <!--✅-->
                 <!-- - [⚛️ Modal.jsx](src/components/Modal/Modal.jsx) <!--❌-->
                 <!--     - [🎨 Modal.css](src/components/Modal/Modal.css) <!--❌-->
-            - [⚛️ Events.jsx](src/pages/Events/Events.jsx) <!--❌-->
-                - [🎨 Events.css](src/pages/Events/Events.css) <!--❌-->
+            - [⚛️ Events.jsx](src/pages/Events/Events.jsx) <!--🟡-->
+                - [⚛️ EventCard.jsx](src/pages/Events/EventCard.jsx) <!--🟡-->
+                - [⚛️ Events.jsx](content/events/Events.jsx) <!--✅-->
+                - [🎨 Events.css](src/pages/Events/Events.css) <!--🟡-->
             - [⚛️ Contact.jsx](src/pages/Contact/Contact.jsx) <!--❌-->
                 - [🎨 Contact.css](src/pages/Contact/Contact.css) <!--❌-->
             - [⚛️ Articles.jsx](src/pages/Articles/Articles.jsx) <!--❌-->
                 - [🎨 Articles.css](src/pages/Articles/Articles.css) <!--❌-->
             - [⚛️ Footer.jsx](src/components/Footer/Footer.jsx) <!--❌-->
                 - [🎨 Footer.css](src/components/Footer/Footer.css) <!--❌-->
-            - [⚛️ NotFound.jsx](src/pages/NotFound/NotFound.jsx) <!--❌-->
-                - [🎨 NotFound.css](src/pages/NotFound/NotFound.css) <!--❌-->
+            - [⚛️ NotFound.jsx](src/pages/NotFound/NotFound.jsx) <!--🟡-->
+                - [🎨 NotFound.css](src/pages/NotFound/NotFound.css) <!--🟡-->
 
 <br><br>
 
