@@ -229,6 +229,10 @@ const events = [
   },
 ];
 
+// Sort entire events array with latest first.
+events.sort((a, b) => Math.min(a.dateTimeStart, a.dateTimeEnd) - Math.min(b.dateTimeStart, b.dateTimeEnd));
+events.reverse();
+
 /** @param {EventEntry} eventDetails */
 function isUpcoming(eventDetails) {
   const {dateTimeStart, dateTimeEnd} = eventDetails;
