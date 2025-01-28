@@ -21,13 +21,12 @@ export default function EventCard({ eventDetails }) {
 
         <p className="event-description">{eventDetails.description}</p>
 
-        {eventDetails.links.map(link => (
-          <LinkButton to={link.url} key={link.url}>
-            {/* {link.urlType == null ? <>a</> : <span>{getIcon(link.urlType)}</span>} */}
-            {link.icon || <FaLink />}
+        <div className="event-buttons">{eventDetails.links.map(link => (
+          <LinkButton to={link.url} key={link.url} newTab>
+            <span>{link.icon || <FaLink />}</span>
             <span>{link.text || "Read More"}</span>
           </LinkButton>
-        ))}
+        ))}</div>
 
       </div>
 

@@ -229,4 +229,13 @@ const events = [
   },
 ];
 
-export default events;
+/** @param {EventEntry} eventDetails */
+function isUpcoming(eventDetails) {
+  const {dateTimeStart, dateTimeEnd} = eventDetails;
+  return Math.max(dateTimeStart, dateTimeEnd) > Date.now();
+}
+/** Array of events which are upcoming. */
+export const eventsUpcoming = events.filter(isUpcoming);
+
+/** Array of events which are completed already. */
+export const eventsPast = events.filter(eventDetails => !isUpcoming(eventDetails));

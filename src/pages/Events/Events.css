@@ -3,7 +3,7 @@
   /* values for any spacing e.g. padding, margin, etc. */
   --events-space-navbar: 65px;
   --events-space-large: 40px;
-  --events-space-small: 20px;
+  --events-space-small: 15px;
   --events-card-max-width: 1080px;
 
   /* font sizes */
@@ -36,6 +36,8 @@ body {
   text-align: center;
 
   h1.section-title {font-size: var(--events-font-large);}
+
+  .event-empty-message {font-size: var(--events-font-small);}
 }
 
 .event-container .event-card {
@@ -76,21 +78,36 @@ body {
 
     .event-datetime {font-size: var(--events-font-small);}
 
-    button {
-      padding: var(--events-space-small) var(--events-space-large);
-      border: none;
-      color: white;
-      background-color: var(--event-card-accent-color);
-      font-size: var(--events-font-small);
-      font-weight: bold;
-      border-radius: var(--events-border-radius);
-      cursor: pointer;
-      transition: var(--events-transition) ease;
+    .event-buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--events-space-small);
 
-      &:hover {
-        color: var(--event-card-accent-color);
-        background-color: white;
-        transform: scale(var(--events-hover-scale));
+      button {
+        padding: var(--events-space-small) var(--events-space-small);
+        border: none;
+        color: white;
+        background-color: var(--event-card-accent-color);
+        font-size: var(--events-font-small);
+        font-weight: bold;
+        border-radius: var(--events-border-radius);
+        cursor: pointer;
+        transition: var(--events-transition) ease;
+
+        /* Flexbox for containing the icon and the text */
+        display: flex;
+        flex-direction: row;
+        gap: var(--events-space-small);
+        align-items: flex-start;
+        > span {line-height: 1;}
+
+        &:hover {
+          color: var(--event-card-accent-color);
+          background-color: white;
+          transform: scale(var(--events-hover-scale));
+        }
       }
     }
   }
