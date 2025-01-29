@@ -76,7 +76,17 @@ body {
       color: var(--events-color-text-dark);
     }
 
-    .event-datetime {font-size: var(--events-font-small);}
+    .event-datetime {
+      display: flex;
+      flex-direction: row;
+      gap: var(--events-space-small);
+      line-height: 1;
+      font-size: var(--events-font-small);
+
+      .event-icon-calendar {
+        color: var(--event-card-accent-color);
+      }
+    }
 
     .event-buttons {
       display: flex;

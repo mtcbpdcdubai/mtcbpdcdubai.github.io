@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import { FaInstagram, FaLink, FaLinkedin, FaVideo } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaVideo } from "react-icons/fa";
 
 import img20241011_cybersecurityTalk               from "./2024-10-11_cybersecurity_talk.jpg";
 import img20241002_excelChampionship               from "./2024-10-02_excel_championship.jpg";
@@ -18,6 +18,36 @@ import img20231005_signQuest                       from "./2023-10-05_sign_quest
 import img20231128_thinkAi23                       from "./2023-11-28_think_ai23.jpg";
 import img20231219_speakerSessionWithProfNickPears from "./2023-12-19_speaker_session_with_prof_nick_pears.jpg";
 
+
+/*
+GUIDELINES FOR EDITING: To add an event to the list, edit the `events` array.
+
+Keep the following points in mind:
+👉 MONTH starts at 0 not 1. So January = 0, February = 1, ... December = 11.
+👉 If you don't know the *start-time* of the event, just mention as 12:00 AM.
+👉 Similarly, if you don't know the *end-time* of the event, just mention as 11:59 PM.
+👉 `links` is an array of objects. Each link is displayed as a button on the event card. Each object contains the following:
+  ➡️ url: a string containing the url
+  ➡️ text: default is "Read More", but you can change it to something else
+  ➡️ icon: a React element such as <FaInstagram />, <FaLinkedin />, <FaVideo />, etc.
+
+COPY this template, PASTE it where required, and edit as required.
+
+  {
+    title: "Title goes here",
+    description: "Description paragraph goes here",
+    dateTimeStart: new Date(YEAR, MONTH-1, DAY, 24HOUR, MINUTE),
+    dateTimeEnd: new Date(YEAR, MONTH-1, DAY, 24HOUR, MINUTE),
+    image: imageImport, // import the image at the start of the file
+    links: [
+      {icon: ICON_ELEMENT_GOES_HERE, text: "optional text", url: "url here"},
+      {icon: ICON_ELEMENT_GOES_HERE, text: "optional text", url: "url here"},
+      {icon: ICON_ELEMENT_GOES_HERE, text: "optional text", url: "url here"},
+      // ...
+    ],
+  },
+
+*/
 
 
 /**
@@ -76,7 +106,7 @@ const events = [
     title: "Time Series Analysis",
     description: "The Microsoft Tech Club hosted the final session of their Data Science Bootcamp, a Time Series EDA workshop, conducted by Events Head Bhavya Kothari and Treasurer Keane Coutinho. Keane introduced the topic, explaining the types of time series data analysis, its practical applications, and the components of a time series. Bhavya then demonstrated a matplotlib program using an electric production dataset, showcasing how to model trends, seasonality, and forecast patterns. The session ended with a quiz, where Adindy Sharma and Chethan Suresh Devadiga won LinkedIn Premium as prizes. Participants were encouraged to explore further and start their own projects.",
     dateTimeStart: new Date(2024, 9-1, 17, 18, 30), // 17/Sep/2024, 6:30 PM
-    dateTimeEnd: new Date(2024, 9-1, 17, 11, 59), // 17/Sep/2024, 11:59 PM
+    dateTimeEnd: new Date(2024, 9-1, 17, 23, 59), // 17/Sep/2024, 11:59 PM
     links: [
       {icon: <FaLinkedin />, url: "https://linkedin.com/posts/microsoft-tech-club_dubai-bitsdubai-datascience-activity-7241436266892840960-AnPx"},
     ],

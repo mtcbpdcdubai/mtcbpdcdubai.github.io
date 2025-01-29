@@ -1,6 +1,7 @@
-import { FaLink } from "react-icons/fa";
+import { FaLink, FaCalendarAlt } from "react-icons/fa";
 import PropTypes from 'prop-types';
 import LinkButton from "src/components/LinkButton/LinkButton";
+import { formatDateRange } from "src/DateTime";
 
 
 /**
@@ -20,6 +21,11 @@ export default function EventCard({ eventDetails }) {
         <h2>{eventDetails.title}</h2>
 
         <p className="event-description">{eventDetails.description}</p>
+
+        <p className="event-datetime">
+          <span className="event-icon-calendar"><FaCalendarAlt /></span>
+          {formatDateRange(eventDetails.dateTimeStart, eventDetails.dateTimeEnd)}
+        </p>
 
         <div className="event-buttons">{eventDetails.links.map(link => (
           <LinkButton to={link.url} key={link.url} newTab>
