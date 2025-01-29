@@ -1,1 +1,0 @@
-import{j as o,L as e,d as s}from"./index-B4zkb0X4.js";function a(){return o.jsxs("div",{className:"not-found-page",children:[o.jsx("h1",{children:"404"}),o.jsx("p",{children:"Oops! The page you are looking for does not exist."}),o.jsx(e,{to:s,className:"home-link",children:"Go back to Home"})]})}export{a as default};
