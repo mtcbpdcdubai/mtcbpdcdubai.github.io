@@ -9,7 +9,7 @@ import Home       from './pages/Home/Home';
 import About      from './pages/About/About';
 import Membership from './pages/Membership/Membership';
 import Events     from './pages/Events/Events';
-import Contact    from './pages/Contact/Contact';
+// import Contact    from './pages/Contact/Contact';
 import Articles   from './pages/Articles/Articles';
 import NotFound   from './pages/NotFound/NotFound';
 
@@ -22,7 +22,7 @@ const App = () => {
       <Route exact path={Paths.ABOUT} element={<About />} />
       <Route exact path={Paths.MEMBERSHIP} element={<Membership />} />
       <Route exact path={Paths.EVENTS} element={<Events />} />
-      <Route exact path={Paths.CONTACT} element={<Contact />} />
+      {/* <Route exact path={Paths.CONTACT} element={<Contact />} /> */}
       <Route exact path={Paths.ARTICLES} element={<Articles />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

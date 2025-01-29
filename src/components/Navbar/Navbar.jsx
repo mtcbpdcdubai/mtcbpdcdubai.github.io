@@ -10,7 +10,7 @@ const menuItems = [
   [Paths.ABOUT,      "About"],
   [Paths.MEMBERSHIP, "Membership"],
   [Paths.EVENTS,     "Events"],
-  [Paths.CONTACT,    "Contact"],
+  // [Paths.CONTACT,    "Contact"],
   [Paths.ARTICLES,   "Articles"],
 ]
 
