@@ -74,6 +74,7 @@ body {
       align-self: flex-start;
       text-align: justify;
       color: var(--events-color-text-dark);
+      white-space: pre-wrap;
     }
 
     .event-datetime {

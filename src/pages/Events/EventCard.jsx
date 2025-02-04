@@ -27,7 +27,7 @@ export default function EventCard({ eventDetails }) {
           {formatDateRange(eventDetails.dateTimeStart, eventDetails.dateTimeEnd)}
         </p>
 
-        <div className="event-buttons">{eventDetails.links.map(link => (
+        <div className="event-buttons">{eventDetails.links.filter(link => link.url).map(link => (
           <LinkButton to={link.url} key={link.url} newTab>
             <span>{link.icon || <FaLink />}</span>
             <span>{link.text || "Read More"}</span>
