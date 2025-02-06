@@ -404,7 +404,7 @@ body {
 
 /* ============================= Mobile layout ============================= */
 
-@media only screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
   /* MARK: 📱 */
   :root {
     /* values for any spacing e.g. padding, margin, etc. */

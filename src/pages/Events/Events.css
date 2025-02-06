@@ -133,7 +133,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
   :root {
     /* values for any spacing e.g. padding, margin, etc. */
     --events-space-large: 20px;
