@@ -9,7 +9,7 @@ import article_2023_12_15 from "./article_2023-12-15.png";
 import article_2023_11_30 from "./article_2023-11-30.png";
 import article_2023_09_28 from "./article_2023-09-28.jpg";
 import article_2023_09_07 from "./article_2023-09-07.jpg";
-import article_2023_09_04 from "./article_2023-09-04.gif";
+import article_2023_09_04 from "./article_2023-09-04.webp";
 import article_2023_08_24 from "./article_2023-08-24.jpg";
 import article_2023_08_18 from "./article_2023-08-18.png";
 import article_2023_08_10 from "./article_2023-08-10.jpg";
