@@ -35,7 +35,7 @@ body {
 
 /* MARK: BANNER */
 .home-banner {
-  height: 100vh;
+  height: 75vh;
   padding: 0 var(--home-space-small);
   margin: 0;
 

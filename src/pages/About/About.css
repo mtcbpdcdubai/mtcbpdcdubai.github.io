@@ -43,7 +43,6 @@ body {
 
 /* The entire About page */
 .about-page {
-  padding-top: var(--about-space-navbar); /* to account for navbar */
   display: flex;
   flex-direction: column;
   align-items: center;

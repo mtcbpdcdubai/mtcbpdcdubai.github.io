@@ -9,7 +9,7 @@
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;

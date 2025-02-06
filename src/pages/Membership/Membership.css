@@ -28,7 +28,6 @@ body {
 
 .membership-page {
   padding: var(--mem-space-large);
-  padding-top: var(--mem-space-navbar); /* to account for navbar */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +37,7 @@ body {
 
   h1 {
     font-size: var(--mem-font-large);
-    margin: var(--mem-space-small) 0px;
+    margin-bottom: var(--mem-space-small);
   }
 }
 
