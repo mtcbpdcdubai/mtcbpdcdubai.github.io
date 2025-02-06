@@ -26,7 +26,7 @@ import marketingEshanTiwari          from "./marketing_eshan_tiwari.jpg";
 import marketingKAnkitaMenon         from "./marketing_k_ankita_menon.jpg";
 import marketingKhyatiJetly          from "./marketing_khyati_jetly.jpg";
 import marketingSrinjitaRoyChowdhury from "./marketing_srinjita_roy_chowdhury.jpg";
-import marketingAmeyiaWankhede       from "./marketing_ameyia_wankhede.jpg";
+import marketingAmeiyaWankhede       from "./marketing_ameiya_wankhede.jpg";
 
 import outreachJoelJoseph            from "./outreach_joel_joseph.jpg";
 import outreachUtkarshTripathi       from "./outreach_utkarsh_tripathi.jpg";
@@ -281,8 +281,8 @@ const sectionMarketingTeam = [
     linkGitHub: "https://github.com/Srinjita-RC",
   },
   {
-    image: marketingAmeyiaWankhede,
-    name: "Ameyia Wankhede",
+    image: marketingAmeiyaWankhede,
+    name: "Ameiya Wankhede",
     position: "Creative Executive",
     linkInstagram: "https://instagram.com/ameiya.w",
     linkLinkedIn: "https://linkedin.com/in/ameiya-wankhede-7600912b1",
