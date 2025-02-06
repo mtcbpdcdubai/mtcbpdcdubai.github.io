@@ -1,42 +1,43 @@
-// src/components/Footer/Footer.jsx
+import { FaInstagram, FaLinkedin, FaTiktok, FaGithub, FaXTwitter, FaThreads } from 'react-icons/fa6';
+import { SiMedium } from 'react-icons/si';
 import './Footer.css';
-import { FaTwitter, FaInstagram, FaLinkedin, /*FaDiscord,*/ FaTiktok, FaMedium, FaGithub } from 'react-icons/fa';
-import { RiThreadsFill } from 'react-icons/ri';
 
-const Footer = () => {
+/** An array of social media icons to be included in the footer.
+ * @type {{icon: React.JSX.Component, url: string}[]}
+ */
+const footerLinks = [
+  {icon: <FaInstagram />, url: "https://instagram.com/mtcbpdc",},
+  {icon: <FaLinkedin />,  url: "https://linkedin.com/company/microsoft-tech-club",},
+  {icon: <SiMedium />,    url: "https://medium.com/@microsofttechclub",},
+  {icon: <FaTiktok />,    url: "https://tiktok.com/@mtcbpdc",},
+  {icon: <FaGithub />,    url: "https://github.com/mtcbpdcdubai",},
+  {icon: <FaXTwitter />,  url: "https://x.com/mtcbpdc",},
+  {icon: <FaThreads />,   url: "https://threads.net/@mtcbpdc",},
+];
+
+export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-icons">
-        <a href="https://x.com/mtcbpdc" target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="footer-icon" />
+
+      <div className="footer-icons">{footerLinks.map(({icon, url}) => (
+        <a
+          key={url}
+          href={url}
+          className="footer-icon"
+          target="_blank"
+          rel="noopener noreferrer">
+          {icon}
         </a>
-        <a href="https://instagram.com/mtcbpdc" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="footer-icon" />
-        </a>
-        <a href="https://github.com/mtcbpdcdubai" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="footer-icon" />
-        </a>
-        <a href="https://www.threads.net/@mtcbpdc" target="_blank" rel="noopener noreferrer">
-          <RiThreadsFill className="footer-icon" />
-        </a>
-        <a href="https://www.linkedin.com/company/microsoft-tech-club/" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="footer-icon" />
-        </a>
-        <a href="https://tiktok.com/@mtcbpdc" target="_blank" rel="noopener noreferrer">
-          <FaTiktok className="footer-icon" />
-        </a>
-        <a href="https://medium.com/@microsofttechclub/" target="_blank" rel="noopener noreferrer">
-          <FaMedium className="footer-icon" />
-        </a>
-      </div>
+      ))}</div>
+
       <div className="footer-contact">
         <a href="mailto:microsofttechclub@dubai.bits-pilani.ac.in">microsofttechclub@dubai.bits-pilani.ac.in</a>
       </div>
+
       <div className="footer-copy">
         &copy; {new Date().getFullYear()} Microsoft Tech Club, BITS Pilani Dubai Campus
       </div>
+
     </footer>
   );
-};
-
-export default Footer;
+}

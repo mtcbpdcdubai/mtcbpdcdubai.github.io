@@ -41,3 +41,21 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* lmao ok so this is funny
+
+The footer doesn't stay at the bottom of the page on Membership page.
+So I just made the entire root element into a grid layout with three rows:
+1. Navbar (which is position: sticky; anyway)
+2. Content
+3. Footer
+and both the Navbar and Footer have auto height, hence it'll fit to content.
+This way, since the Content is 1fr, it'll automatically expand the space.
+
+The root element is also set to 100vh height so that it fits the whole viewport.
+*/
+#root {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
