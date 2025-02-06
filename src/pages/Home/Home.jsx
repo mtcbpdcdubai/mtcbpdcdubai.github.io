@@ -97,19 +97,19 @@ export default function Home() {
         <div className="home-event-cards">
           <div className="home-event-card">
             <img src={imgEvents_matlabWorkshop} alt="MATLAB Workshop" />
-            <LinkButton to="https://www.linkedin.com/posts/microsoft-tech-club_techeducation-techcommunity-studentcommunity-activity-7108388988855484416-VNIv" newTab>Read More</LinkButton>
+            <LinkButton to="https://linkedin.com/posts/microsoft-tech-club_techeducation-techcommunity-studentcommunity-activity-7108388988855484416-VNIv" newTab>Read More</LinkButton>
           </div>
           <div className="home-event-card">
             <img src={imgEvents_vsCodeWorkshop} alt="VS Code Workshop" />
-            <LinkButton to="https://www.instagram.com/p/Czv9N40NEYV/" newTab>Read More</LinkButton>
+            <LinkButton to="https://instagram.com/p/Czv9N40NEYV" newTab>Read More</LinkButton>
           </div>
           <div className="home-event-card">
             <img src={imgEvents_thinkAi23} alt="Think AI'23" />
-            <LinkButton to="https://www.instagram.com/p/C0rSVqlPBpe/" newTab>Read More</LinkButton>
+            <LinkButton to="https://instagram.com/p/C0rSVqlPBpe" newTab>Read More</LinkButton>
           </div>
           <div className="home-event-card">
             <img src={imgEvents_researchTalk} alt="Research Talk" />
-            <LinkButton to="https://www.linkedin.com/posts/microsoft-tech-club_microsofttechclub-computervision-techinnovation-activity-7143636619009466368-QdG9" newTab>Read More</LinkButton>
+            <LinkButton to="https://linkedin.com/posts/microsoft-tech-club_microsofttechclub-computervision-techinnovation-activity-7143636619009466368-QdG9" newTab>Read More</LinkButton>
           </div>
         </div>
         <LinkButton to="/events" className="view-all-button">View All ➔</LinkButton>
