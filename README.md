@@ -14,7 +14,7 @@
 
 # **Microsoft Tech Club BPDC - official website**
 
-👉 <a href="https://mtcbpdcdubai.github.io/mtcbpdc/" target="_blank">https://mtcbpdcdubai.github.io/mtcbpdc/</a> 👈
+👉 <a href="https://mtcbpdc.org" target="_blank">https://mtcbpdc.org</a> 👈
 
 This GitHub repository contains the code for the official website of Microsoft
 Tech Club.
@@ -33,11 +33,11 @@ section **before** contributing to this project. ⚠️
     Complete its installation process.
 
 2.  Download the code. You may either use [GitHub Desktop](https://github.com/apps/desktop),
-    [download the code as a ZIP](https://github.com/mtcbpdcdubai/mtcbpdc/archive/refs/heads/main.zip),
+    [download the code as a ZIP](https://github.com/mtcbpdcdubai/mtcbpdcdubai.github.io/archive/refs/heads/main.zip),
     or open a terminal window and type the following
     command:
 
-        git clone https://github.com/mtcbpdcdubai/mtcbpdc.git
+        git clone https://github.com/mtcbpdcdubai/mtcbpdcdubai.github.io.git
 
 3.  Open a terminal window inside the folder, and run the following command to
     download all the required packages:
@@ -62,7 +62,10 @@ you can either host locally for development purposes, or deploy to GitHub pages.
 
     This will build the website to the `dist/` folder, and publish its contents
     to GitHub Pages, which will end up in the following URL:
-    https://mtcbpdcdubai.github.io/mtcbpdc/
+    https://mtcbpdcdubai.github.io/
+
+    It will also automatically deploy to CloudFlare Pages, which will end up at:
+    https://mtcbpdc.org/
 
 Source: [How to deploy Vite React App to GitHub Pages | by Prateek Singh | Medium](https://medium.com/@devxprite/how-to-deploy-vite-react-app-to-github-pages-00e150f73961#6474)
 
