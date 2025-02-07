@@ -415,11 +415,11 @@ const sectionFaculty = [
 
 /** An array of all sections in the About page. @type {Section[]} */
 const sections = [
-  {numCols: 3, sectionTitle: "Core Members", members: sectionCore},
+  {numCols: 4, sectionTitle: "Core Members", members: sectionCore},
   {numCols: 3, sectionTitle: "Tech Team", members: sectionTechTeam},
   {numCols: 3, sectionTitle: "Events Team", members: sectionEventsTeam},
   {numCols: 3, sectionTitle: "Marketing & Creative Team", members: sectionMarketingTeam},
-  {numCols: 3, sectionTitle: "Outreach & DevOps Team", members: sectionOutreachTeam},
+  {numCols: 2, sectionTitle: "Outreach & DevOps Team", members: sectionOutreachTeam},
   {numCols: 3, sectionTitle: "Ambassadors", members: sectionAmbassadors},
   {numCols: 1, sectionTitle: "Faculty In-Charge", members: sectionFaculty},
 ];
