@@ -3,16 +3,18 @@ import coreMrudulaRahate             from "./core_mrudula_rahate.jpg";
 import coreVennelaVallabhaneni       from "./core_vennela_vallabhaneni.jpg";
 import coreAdityaGopinath            from "./core_aditya_gopinath.jpg";
 import coreKeaneCoutinho             from "./core_keane_coutinho.jpg";
+import coreJoelJoseph                from "./core_joel_joseph.jpg";
 import coreLasyaSai                  from "./core_lasya_sai.jpg";
 
-import techShaikMohammedAnas         from "./tech_shaik_mohammed_anas.jpg";
+import techShaikMohammadAnas         from "./tech_shaik_mohammad_anas.jpg";
 import techLayaShreeElango           from "./tech_laya_shree_elango.jpg";
 import techStellinJohnGeorge         from "./tech_stellin_john_george.jpg";
-import techSrihariSai                from "./tech_srihari_sai.jpg";
 import techSreenikethanIyer          from "./tech_sreenikethan_iyer.jpg"
+import techSiddharathNagesh          from "./tech_siddharath_nagesh.jpg";
 import techVaibhavVinil              from "./tech_vaibhav_vinil.jpg"
-import techDurgaPritam               from "./tech_durga_pritam.jpg"
+import techSriHariSai                from "./tech_sri_hari_sai.jpg";
 import techAkshatSingh               from "./tech_akshat_singh.jpg"
+import techDurgaPritam               from "./tech_durga_pritam.jpg"
 
 import eventsBhavyaKothari           from "./events_bhavya_kothari.jpg";
 import eventsKarthikVishal           from "./events_karthik_vishal.jpg";
@@ -24,16 +26,21 @@ import eventsReubenThomas            from "./events_reuben_thomas.jpg";
 import marketingSathvikSreeram       from "./marketing_sathvik_sreeram.jpg";
 import marketingEshanTiwari          from "./marketing_eshan_tiwari.jpg";
 import marketingKAnkitaMenon         from "./marketing_k_ankita_menon.jpg";
-import marketingKhyatiJetly          from "./marketing_khyati_jetly.jpg";
 import marketingSrinjitaRoyChowdhury from "./marketing_srinjita_roy_chowdhury.jpg";
+import marketingKhyatiJetly          from "./marketing_khyati_jetly.jpg";
 import marketingAmeiyaWankhede       from "./marketing_ameiya_wankhede.jpg";
 
-import outreachJoelJoseph            from "./outreach_joel_joseph.jpg";
 import outreachUtkarshTripathi       from "./outreach_utkarsh_tripathi.jpg";
 import outreachPrasannahRaman        from "./outreach_prasannah_raman.jpg";
-import outreachSiddharathNagesh      from "./outreach_siddharath_nagesh.jpg";
 import outreachAkashRajasekar        from "./outreach_akash_rajasekar.jpg";
 import outreachDiyaFreddy            from "./outreach_diya_freddy.jpg";
+
+import ambassadorTanishaHanda        from "./ambassador_tanisha_handa.jpg";
+import ambassadorPriyanshuSingh      from "./ambassador_priyanshu_singh.jpg";
+import ambassadorChhavi              from "./ambassador_chhavi.jpg";
+import ambassadorAmintaBinu          from "./ambassador_aminta_binu.jpg";
+import ambassadorSurajSingh          from "./ambassador_suraj_singh.jpg";
+import ambassadorSmredhiShankar      from "./ambassador_smredhi_shankar.jpg";
 
 import facultyDrElakkiyaR            from "./faculty_dr_elakkiya_r.jpg";
 
@@ -109,6 +116,14 @@ const sectionCore = [
     linkGitHub: "https://github.com/keanec27",
   },
   {
+    image: coreJoelJoseph,
+    name: "Joel Joseph",
+    position: "Outreach Head",
+    linkInstagram: "https://instagram.com/joelj.05",
+    linkLinkedIn: "https://linkedin.com/in/joel-joseph-30a289215",
+    linkGitHub: "https://github.com/JJ512-ishere",
+  },
+  {
     image: coreLasyaSai,
     name: "Lasya Sai",
     position: "General Secretary",
@@ -121,8 +136,8 @@ const sectionCore = [
 /** An array of members in the Tech Team @type {Member[]} */
 const sectionTechTeam = [
   {
-    image: techShaikMohammedAnas,
-    name: "Shaik Mohammed Anas",
+    image: techShaikMohammadAnas,
+    name: "Shaik Mohammad Anas",
     position: "Technical Head",
     linkInstagram: "https://instagram.com/armaan_0510",
     linkLinkedIn: "https://linkedin.com/in/anas-shaik",
@@ -138,19 +153,11 @@ const sectionTechTeam = [
   },
   {
     image: techStellinJohnGeorge,
-    name: "Stellin John George",
+    name: "Stellin John",
     position: "Technical Executive",
     linkInstagram: "https://instagram.com/Stellin_15",
     linkLinkedIn: "https://linkedin.com/in/stellin-john-george-1bb757163",
     linkGitHub: "https://github.com/Stellin-15",
-  },
-  {
-    image: techSrihariSai,
-    name: "Srihari Sai",
-    position: "Technical Executive",
-    linkInstagram: "https://instagram.com/ft.hyper",
-    linkLinkedIn: "https://linkedin.com/in/sri-hari-sai-subramanian-737279322",
-    linkGitHub: "https://github.com/HyperPlexG",
   },
   {
     image: techSreenikethanIyer,
@@ -161,6 +168,14 @@ const sectionTechTeam = [
     linkGitHub: "https://github.com/SreenikethanI",
   },
   {
+    image: techSiddharathNagesh,
+    name: "Siddharath Nagesh",
+    position: "Technical Executive",
+    linkInstagram: "https://instagram.com/siddharath_nagesh",
+    linkLinkedIn: "https://linkedin.com/in/siddharath-malavalli-nagesh-270b571ba",
+    linkGitHub: "https://github.com/SiddharathMN",
+  },
+  {
     image: techVaibhavVinil,
     name: "Vaibhav Vinil",
     position: "Technical Executive",
@@ -169,12 +184,12 @@ const sectionTechTeam = [
     linkGitHub: "https://github.com/Vaibhav-Vinil",
   },
   {
-    image: techDurgaPritam,
-    name: "Durga Pritam",
+    image: techSriHariSai,
+    name: "Sri Hari Sai",
     position: "Technical Executive",
-    linkInstagram: "https://instagram.com/pritam_lite",
-    linkLinkedIn: "https://linkedin.com/in/durgapritam",
-    linkGitHub: "https://github.com/DurgaPritam",
+    linkInstagram: "https://instagram.com/ft.hyper",
+    linkLinkedIn: "https://linkedin.com/in/sri-hari-sai-subramanian-737279322",
+    linkGitHub: "https://github.com/HyperPlexG",
   },
   {
     image: techAkshatSingh,
@@ -183,6 +198,14 @@ const sectionTechTeam = [
     linkInstagram: "https://instagram.com/akshatlovesyou",
     linkLinkedIn: "https://linkedin.com/in/akshatsingh-ind",
     linkGitHub: "https://github.com/Akshatcodesyou",
+  },
+  {
+    image: techDurgaPritam,
+    name: "Durga Pritam",
+    position: "Technical Executive",
+    linkInstagram: "https://instagram.com/pritam_lite",
+    linkLinkedIn: "https://linkedin.com/in/durgapritam",
+    linkGitHub: "https://github.com/DurgaPritam",
   },
 ];
 
@@ -207,7 +230,7 @@ const sectionEventsTeam = [
   {
     image: eventsNardaZaria,
     name: "Narda Zaria",
-    position: "Strategy Officer",
+    position: "Strategy Manager",
     linkInstagram: "https://instagram.com/nardazaria",
     linkLinkedIn: "https://linkedin.com/in/narda-zaria-60254823b",
     linkGitHub: "https://github.com/nardazaria",
@@ -265,20 +288,20 @@ const sectionMarketingTeam = [
     linkGitHub: "https://github.com/ankita-17-09",
   },
   {
-    image: marketingKhyatiJetly,
-    name: "Khyati Jetly",
-    position: "Marketing Executive",
-    linkInstagram: "https://instagram.com/_kxyati_",
-    linkLinkedIn: "https://linkedin.com/in/khyati-jetly-085792306",
-    linkGitHub: "https://github.com/khyati2107",
-  },
-  {
     image: marketingSrinjitaRoyChowdhury,
     name: "Srinjita Roy Chowdhury",
     position: "Marketing Executive",
     linkInstagram: "https://instagram.com/srinxie",
     linkLinkedIn: "https://linkedin.com/in/srinjita-roy-chowdhury-99707531a",
     linkGitHub: "https://github.com/Srinjita-RC",
+  },
+  {
+    image: marketingKhyatiJetly,
+    name: "Khyati Jetly",
+    position: "Marketing Executive",
+    linkInstagram: "https://instagram.com/_kxyati_",
+    linkLinkedIn: "https://linkedin.com/in/khyati-jetly-085792306",
+    linkGitHub: "https://github.com/khyati2107",
   },
   {
     image: marketingAmeiyaWankhede,
@@ -292,14 +315,6 @@ const sectionMarketingTeam = [
 
 /** An array of members in the Outreach & DevOps Team @type {Member[]} */
 const sectionOutreachTeam = [
-  {
-    image: outreachJoelJoseph,
-    name: "Joel Joseph",
-    position: "Outreach Head",
-    linkInstagram: "https://instagram.com/joelj.05",
-    linkLinkedIn: "https://linkedin.com/in/joel-joseph-30a289215",
-    linkGitHub: "https://github.com/JJ512-ishere",
-  },
   {
     image: outreachUtkarshTripathi,
     name: "Utkarsh Tripathi",
@@ -315,14 +330,6 @@ const sectionOutreachTeam = [
     linkInstagram: "https://instagram.com/_prasannargh",
     linkLinkedIn: "https://linkedin.com/in/prasannah-raman-0a7a6926b",
     linkGitHub: "https://github.com/prastostart",
-  },
-  {
-    image: outreachSiddharathNagesh,
-    name: "Siddharath Nagesh",
-    position: "DevOps Manager",
-    linkInstagram: "https://instagram.com/siddharath_nagesh",
-    linkLinkedIn: "https://linkedin.com/in/siddharath-malavalli-nagesh-270b571ba",
-    linkGitHub: "https://github.com/SiddharathMN",
   },
   {
     image: outreachAkashRajasekar,
@@ -342,6 +349,58 @@ const sectionOutreachTeam = [
   },
 ];
 
+/** An array of members in the Ambassadors section @type {Member[]} */
+const sectionAmbassadors = [
+  {
+    image: ambassadorTanishaHanda,
+    name: "Tanisha Handa",
+    position: "Technical Ambassador",
+    linkInstagram: "https://instagram.com/txnishx24",
+    linkLinkedIn: "",
+    linkGitHub: "",
+  },
+  {
+    image: ambassadorPriyanshuSingh,
+    name: "Priyanshu Singh",
+    position: "Technical Ambassador",
+    linkInstagram: "https://instagram.com/prx.py",
+    linkLinkedIn: "https://linkedin.com/in/priyanshusingh10",
+    linkGitHub: "https://github.com/prxcode",
+  },
+  {
+    image: ambassadorChhavi,
+    name: "Chhavi",
+    position: "Technical & Creative Ambassador",
+    linkInstagram: "https://instagram.com/chhavithegreat",
+    linkLinkedIn: "https://linkedin.com/in/fnu-chhavi-094b6b286",
+    linkGitHub: "https://github.com/chhaavii",
+  },
+  {
+    image: ambassadorAmintaBinu,
+    name: "Aminta Binu",
+    position: "Marketing Ambassador",
+    linkInstagram: "https://instagram.com/amintaa_bt",
+    linkLinkedIn: "https://linkedin.com/in/aminta-binu-thomas-435731331",
+    linkGitHub: "https://github.com/aminta-bt",
+  },
+  {
+    image: ambassadorSurajSingh,
+    name: "Suraj Singh",
+    position: "Marketing Ambassador",
+    linkInstagram: "https://instagram.com/surxj.xx",
+    linkLinkedIn: "https://linkedin.com/in/suraj-singh-750a67320",
+    linkGitHub: "https://github.com/SurajBlazer",
+  },
+  {
+    image: ambassadorSmredhiShankar,
+    name: "Smredhi Shankar",
+    position: "Creative Ambassador",
+    linkInstagram: "https://instagram.com/smrredhi",
+    linkLinkedIn: "https://linkedin.com/in/smredhi-shankar-926210331",
+    linkGitHub: "https://github.com/smredhi",
+  },
+];
+
 /** An array of members in the Faculty In-Charge section @type {Member[]} */
 const sectionFaculty = [
   {
@@ -357,10 +416,11 @@ const sectionFaculty = [
 /** An array of all sections in the About page. @type {Section[]} */
 const sections = [
   {numCols: 3, sectionTitle: "Core Members", members: sectionCore},
-  {numCols: 4, sectionTitle: "Tech Team", members: sectionTechTeam},
+  {numCols: 3, sectionTitle: "Tech Team", members: sectionTechTeam},
   {numCols: 3, sectionTitle: "Events Team", members: sectionEventsTeam},
   {numCols: 3, sectionTitle: "Marketing & Creative Team", members: sectionMarketingTeam},
   {numCols: 3, sectionTitle: "Outreach & DevOps Team", members: sectionOutreachTeam},
+  {numCols: 3, sectionTitle: "Ambassadors", members: sectionAmbassadors},
   {numCols: 1, sectionTitle: "Faculty In-Charge", members: sectionFaculty},
 ];
 
