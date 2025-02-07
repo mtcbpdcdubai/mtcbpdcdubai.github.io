@@ -1,3 +1,4 @@
+import article_2025_02_07 from "./article_2025-02-07.png";
 import article_2024_11_25 from "./article_2024-11-25.jpg";
 import article_2024_10_06 from "./article_2024-10-06.png";
 import article_2024_09_07 from "./article_2024-09-07.png";
@@ -30,6 +31,14 @@ import article_2023_08_10 from "./article_2023-08-10.jpg";
 
 /** An array of articles. @type {Article[]} */
 export const articles = [
+  {
+    title: "ChatGPT’s White Whale is China’s Golden Goose",
+    preview: "The Deepseek story. On January 18, 2025, America tried to ban Tiktok, over concerns of Chinese actors accessing users’ private data through the app.",
+    dateTime: new Date(2025, 2-1, 7),
+    image: article_2025_02_07,
+    link: "https://medium.com/@microsofttechclub/chatgpts-white-whale-is-china-s-golden-goose-a79619c545f2",
+  },
+
   {
     title: "Do Employers Dream of AI Sheep?",
     preview: "Are programmers going to be obsolete?",
