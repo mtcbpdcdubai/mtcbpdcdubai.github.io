@@ -1,6 +1,7 @@
 // import { SiGooglemeet } from "react-icons/si";
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 
+import img20250212_cybersecurityWorkshop           from "./2025-02-12_cybersecurity_workshop.jpg"
 import img20250205_membershipStall                 from "./2025-02-05_membership_stall.jpg"
 import img20241212_researchTalk                    from "./2024-12-12_research_talk.jpg"
 import img20241121_typingContest                   from "./2024-11-21_typing_contest.jpg"
@@ -83,6 +84,18 @@ COPY this template, PASTE it where required, and edit as required.
 
 /** An array of events. @type {EventEntry[]} */
 const events = [
+  {
+    title: "Cybersecurity Workshop",
+    description: "Cybersecurity Workshop - Foundations of Penetration Testing\nSpeaker: Ashwin Ragav, Founder of Speclar, Co-founder of Nodeshield, Cybersecurity Researcher",
+    dateTimeStart: new Date(2025, 2-1, 12, 18, 30), // 12/Feb/2025, 06:30 PM
+    dateTimeEnd: new Date(2025, 2-1, 12, 20, 0), // 12/Feb/2025, 08:00 PM
+    image: img20250212_cybersecurityWorkshop,
+    links: [
+      {icon: <FaInstagram />, url: "https://instagram.com/p/DF2spf2zokv"},
+      {icon: <FaLinkedin />, url: "https://linkedin.com/posts/microsoft-tech-club_researchtalk-mtc-bitspilanidubai-activity-7294384565668737025-dkTw"},
+    ]
+  },
+
   {
     title: "Membership Stall",
     description: "MTC hosted a creative and engaging Squid Games-themed Membership Stall next to the vending machine providing an interactive experience where participants tested their skills and knowledge through a thrilling challenge inspired by the popular series.\nParticipants were required to flip a Ddakji and successfully turn it over to qualify for answering questions. Questions ranged from easy, medium, or hard—to earn points and prizes. The competitive element, combined with the fun and strategy, kept participants hooked throughout the event.",
