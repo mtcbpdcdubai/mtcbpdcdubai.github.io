@@ -1,5 +1,6 @@
 // import { SiGooglemeet } from "react-icons/si";
-import { FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaVideo } from "react-icons/fa6";
+import { SiGoogledocs, SiGoogleforms } from "react-icons/si";
 
 import img20250212_cybersecurityWorkshop           from "./2025-02-12_cybersecurity_workshop.jpg"
 import img20250205_membershipStall                 from "./2025-02-05_membership_stall.jpg"
@@ -85,6 +86,19 @@ COPY this template, PASTE it where required, and edit as required.
 /** An array of events. @type {EventEntry[]} */
 const events = [
   {
+    title: "ACM-W x MTC: Hack-A-Bot",
+    description: "Participants are challenged to build a chatbot coupled with an interactive landing webpage around the themes of Education & Career, Health & Wellness, Entertainment, E-Commerce and Personal Assistance.\nThe Judging Criteria will based on Bot Logic, Pitching & Presentation, Creative Visuals and Theme Relevance.\nRegistration is free for all ACMW and MTC Members, and is only AED 5 for non-members!",
+    dateTimeStart: new Date(2025, 2-1, 17, 0, 0), // 17/Feb/2025
+    dateTimeEnd: new Date(2025, 2-1, 26, 23, 59), // 26/Feb/2025
+    image: null,
+    links: [
+      {icon: <FaInstagram />, url: "https://instagram.com/p/DGIFBalTUo8"},
+      {icon: <SiGoogleforms />, text: "Register", url: "https://docs.google.com/forms/d/e/1FAIpQLSd4bu4Ber8YIDqA8qF56hqKsXLYtuXy1iEUMo7AJ4jtlyOE-w/viewform"},
+      {icon: <SiGoogledocs />, text: "Rules", url: "https://instagram.com/p/DGIFBalTUo8"},
+    ]
+  },
+
+  {
     title: "Cybersecurity Workshop",
     description: "Cybersecurity Workshop - Foundations of Penetration Testing\nSpeaker: Ashwin Ragav, Founder of Speclar, Co-founder of Nodeshield, Cybersecurity Researcher",
     dateTimeStart: new Date(2025, 2-1, 12, 18, 30), // 12/Feb/2025, 06:30 PM
@@ -92,7 +106,8 @@ const events = [
     image: img20250212_cybersecurityWorkshop,
     links: [
       {icon: <FaInstagram />, url: "https://instagram.com/p/DF2spf2zokv"},
-      {icon: <FaLinkedin />, url: "https://linkedin.com/posts/microsoft-tech-club_researchtalk-mtc-bitspilanidubai-activity-7294384565668737025-dkTw"},
+      {icon: <FaLinkedin />, url: "https://linkedin.com/posts/microsoft-tech-club_cybersecurity-penetrationtesting-mtc-activity-7296857567966724096-Y9zM"},
+      {icon: <FaVideo />, text: "Watch recording", url: "https://drive.google.com/file/d/1ymnObDaAAaHF-s3qDqRG1A-WZR-tPDzn/view"},
     ]
   },
 
