@@ -2,6 +2,7 @@
 import { FaInstagram, FaLinkedin, FaVideo } from "react-icons/fa6";
 import { SiGoogledocs, SiGoogleforms } from "react-icons/si";
 
+import img20250217_hackabot                        from "./2025-02-17_hackabot.jpg"
 import img20250212_cybersecurityWorkshop           from "./2025-02-12_cybersecurity_workshop.jpg"
 import img20250205_membershipStall                 from "./2025-02-05_membership_stall.jpg"
 import img20241212_researchTalk                    from "./2024-12-12_research_talk.jpg"
@@ -90,11 +91,11 @@ const events = [
     description: "Participants are challenged to build a chatbot coupled with an interactive landing webpage around the themes of Education & Career, Health & Wellness, Entertainment, E-Commerce and Personal Assistance.\nThe Judging Criteria will based on Bot Logic, Pitching & Presentation, Creative Visuals and Theme Relevance.\nRegistration is free for all ACMW and MTC Members, and is only AED 5 for non-members!",
     dateTimeStart: new Date(2025, 2-1, 17, 0, 0), // 17/Feb/2025
     dateTimeEnd: new Date(2025, 2-1, 26, 23, 59), // 26/Feb/2025
-    image: null,
+    image: img20250217_hackabot,
     links: [
-      {icon: <FaInstagram />, url: "https://instagram.com/p/DGIFBalTUo8"},
+      {icon: <FaInstagram />, url: "https://instagram.com/p/DGKasBTyDDZ"},
       {icon: <SiGoogleforms />, text: "Register", url: "https://docs.google.com/forms/d/e/1FAIpQLSd4bu4Ber8YIDqA8qF56hqKsXLYtuXy1iEUMo7AJ4jtlyOE-w/viewform"},
-      {icon: <SiGoogledocs />, text: "Rules", url: "https://instagram.com/p/DGIFBalTUo8"},
+      {icon: <SiGoogledocs />, text: "Rules", url: "https://docs.google.com/document/d/1PH5CdkYtqesr7AceHjEadgjP1nCzEzBXuHMND31vS_U"},
     ]
   },
 
