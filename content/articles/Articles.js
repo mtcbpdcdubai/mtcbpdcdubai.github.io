@@ -1,3 +1,4 @@
+import article_2025_03_03 from "./article_2025-03-03.png";
 import article_2025_02_07 from "./article_2025-02-07.png";
 import article_2024_11_25 from "./article_2024-11-25.jpg";
 import article_2024_10_06 from "./article_2024-10-06.png";
@@ -31,6 +32,14 @@ import article_2023_08_10 from "./article_2023-08-10.jpg";
 
 /** An array of articles. @type {Article[]} */
 export const articles = [
+  {
+    title: "And I Am Become Death, Destroyer Of Phones…",
+    preview: "Planned Obsolescence. Your smartphone will die in 2 years.",
+    dateTime: new Date(2025, 3-1, 3),
+    image: article_2025_03_03,
+    link: "https://medium.com/@microsofttechclub/and-i-am-become-death-destroyer-of-phones-ca7eb40ed4c9",
+  },
+
   {
     title: "ChatGPT’s White Whale is China’s Golden Goose",
     preview: "The Deepseek story. On January 18, 2025, America tried to ban Tiktok, over concerns of Chinese actors accessing users’ private data through the app.",
