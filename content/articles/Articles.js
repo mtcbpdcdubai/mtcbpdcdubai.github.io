@@ -1,3 +1,4 @@
+import article_2025_04_17 from "./article_2025-04-17.jpg";
 import article_2025_03_03 from "./article_2025-03-03.png";
 import article_2025_02_07 from "./article_2025-02-07.png";
 import article_2024_11_25 from "./article_2024-11-25.jpg";
@@ -32,6 +33,14 @@ import article_2023_08_10 from "./article_2023-08-10.jpg";
 
 /** An array of articles. @type {Article[]} */
 export const articles = [
+  {
+    title: "Maybe Our Phones Should Be Dumber",
+    preview: "Maybe your mom was right; it is all because of that phone.",
+    dateTime: new Date(2025, 4-1, 17),
+    image: article_2025_04_17,
+    link: "https://medium.com/@microsofttechclub/maybe-our-phones-should-be-dumber-511ad2da46dc",
+  },
+
   {
     title: "And I Am Become Death, Destroyer Of Phones…",
     preview: "Planned Obsolescence. Your smartphone will die in 2 years.",
