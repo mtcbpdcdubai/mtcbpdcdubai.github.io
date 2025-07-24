@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
+
 import './Modal.css';
+
 
 /**
  * Modal component to display content in a modal dialog.

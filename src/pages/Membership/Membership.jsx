@@ -1,8 +1,10 @@
 // import { useState } from 'react';
 // import emailjs from 'emailjs-com';
+
+import './Membership.css';
 // import Modal from 'components/Modal/Modal';
 import LinkButton from 'src/components/LinkButton/LinkButton';
-import './Membership.css';
+
 
 export default function Membership() {
   /*

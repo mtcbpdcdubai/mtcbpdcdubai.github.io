@@ -1,7 +1,8 @@
 import { FaLink, FaCalendarAlt } from "react-icons/fa";
 import PropTypes from 'prop-types';
-import LinkButton from "src/components/LinkButton/LinkButton";
+
 import { formatDateRange } from "src/DateTime";
+import LinkButton from "src/components/LinkButton/LinkButton";
 
 
 /**

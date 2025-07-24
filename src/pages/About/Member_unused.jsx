@@ -1,6 +1,7 @@
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import PropTypes from 'prop-types';
 
+
 /** @param {import("content/members/MembersAndSections").Member} props */
 function Member(props) {
   return <div className="member">

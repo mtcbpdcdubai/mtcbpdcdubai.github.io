@@ -2,6 +2,7 @@ import imgAmeiya from "./Ameiya.jpg";
 import imgSiddhi from "./Siddhi.jpg";
 import imgVania from "./Vania.jpg";
 
+
 /** A type declaration for a single Testimonial entry.
  * @typedef {Object} Testimonial
  * @property {str} name

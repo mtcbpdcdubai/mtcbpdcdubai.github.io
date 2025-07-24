@@ -1,6 +1,6 @@
-import EventCard from "./EventCard";
-import { eventsPast, eventsUpcoming } from "content/events/Events.jsx";
 import "./Events.css";
+import { eventsPast, eventsUpcoming } from "content/events/Events.jsx";
+import EventCard from "./EventCard";
 
 
 export default function Events() {

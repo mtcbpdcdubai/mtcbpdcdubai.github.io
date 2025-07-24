@@ -1,6 +1,8 @@
 import { FaInstagram, FaLinkedin, FaTiktok, FaGithub, FaXTwitter, FaThreads } from 'react-icons/fa6';
 import { SiMedium } from 'react-icons/si';
+
 import './Footer.css';
+
 
 /** An array of social media icons to be included in the footer.
  * @type {{icon: React.JSX.Component, url: string}[]}

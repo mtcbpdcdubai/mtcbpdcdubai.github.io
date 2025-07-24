@@ -1,6 +1,7 @@
 import { useState } from "react";
-import testimonials from "content/testimonials/Testimonials";
+
 import "./TestimonialSlider.css";
+import testimonials from "content/testimonials/Testimonials";
 
 
 const TestimonialSlider = () => {

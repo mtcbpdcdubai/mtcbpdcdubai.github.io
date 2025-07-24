@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from 'assets/MTClogo.svg';
+
 import './Navbar.css';
 import * as Paths from "src/Paths";
+import logo from 'assets/MTClogo.svg';
+
 
 /** The menu entries @type {[str, str][]} */
 const menuItems = [

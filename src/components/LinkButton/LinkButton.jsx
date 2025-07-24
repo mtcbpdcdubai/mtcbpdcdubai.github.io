@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 
+
 /** LinkButton component renders a button wrapped in a Link.
  * @param {Object} props The properties object.
  * @param {import("react-router-dom").To} props.to The path to link to.

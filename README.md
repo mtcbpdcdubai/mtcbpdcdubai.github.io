@@ -37,12 +37,16 @@ section **before** contributing to this project. ⚠️
     or open a terminal window and type the following
     command:
 
-        git clone https://github.com/mtcbpdcdubai/mtcbpdcdubai.github.io.git
+    ```shell
+    git clone https://github.com/mtcbpdcdubai/mtcbpdcdubai.github.io.git
+    ```
 
 3.  Open a terminal window inside the folder, and run the following command to
     download all the required packages:
 
-        npm i
+    ```shell
+    npm i
+    ```
 
 So far, the above steps will get the files ready on your computer. After this,
 you can either host locally for development purposes, or deploy to GitHub pages.
@@ -50,7 +54,9 @@ you can either host locally for development purposes, or deploy to GitHub pages.
 ## To host locally, for development purposes:
 4.  Open a terminal window inside the folder, and run the following command:
 
-        npm run dev
+    ```shell
+    npm run dev
+    ```
 
     This will host a webserver on your local machine, usually at
     http://localhost:5173/.
@@ -58,7 +64,9 @@ you can either host locally for development purposes, or deploy to GitHub pages.
 ## To deploy to GitHub pages:
 4.  Open a terminal window inside the folder, and run the following command:
 
-        npm run deploy
+    ```shell
+    npm run deploy
+    ```
 
     This will build the website to the `dist/` folder, and publish its contents
     to GitHub Pages, which will end up in the following URL:
@@ -90,7 +98,7 @@ Since JavaScript is used and not TypeScript, we use JSDoc comments in this
 content folder to add type hinting, which helps reduce mistakes.
 
 ## [`/src/`](/src/) folder
-The `src` folder contains the main code of the website, and is divided into two
+The `src` folder contains the main code of the website, and is divided into 3
 main sub-folders:
 
 1.  [`pages`](/src/pages/): Contains code for whole pages, such as
@@ -111,11 +119,11 @@ main sub-folders:
 
 
 ---
-# **🛠️ Useful info for future dev reference**
+# **🛠️ Useful info for developers**
 This section contains information and tips that will be useful for developers,
 and mainly aims to serve as future reference material.
 
-## Custom import alias
+## 1. Custom import alias
 Consider an `import` statement that imports a file in a different directory.
 
 ```js
@@ -161,7 +169,7 @@ All done! Now you can write something like this:
 import logo from 'assets/MTClogo.png';
 ```
 
-## CSS nesting
+## 2. CSS nesting
 CSS has a cool feature called "[CSS nesting](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting)"
 where you can declare CSS selectors *within* another selector.
 
@@ -211,41 +219,80 @@ Regarding compatibility, CSS nesting is a very recent feature (released in
 roughly December of 2024). But Vite's build process converts all the nested
 declarations to regular selectors, hence backward compatibility is ensured.
 
-## Load sequence
+## 3. Dependencies
+This section lists out the Node.js packages used in this project. Packages used
+by other packages indirectly aren't included here, for simplicity's sake. The
+following command displays the list:
+```shell
+npm list --depth=0
+```
+
+| Package name                                                                         | Purpose |
+| ---                                                                                  | --- |
+| [react](https://npmjs.com/package/react)                                             | React itself |
+| [@types/react](https://npmjs.com/package/@types/react)                               | Type hinting for React |
+| [react-dom](https://npmjs.com/package/react-dom)                                     | React for web (as opposed to `react-native`, etc.) |
+| [@types/react-dom](https://npmjs.com/package/@types/react-dom)                       | Type hinting for React for web |
+| [react-icons](https://npmjs.com/package/react-icons)                                 | React-compatible icon pack |
+| [react-router-dom](https://npmjs.com/package/react-router-dom)                       | Router - Navigation between pages |
+| [react-typed](https://npmjs.com/package/react-typed)                                 | [Typing animation](https://mattboldt.com/demos/typed-js/) |
+|                                                                                      | |
+| [eslint](https://npmjs.com/package/eslint)                                           | Linting for JS |
+| [@eslint/js](https://npmjs.com/package/@eslint/js)                                   | <sup><sub>? lol idk</sub></sup> |
+| [eslint-plugin-react](https://npmjs.com/package/eslint-plugin-react)                 | ESLint plugin for React |
+| [eslint-plugin-react-hooks](https://npmjs.com/package/eslint-plugin-react-hooks)     | ESLint plugin for React Hooks |
+| [eslint-plugin-react-refresh](https://npmjs.com/package/eslint-plugin-react-refresh) | ESLint plugin for Hot Reloading |
+|                                                                                      | |
+| [vite](https://npmjs.com/package/vite)                                               | Build tool for publishing highly minified, optimized code |
+| [@vitejs/plugin-react](https://npmjs.com/package/@vitejs/plugin-react)               | Vite for React |
+|                                                                                      | |
+| [gh-pages](https://npmjs.com/package/gh-pages)                                       | Publish to GitHub Pages |
+
+## 4. Load sequence
 This section shows the sequence/chain in which modules are imported.
+
+Note that Node.js imports modules only the first time, and on subsequent imports
+(even in other files), it just reuses the initial import. For this reason, this
+list only shows the first import.
+
+Benefits of maintaining such a list:
+1. You get an intuitive understanding on how the website gradually builds up
+2. You can diagnose any weird errors by narrowing it down to the exact moment
+   in the import sequence
+3. You can use this list to figure out any modules which are never used.
 
 - [🌐 index.html](index.html) <!--✅-->
     - [⚛️ index.jsx](src/index.jsx) <!--✅-->
+        - [⚛️ LoadingScreen.jsx](src/components/LoadingScreen/LoadingScreen.jsx) <!--✅-->
         - [⚛️ App.jsx](src/App.jsx) <!--✅-->
             - [🎨 App.css](src/App.css) <!--✅-->
             - [📄 Paths.js](src/Paths.js) <!--✅-->
             - [⚛️ Navbar.jsx](src/components/Navbar/Navbar.jsx) <!--✅-->
                 - [🎨 Navbar.css](src/components/Navbar/Navbar.css) <!--✅-->
-            - [⚛️ LoadingScreen.jsx](src/components/LoadingScreen/LoadingScreen.jsx) <!--✅-->
-                - [🎨 LoadingScreen.css](src/components/LoadingScreen/LoadingScreen.css) <!--✅-->
+            - [⚛️ Footer.jsx](src/components/Footer/Footer.jsx) <!--❌-->
+                - [🎨 Footer.css](src/components/Footer/Footer.css) <!--❌-->
             - [⚛️ Home.jsx](src/pages/Home/Home.jsx) <!--✅-->
                 - [🎨 Home.css](src/pages/Home/Home.css) <!--✅-->
                 - [⚛️ LinkButton.jsx](src/components/LinkButton/LinkButton.jsx) <!--✅-->
                 - [⚛️ TestimonialSlider.jsx](src/pages/Home/TestimonialSlider.jsx) <!--✅-->
                     - [🎨 TestimonialSlider.css](src/pages/Home/TestimonialSlider.css) <!--✅-->
-                    - [📄 Testimonials.js](content/testimonials/Testimonials.js) <!--✅-->
+                    - [📄 Testimonials.js](content/testimonials/Testimonials.js) (from [`content/`](content/)) <!--✅-->
             - [⚛️ About.jsx](src/pages/About/About.jsx) <!--✅-->
                 - [🎨 About.css](src/pages/About/About.css) <!--✅-->
-                - [📄 MembersAndSections.js](content/members/MembersAndSections.js) <!--✅-->
+                - [📄 MembersAndSections.js](content/members/MembersAndSections.js) (from [`content/`](content/)) <!--✅-->
             - [⚛️ Membership.jsx](src/pages/Membership/Membership.jsx) <!--✅-->
                 - [🎨 Membership.css](src/pages/Membership/Membership.css) <!--✅-->
                 <!-- - [⚛️ Modal.jsx](src/components/Modal/Modal.jsx) <!--❌-->
                 <!--     - [🎨 Modal.css](src/components/Modal/Modal.css) <!--❌-->
             - [⚛️ Events.jsx](src/pages/Events/Events.jsx) <!--🟡-->
-                - [⚛️ EventCard.jsx](src/pages/Events/EventCard.jsx) <!--🟡-->
-                - [⚛️ Events.jsx](content/events/Events.jsx) <!--✅-->
                 - [🎨 Events.css](src/pages/Events/Events.css) <!--🟡-->
-            - [⚛️ Contact.jsx](src/pages/Contact/Contact.jsx) <!--❌-->
-                - [🎨 Contact.css](src/pages/Contact/Contact.css) <!--❌-->
+                - [⚛️ EventCard.jsx](src/pages/Events/EventCard.jsx) <!--🟡-->
+                - [⚛️ Events.jsx](content/events/Events.jsx) (from [`content/`](content/)) <!--✅-->
+            <!-- - [⚛️ Contact.jsx](src/pages/Contact/Contact.jsx) <!--❌-->
+            <!--     - [🎨 Contact.css](src/pages/Contact/Contact.css) <!--❌-->
             - [⚛️ Articles.jsx](src/pages/Articles/Articles.jsx) <!--❌-->
                 - [🎨 Articles.css](src/pages/Articles/Articles.css) <!--❌-->
-            - [⚛️ Footer.jsx](src/components/Footer/Footer.jsx) <!--❌-->
-                - [🎨 Footer.css](src/components/Footer/Footer.css) <!--❌-->
+                - [📄 Articles.js](content/articles/Articles.js) (from [`content/`](content/)) <!--✅-->
             - [⚛️ NotFound.jsx](src/pages/NotFound/NotFound.jsx) <!--🟡-->
                 - [🎨 NotFound.css](src/pages/NotFound/NotFound.css) <!--🟡-->
 

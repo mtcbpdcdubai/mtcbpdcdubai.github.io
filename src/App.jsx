@@ -1,8 +1,8 @@
 // import { /*useState, useEffect,*/ lazy, Suspense } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
+
 import './App.css'
 import * as Paths from "src/Paths";
-
 import Navbar     from './components/Navbar/Navbar';
 import Footer     from './components/Footer/Footer';
 import Home       from './pages/Home/Home';

@@ -1,7 +1,8 @@
 import { FaMedium } from "react-icons/fa";
-import LinkButton from 'src/components/LinkButton/LinkButton';
-import { articles } from 'content/articles/Articles';
+
 import './Articles.css';
+import { articles } from 'content/articles/Articles';
+import LinkButton from 'src/components/LinkButton/LinkButton';
 
 
 export default function Articles() {
