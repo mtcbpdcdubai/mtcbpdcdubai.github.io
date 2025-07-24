@@ -6,6 +6,6 @@ to be **updated**.
 See the main [README](/README.md) for more information.
 
 Examples:
-- [Members](members/)
+- [Members 2024-25](members_2024_25/)
 - [Testimonials](testimonials/)
 - [Events](events/)

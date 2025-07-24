@@ -88,7 +88,7 @@ This section explains the folder structure and organization of this repo.
 ## [`/content/`](/content/) folder
 The `content` folder intends to have anything that is meant to be **modified**
 at a later time, such as list of events,
-[list of council members](/content/members/MembersAndSections.js),
+[list of council members](/content/members_2024_25/MembersAndSections.js),
 [testimonials](/content/testimonials/Testimonials.js), etc.
 
 It is requested that relevant assets, such as photos and videos of people and
@@ -279,7 +279,7 @@ Benefits of maintaining such a list:
                     - [📄 Testimonials.js](content/testimonials/Testimonials.js) (from [`content/`](content/)) <!--✅-->
             - [⚛️ About.jsx](src/pages/About/About.jsx) <!--✅-->
                 - [🎨 About.css](src/pages/About/About.css) <!--✅-->
-                - [📄 MembersAndSections.js](content/members/MembersAndSections.js) (from [`content/`](content/)) <!--✅-->
+                - [📄 MembersAndSections.js](content/members_2024_25/MembersAndSections.js) (from [`content/`](content/)) <!--✅-->
             - [⚛️ Membership.jsx](src/pages/Membership/Membership.jsx) <!--✅-->
                 - [🎨 Membership.css](src/pages/Membership/Membership.css) <!--✅-->
                 <!-- - [⚛️ Modal.jsx](src/components/Modal/Modal.jsx) <!--❌-->
