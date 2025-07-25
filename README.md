@@ -220,9 +220,9 @@ roughly December of 2024). But Vite's build process converts all the nested
 declarations to regular selectors, hence backward compatibility is ensured.
 
 ## 3. Dependencies
-This section lists out the Node.js packages used in this project. Packages used
-by other packages indirectly aren't included here, for simplicity's sake. The
-following command displays the list:
+This section lists out the Node.js&reg; packages used in this project. Packages
+used by other packages indirectly aren't included here, for simplicity's sake.
+The following command displays the list:
 ```shell
 npm list --depth=0
 ```
@@ -235,7 +235,6 @@ npm list --depth=0
 | [@types/react-dom](https://npmjs.com/package/@types/react-dom)                       | Type hinting for React for web |
 | [react-icons](https://npmjs.com/package/react-icons)                                 | React-compatible icon pack |
 | [react-router-dom](https://npmjs.com/package/react-router-dom)                       | Router - Navigation between pages |
-| [react-typed](https://npmjs.com/package/react-typed)                                 | [Typing animation](https://mattboldt.com/demos/typed-js/) |
 |                                                                                      | |
 | [eslint](https://npmjs.com/package/eslint)                                           | Linting for JS |
 | [@eslint/js](https://npmjs.com/package/@eslint/js)                                   | <sup><sub>? lol idk</sub></sup> |
@@ -246,14 +245,15 @@ npm list --depth=0
 | [vite](https://npmjs.com/package/vite)                                               | Build tool for publishing highly minified, optimized code |
 | [@vitejs/plugin-react](https://npmjs.com/package/@vitejs/plugin-react)               | Vite for React |
 |                                                                                      | |
+| [react-typed](https://npmjs.com/package/react-typed)                                 | [Typing animation](https://mattboldt.com/demos/typed-js/) |
 | [gh-pages](https://npmjs.com/package/gh-pages)                                       | Publish to GitHub Pages |
 
 ## 4. Load sequence
 This section shows the sequence/chain in which modules are imported.
 
-Note that Node.js imports modules only the first time, and on subsequent imports
-(even in other files), it just reuses the initial import. For this reason, this
-list only shows the first import.
+Note that Node.js&reg; imports modules only the first time, and on subsequent
+imports (even in other files), it just reuses the initial import. For this
+reason, this list only shows the first import.
 
 Benefits of maintaining such a list:
 1. You get an intuitive understanding on how the website gradually builds up
