@@ -1,132 +1,137 @@
+/* Store "constants" here */
+:root {
+  /* values for any spacing e.g. padding, margin, etc. */
+  --articles-space-navbar: 65px;
+  --articles-space-large: 40px;
+  --articles-space-small: 15px;
+  --articles-cards-max-width: 1080px;
+
+  /* font sizes */
+  --articles-font-large: 3.5em;
+  --articles-font-medium: 1.75em;
+  --articles-font-small: 1.25em;
+
+  /* colors */
+  --articles-color-accent: #0078d7;
+  --articles-color-text-dark: #e0e0e0;
+  --articles-color-back: #1e1e1e;
+  --articles-color-back-light: #2a2a2a;
+  --articles-color-back-lighter: #393939;
+
+  --articles-border-radius: 10px; /* thickness of strip on left side */
+  --articles-hover-scale: 1.05;
+  --articles-transition: 0.3s;
+}
+
+body {
+  background-color: var(--articles-color-back);
+}
+
 .articles-page {
+  padding: var(--articles-space-large);
   display: flex;
   flex-direction: column;
+  gap: var(--articles-space-large);
   align-items: center;
-  padding: 50px 15%;
-  background-color: #1e1e1e;
-  color: white;
   text-align: center;
 
   h1 {
-    font-size: 3em;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    font-size: var(--articles-font-large);
   }
 }
 
 .articles-page .articles-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 40px;
+  gap: var(--articles-space-large);
   justify-content: center;
   width: 100%;
+  max-width: var(--articles-cards-max-width);
 
   .article-card {
-    background-color: #2c2c2c;
-    border-radius: 10px;
+    background-color: var(--articles-color-back-light);
+    border-radius: var(--articles-border-radius);
     overflow: hidden;
     max-width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
-    height: auto;
+    /* min-width: 300px; */
+    border-left: var(--articles-border-radius) solid var(--articles-color-accent);
 
     img {
       width: 100%;
       height: 200px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
     }
 
     .article-content {
-      padding: 20px;
-      flex-grow: 1;
+      display: grid;
+      gap: var(--articles-space-small);
+      padding: var(--articles-space-small);
       text-align: left;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      grid-template-rows: auto 1fr auto;
+      height: 100%;
 
       h2 {
-        font-size: 1.75em;
-        margin-bottom: 20px;
-        font-family: 'Montserrat', sans-serif;
+        font-size: var(--articles-font-medium);
       }
 
-      p {
-        font-size: 1em;
-        line-height: 1.5;
-        font-family: 'Lato', sans-serif;
-      }
+      .article-button {
+        margin: 0 auto; /* center it horizontally */
 
-      button {
-        background-color: #0078D7;
-        color: white;
-        border: none;
-        padding: 10px 16px;
-        font-size: 1.2em;
-        font-weight: bold;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-        display: block;
-        margin: 20px auto 0 auto;
-        width: 60%;
+        button {
+          padding: var(--articles-space-small) var(--articles-space-small);
+          border: none;
+          color: white;
+          background-color: var(--articles-color-accent);
+          font-size: var(--articles-font-small);
+          font-weight: bold;
+          border-radius: var(--articles-border-radius);
+          cursor: pointer;
+          transition: var(--articles-transition) ease;
 
-        &:hover {
-          background-color: white;
-          transform: scale(1.1);
-          color: #0078D7;
+          /* Flexbox for containing the icon and the text */
+          display: flex;
+          flex-direction: row;
+          gap: var(--events-space-small);
+          align-items: flex-start;
+          > span {line-height: 1;}
+
+          &:hover {
+            color: var(--articles-color-accent);
+            background-color: white;
+            transform: scale(var(--articles-hover-scale));
+          }
         }
       }
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 10px;
-      height: 100%;
-      background-color: #0078D7;
     }
   }
 }
 
 @media screen and (max-width: 750px) {
-  .articles-page {
-    padding: 20px 5%;
-    margin-top: 0; /* Remove extra top margin to eliminate white space */
+  :root {
+    /* values for any spacing e.g. padding, margin, etc. */
+    --articles-space-large: 20px;
+    --articles-space-small: 10px;
 
-    h1 {
-      font-size: 2em;
-      margin-top: 50px;
-      margin-bottom: 20px;
-    }
+    /* font sizes */
+    --articles-font-large: 1.8em;
+    --articles-font-medium: 1.25em;
+    --articles-font-small: 1em;
+
+    --articles-border-radius: 8px;
+    --articles-hover-scale: 1.025;
   }
 
   .articles-page .articles-cards {
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 20px; /* Reduce gap between articles */
+    grid-template-columns: 1fr; /* 1 column */
 
     .article-card {
-      img {
-        height: 150px; /* Reduce image height for smaller screens */
-      }
-
-      .article-content {
-        h2 {
-          font-size: 1.5em;
-          margin-bottom: 15px;
-        }
-
-        p {
-          font-size: 0.9em;
-        }
-
-        button {
-          padding: 8px 12px; /* Adjust padding */
-          font-size: 1em; /* Reduce font size */
-          width: 80%; /* Increase button width */
-        }
-      }
+      img {height: 150px;}
+      .article-content {height: auto;}
     }
   }
 }
