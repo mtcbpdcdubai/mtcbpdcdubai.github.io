@@ -19,8 +19,8 @@
 This GitHub repository contains the code for the official website of Microsoft
 Tech Club.
 
-⚠️ Please read the [**🛠️ Useful info for future dev reference**](#️-useful-info-for-future-dev-reference)
-section **before** contributing to this project. ⚠️
+⚠️ Please read the "**🛠️ Useful info for developers**" section **before**
+contributing to this project.
 
 <br><br>
 
@@ -82,10 +82,28 @@ Source: [How to deploy Vite React App to GitHub Pages | by Prateek Singh | Mediu
 
 
 ---
-# **📂 Structure of project**
+# **🛠️ Useful info for developers**
+This section contains information and tips that will be useful for developers,
+and mainly aims to serve as future reference material.
+
+## **1. Tech stack**
+This section briefs on the entire tech stack involved in this project. If you're
+a newcomer to this project, read this section to familiarize yourself with the
+tools and tech!
+
+| Tech |  | What? | Why? |
+| --- | --- | --- | --- |
+| ![github32] | [GitHub](https://github.com) | Platform to store, manage and maintain history of code. | To keep code accessible and synced with everyone under MTC. |
+| ![vsc32] | [Visual Studio Code](https://code.visualstudio.com) | A fancy code editor with useful features such as IntelliSense (autocomplete). | There's a lot of useful extensions which help speed up the dev process. |
+| ![node32] | [Node.js&reg;](https://nodejs.org) | A JavaScript runtime environment.<br>Just like how your browser provides an "environment" for your JavaScript code to "run", Node.js&reg; is a standalone software whose only purpose is to run JavaScript code on your machine. | Here, Node.js&reg; is used mainly for building React using Vite, that's it. |
+| ![react32] | [React](https://react.dev/) | JavaScript library for building user interfaces. | Creates reusable UI "components" and makes dynamic content easier to code. |
+| ![vite32] | [Vite](https://vite.dev) | A build tool. It bundles all of your JavaScript, CSS, assets, etc. into few but highly-optimized files, useful for performance. | Vite is more modern than using webpack/Babel that comes in-built with React. |
+| ![cloudflare32] | [Cloudflare Pages](https://pages.cloudflare.com/) | Static page hosting. | We use Cloudflare since we already have the domain name `mtcbpdc.org` under Cloudflare. Equivalent to GitHub Pages. |
+
+## **2. Folder structure**
 This section explains the folder structure and organization of this repo.
 
-## [`/content/`](/content/) folder
+### [`/content/`](/content/) folder
 The `content` folder intends to have anything that is meant to be **modified**
 at a later time, such as list of events,
 [list of council members](/content/members_2024_25/MembersAndSections.js),
@@ -97,7 +115,10 @@ events etc., shall be stored within this content folder only.
 Since JavaScript is used and not TypeScript, we use JSDoc comments in this
 content folder to add type hinting, which helps reduce mistakes.
 
-## [`/src/`](/src/) folder
+A lot of the dynamic content here will eventually be replaced with data fetched
+from the MTC ERP. <sup><sub>(inshallah)</sub></sup>
+
+### [`/src/`](/src/) folder
 The `src` folder contains the main code of the website, and is divided into 3
 main sub-folders:
 
@@ -114,16 +135,7 @@ main sub-folders:
 3.  [`assets`](/src/assets/): Contains generic images and media. For
     content-specific media, please use the `content` folder as explained [above](#content-folder).
 
-<br><br>
-
-
-
----
-# **🛠️ Useful info for developers**
-This section contains information and tips that will be useful for developers,
-and mainly aims to serve as future reference material.
-
-## 1. Custom import alias
+## **3. Custom import alias**
 Consider an `import` statement that imports a file in a different directory.
 
 ```js
@@ -169,7 +181,7 @@ All done! Now you can write something like this:
 import logo from 'assets/MTClogo.png';
 ```
 
-## 2. CSS nesting
+## **4. CSS nesting**
 CSS has a cool feature called "[CSS nesting](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting)"
 where you can declare CSS selectors *within* another selector.
 
@@ -219,7 +231,7 @@ Regarding compatibility, CSS nesting is a very recent feature (released in
 roughly December of 2024). But Vite's build process converts all the nested
 declarations to regular selectors, hence backward compatibility is ensured.
 
-## 3. Dependencies
+## **5. Dependencies**
 This section lists out the Node.js&reg; packages used in this project. Packages
 used by other packages indirectly aren't included here, for simplicity's sake.
 The following command displays the list:
@@ -248,7 +260,7 @@ npm list --depth=0
 | [react-typed](https://npmjs.com/package/react-typed)                                 | [Typing animation](https://mattboldt.com/demos/typed-js/) |
 | [gh-pages](https://npmjs.com/package/gh-pages)                                       | Publish to GitHub Pages |
 
-## 4. Load sequence
+## **6. Load sequence**
 This section shows the sequence/chain in which modules are imported.
 
 Note that Node.js&reg; imports modules only the first time, and on subsequent
@@ -328,3 +340,11 @@ Benefits of maintaining such a list:
 [linkedin16]: readme_assets/linkedin16.png
 [github16]: readme_assets/github16.png
 [globe16]: readme_assets/globe16.png
+
+[github32]: readme_assets/github32.png
+[vsc32]: readme_assets/vsc32.png
+[node32]: readme_assets/node32.png
+[react32]: readme_assets/react32.png
+[vite32]: readme_assets/vite32.png
+[cloudflare32]: readme_assets/cloudflare32.png
+[sass32]: readme_assets/sass32.png
