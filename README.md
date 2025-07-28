@@ -301,7 +301,30 @@ Benefits of maintaining such a list:
 
 
 ---
-# **💻 Authors**
-- Sreenikethan I - [@SreenikethanI](https://github.com/SreenikethanI/)
-- Stellin J - [@Stellin-15](https://github.com/Stellin-15/)
-- Mrudula R - [@Mrudula1205](https://github.com/Mrudula1205/)
+# **💻 Contributors and Socials**
+<a target="_blank" href="https://instagram.com/sreenikethan.i">![instagram16]</a>
+<a target="_blank" href="https://linkedin.com/in/sreenikethan-i">![linkedin16]</a>
+<a target="_blank" href="https://github.com/SreenikethanI">![github16]</a>
+**Sreenikethan I** - DevOps Manager @ MTC BPDC, 2025-26
+
+<a target="_blank" href="https://instagram.com/Stellin_15">![instagram16]</a>
+<a target="_blank" href="https://linkedin.com/in/stellin-john-george-1bb757163">![linkedin16]</a>
+<a target="_blank" href="https://github.com/Stellin-15">![github16]</a>
+**Stellin J** - Technical Head @ MTC BPDC, 2025-26
+
+<a target="_blank" href="https://instagram.com/mrudula12503">![instagram16]</a>
+<a target="_blank" href="https://linkedin.com/in/mrudula-rahate">![linkedin16]</a>
+<a target="_blank" href="https://github.com/Mrudula1205">![github16]</a>
+**Mrudula R** - Co-Chair @ MTC BPDC, 2024-25
+
+<a target="_blank" href="https://instagram.com/mtcbpdc">![instagram16]</a>
+<a target="_blank" href="https://linkedin.com/company/microsoft-tech-club">![linkedin16]</a>
+<a target="_blank" href="https://github.com/mtcbpdcdubai">![github16]</a>
+<a target="_blank" href="https://mtcbpdc.org">![globe16]</a>
+**Microsoft Tech Club** @ BITS Pilani, Dubai
+
+<!-- Icon URLs -->
+[instagram16]: readme_assets/instagram16.png
+[linkedin16]: readme_assets/linkedin16.png
+[github16]: readme_assets/github16.png
+[globe16]: readme_assets/globe16.png
