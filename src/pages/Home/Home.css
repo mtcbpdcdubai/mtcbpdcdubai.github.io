@@ -35,7 +35,13 @@ body {
 
 /* MARK: BANNER */
 .home-banner {
-  height: 75vh;
+  &.mobile {
+    display: none;
+  }
+  &.desktop {
+    display: flex;
+    height: 100vh;
+  }
   padding: 0 var(--home-space-small);
   margin: 0;
 
@@ -423,6 +429,14 @@ body {
 
   /* MARK: 📱 banner */
   .home-banner {
+    &.desktop {
+      display: none;
+    }
+    &.mobile {
+      display: flex;
+      height: 75vh;
+    }
+
     h1, .h1 {font-size: 3em;}
 
     p {font-size: 1.25em;}

@@ -27,7 +27,10 @@ import imgSocial_techTribune             from 'assets/home/social_tech_tribune.j
 export default function Home() {
   return (
     <div>
-      <div className="home-banner">
+      <div className="home-banner desktop">
+        <Spline scene="https://prod.spline.design/vbjhCc7f3BsIjIM4/scene.splinecode" />
+      </div>
+      <div className="home-banner mobile">
         <img src={backgroundImage} className="home-background" alt="Background" />
         <ReactTyped
           strings={["Microsoft Tech Club"]}
