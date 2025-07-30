@@ -1,4 +1,5 @@
 import { ReactTyped } from 'react-typed';
+import Spline from '@splinetool/react-spline';
 
 import './Home.css';
 import LinkButton from 'src/components/LinkButton/LinkButton.jsx';
