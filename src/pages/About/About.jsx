@@ -2,7 +2,7 @@ import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { ReactTyped } from 'react-typed';
 
 import "./About.css";
-import sections from "content/members_2024_25/MembersAndSections";
+import sections from "content/members_2025_26/MembersAndSections";
 import aboutImage from "assets/about_us2.jpg";
 
 
@@ -29,7 +29,7 @@ const About = () => {
         </p>
       </div>
 
-      <h2>MTC Council 2024-25</h2>
+      <h2>MTC Council 2025-26</h2>
 
       {/* Section for each Team */}
       {sections.map((section) =>
