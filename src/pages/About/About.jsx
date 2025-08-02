@@ -45,9 +45,9 @@ const About = () => {
                 <h4>{member.name}</h4>
                 <p>{member.position}</p>
                 <div className="social-icons">
-                  {member.linkInstagram ? <a href={member.linkInstagram} target="_blank"><FaInstagram /></a> : <></>}
-                  {member.linkLinkedIn ? <a href={member.linkLinkedIn} target="_blank"><FaLinkedin /></a> : <></>}
-                  {member.linkGitHub ? <a href={member.linkGitHub} target="_blank"><FaGithub /></a> : <></>}
+                  {member.linkInstagram ? <a href={member.linkInstagram} target="_blank" rel="noopener noreferrer"><FaInstagram /></a> : <></>}
+                  {member.linkLinkedIn ? <a href={member.linkLinkedIn} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a> : <></>}
+                  {member.linkGitHub ? <a href={member.linkGitHub} target="_blank" rel="noopener noreferrer"><FaGithub /></a> : <></>}
                 </div>
               </div>
             )}
