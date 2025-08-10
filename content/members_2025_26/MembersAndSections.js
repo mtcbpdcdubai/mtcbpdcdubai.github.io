@@ -50,7 +50,7 @@ import communityCrystalNazareth    from "./community_crystal_nazareth.jpg";
 import communityDiyaFreddy         from "./community_diya_freddy.jpg";
 import communityShristiSudeep      from "./community_shristi_sudeep.jpg";
 import communitySreeGouriMenon     from "./community_sree_gouri_menon.jpg";
-import communityAdhinarayanAshok   from "./community_adhinarayan_ashok.jpg";
+// import communityAdhinarayanAshok   from "./community_adhinarayan_ashok.jpg";
 import communityMurtazaRangwala    from "./community_murtaza_rangwala.jpg";
 import communityReubenThomas       from "./community_reuben_thomas.jpg";
 
@@ -471,14 +471,14 @@ const sectionCommunitySandbox = [
     linkLinkedIn: "https://linkedin.com/in/sree-gouri-menon-6a45512b4",
     linkGitHub: "https://github.com/sree-gouri",
   },
-  {
-    image: communityAdhinarayanAshok,
-    name: "Adhinarayan Ashok",
-    position: "Electrical Community Manager",
-    linkInstagram: "",
-    linkLinkedIn: "https://linkedin.com/in/adhinarayan-ashok-64395b340",
-    linkGitHub: "",
-  },
+  // {
+  //   image: communityAdhinarayanAshok,
+  //   name: "Adhinarayan Ashok",
+  //   position: "Electrical Community Manager",
+  //   linkInstagram: "",
+  //   linkLinkedIn: "https://linkedin.com/in/adhinarayan-ashok-64395b340",
+  //   linkGitHub: "",
+  // },
   {
     image: communityMurtazaRangwala,
     name: "Murtaza Rangwala",
